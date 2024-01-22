@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+    <changeSet id="20210312091841" author="rohan">
+        <addColumn tableName="customer_portal_settings">
+            <column name="update_payment_message" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="card_last_four_digit_text" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="card_expiry_text" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="card_holder_name_text" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="card_type_text" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="payment_method_type_text" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="cancel_accordion_title" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="payment_detail_accordion_title" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="upcoming_order_accordion_title" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="payment_info_text" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="update_payment_btn_text" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="next_order_date_lbl" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="status_lbl" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="quantity_lbl" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="amount_lbl" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="order_no_lbl" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="edit_frequency_btn_text" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="cancel_freq_btn_text" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="update_freq_btn_text" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+        </addColumn>
+    </changeSet>
+</databaseChangeLog>

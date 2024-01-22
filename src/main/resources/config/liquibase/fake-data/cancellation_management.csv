@@ -1,0 +1,11 @@
+id;shop;cancellation_type;cancellation_instructions_text;cancellation_reasons_json
+1;Arizona Shore;CANCELLATION_INSTRUCTIONS;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+2;payment PCI Illinois;CANCEL_IMMEDIATELY;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+3;Incredible installation service-desk;CUSTOMER_RETENTION_FLOW;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+4;Down-sized;CANCELLATION_INSTRUCTIONS;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+5;Function-based Ergonomic Cotton Soap;CANCEL_IMMEDIATELY;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+6;transmitting Louisiana Credit Card Account;CANCELLATION_INSTRUCTIONS;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+7;facilitate Games;CANCEL_IMMEDIATELY;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+8;deposit Home Loan Account;CANCEL_IMMEDIATELY;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+9;Bacon;CANCEL_IMMEDIATELY;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+10;port Dobra scalable;CUSTOMER_RETENTION_FLOW;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt

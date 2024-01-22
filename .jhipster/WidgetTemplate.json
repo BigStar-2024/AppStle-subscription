@@ -1,0 +1,34 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "type",
+            "fieldType": "WidgetTemplateType",
+            "fieldValues": "WIDGET_TYPE_1,WIDGET_TYPE_2,WIDGET_TYPE_3,WIDGET_TYPE_4,WIDGET_TYPE_5,WIDGET_TYPE_6,WIDGET_TYPE_7,WIDGET_TYPE_8,WIDGET_TYPE_9,WIDGET_TYPE_10",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "html",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        }
+    ],
+    "changelogDate": "20220705132736",
+    "dto": "mapstruct",
+    "searchEngine": false,
+    "service": "serviceImpl",
+    "entityTableName": "widget_template",
+    "databaseType": "sql",
+    "readOnly": false,
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

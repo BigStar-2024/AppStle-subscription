@@ -1,0 +1,53 @@
+.cp-setting-tabs .rc-tabs-bar {
+  margin-bottom: 19px;
+}
+
+.cp-setting-tabs .rc-tabs-nav-wrap {
+  border: 2px solid #0000001f;
+  border-radius: 15px;
+  font-weight: bold;
+  color: slategrey;
+}
+
+.rc-tabs-tab-prev,
+.rc-tabs-tab-next {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-weight: bold;
+
+    color: slategrey;
+  }
+}
+
+.rc-tabs-tab-prev-icon::before {
+  content: '\f137' !important;
+
+  font-family: 'Font Awesome 5 Free';
+  font-size: 20px;
+
+  transition: color 0.1s;
+
+  cursor: pointer;
+}
+
+.rc-tabs-tab-prev-icon:hover::before {
+  color: darken(slategrey, 10%);
+}
+
+.rc-tabs-tab-next-icon::before {
+  content: '\f138' !important;
+
+  font-family: 'Font Awesome 5 Free';
+  font-size: 20px;
+
+  transition: color 0.1s;
+}
+
+.rc-tabs-tab-next-icon:hover::before {
+  color: darken(slategrey, 10%);
+
+  cursor: pointer;
+}

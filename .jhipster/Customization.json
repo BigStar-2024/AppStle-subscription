@@ -1,0 +1,34 @@
+{
+  "name": "Customization",
+  "fields": [
+    {
+      "fieldName": "label",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "CustomizationType",
+      "fieldValues": "COLOR_PICKER,PIXEL_FIELD,TOGGLE,TEXT_FIELD"
+    },
+    {
+      "fieldName": "css",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "category",
+      "fieldType": "CustomizationCategory",
+      "fieldValues": "PRODUCT_PAGE_WIDGET,CUSTOMER_PORTAL,BUILD_A_BOX,CART_PAGE_WIDGET,BUNDLING"
+    }
+  ],
+  "changelogDate": "20230328061909",
+  "entityTableName": "customization",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

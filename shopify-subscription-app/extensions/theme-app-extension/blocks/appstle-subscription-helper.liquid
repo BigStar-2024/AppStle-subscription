@@ -1,0 +1,203 @@
+<script id="subscription-helper">
+
+        if (!window.AppstleIncluded) {
+          window.AppstleIncluded = true;
+          window.RS = Window.RS || {};
+          RS.Config = {
+            "selectors": {
+                "payment_button_selectors": "form[action$='/cart/add'] .shopify-payment-button",
+                "subscriptionLinkSelector": "{{shop.metafields.appstle_subscription.setting.value.subscriptionLinkSelector}}",
+                "atcButtonPlacement": "{{shop.metafields.appstle_subscription.setting.value.atcButtonPlacement}}",
+                "subscriptionLinkPlacement": "{{shop.metafields.appstle_subscription.setting.value.subscriptionLinkPlacement}}",
+                "cartRowSelector": "{{ shop.metafields.appstle_subscription.setting.value.cartRowSelector }}",
+                "cartLineItemSelector": "{{ shop.metafields.appstle_subscription.setting.value.cartLineItemSelector }}",
+                "cartLineItemPerQuantityPriceSelector": "{{ shop.metafields.appstle_subscription.setting.value.cartLineItemPerQuantityPriceSelector }}",
+                "cartLineItemTotalPriceSelector": "{{ shop.metafields.appstle_subscription.setting.value.cartLineItemTotalPriceSelector }}",
+                "cartLineItemSellingPlanNameSelector": "{{ shop.metafields.appstle_subscription.setting.value.cartLineItemSellingPlanNameSelector }}",
+                "cartSubTotalSelector" : "{{ shop.metafields.appstle_subscription.setting.value.cartSubTotalSelector }}",
+                "cartLineItemPriceSelector": "{{ shop.metafields.appstle_subscription.setting.value.cartLineItemPriceSelector }}",
+                "cartHiddenAttributesSelector": "{{ shop.metafields.appstle_subscription.setting.value.cartHiddenAttributesSelector }}",
+            },
+            "enableCartWidgetFeature": "{{shop.metafields.appstle_subscription.setting.value.enableCartWidgetFeature}}",
+            "useUrlWithCustomerId": "{{shop.metafields.appstle_subscription.setting.value.useUrlWithCustomerId}}",
+            "atcButtonSelector": "{{shop.metafields.appstle_subscription.setting.value.atcButtonSelector}}",
+            "moneyFormat": "{{shop.metafields.appstle_subscription.setting.value.moneyFormat}}",
+            "oneTimePurchaseText": "{{shop.metafields.appstle_subscription.setting.value.oneTimePurchaseText}}",
+            "shop": "{{shop.metafields.appstle_subscription.setting.value.shop}}",
+            "deliveryText": "{{shop.metafields.appstle_subscription.setting.value.deliveryText}}",
+            "purchaseOptionsText": "{{shop.metafields.appstle_subscription.setting.value.purchaseOptionsText}}",
+            "manageSubscriptionButtonText": "{{shop.metafields.appstle_subscription.setting.value.manageSubscriptionButtonText}}",
+            "subscriptionOptionText": "{{shop.metafields.appstle_subscription.setting.value.subscriptionOptionText}}",
+            "sellingPlanSelectTitle": "{{shop.metafields.appstle_subscription.setting.value.sellingPlanSelectTitle}}",
+            "subscriptionPriceDisplayText": "{{shop.metafields.appstle_subscription.setting.value.subscriptionPriceDisplayText}}",
+            "tooltipTitle": "{{shop.metafields.appstle_subscription.setting.value.tooltipTitle}}",
+            "showTooltipOnClick": "{{shop.metafields.appstle_subscription.setting.value.showTooltipOnClick}}",
+            "tooltipDesctiption": "{{shop.metafields.appstle_subscription.setting.value.tooltipDesctiption}}",
+            "tooltipDescriptionOnPrepaidPlan": "{{shop.metafields.appstle_subscription.setting.value.tooltipDescriptionOnPrepaidPlan}}",
+            "tooltipDescriptionOnMultipleDiscount": "{{shop.metafields.appstle_subscription.setting.value.tooltipDescriptionOnMultipleDiscount}}",
+            "tooltipDescriptionCustomization": "{{shop.metafields.appstle_subscription.setting.value.tooltipDescriptionCustomization}}",
+            "orderStatusManageSubscriptionTitle": "{{shop.metafields.appstle_subscription.setting.value.orderStatusManageSubscriptionTitle}}",
+            "orderStatusManageSubscriptionDescription": "{{shop.metafields.appstle_subscription.setting.value.orderStatusManageSubscriptionDescription}}",
+            "orderStatusManageSubscriptionButtonText": "{{shop.metafields.appstle_subscription.setting.value.orderStatusManageSubscriptionButtonText}}",
+            "subscriptionOptionSelectedByDefault" : {{shop.metafields.appstle_subscription.setting.value.subscriptionOptionSelectedByDefault}},
+            "totalPricePerDeliveryText" : "{{shop.metafields.appstle_subscription.setting.value.totalPricePerDeliveryText}}",
+            "memberOnlySellingPlansJson": {{shop.metafields.appstle_subscription.setting.value.memberOnlySellingPlansJson}},
+            "nonMemberOnlySellingPlansJson": {{shop.metafields.appstle_subscription.setting.value.nonMemberOnlySellingPlansJson}},
+            "sellingPlansJson": {{shop.metafields.appstle_subscription.setting.value.sellingPlansJson}},
+            "widgetEnabled": {{shop.metafields.appstle_subscription.setting.value.widgetEnabled}},
+            "showTooltip" : {{shop.metafields.appstle_subscription.setting.value.showTooltip}},
+            "sortByDefaultSequence": {{shop.metafields.appstle_subscription.setting.value.sortByDefaultSequence}},
+            "showSubOptionBeforeOneTime": {{shop.metafields.appstle_subscription.setting.value.showSubOptionBeforeOneTime}},
+            "detectVariantFromURLParams": {{shop.metafields.appstle_subscription.setting.value.detectVariantFromURLParams | default: false, allow_false: true}},
+            "disableQueryParamsUpdate": {{shop.metafields.appstle_subscription.setting.value.disableQueryParamsUpdate | default: false, allow_false: true}},
+            "showStaticTooltip": {{shop.metafields.appstle_subscription.setting.value.showStaticTooltip}},
+            "showAppstleLink": {{shop.metafields.appstle_subscription.setting.value.showAppstleLink}},
+            "sellingPlanTitleText" : "{{shop.metafields.appstle_subscription.setting.value.sellingPlanTitleText}}",
+            "oneTimePriceText" : "{{shop.metafields.appstle_subscription.setting.value.oneTimePriceText}}",
+            "selectedPayAsYouGoSellingPlanPriceText" : "{{shop.metafields.appstle_subscription.setting.value.selectedPayAsYouGoSellingPlanPriceText}}",
+            "selectedPrepaidSellingPlanPriceText" : "{{shop.metafields.appstle_subscription.setting.value.selectedPrepaidSellingPlanPriceText}}",
+            "selectedDiscountFormat" : "{{shop.metafields.appstle_subscription.setting.value.selectedDiscountFormat}}",
+            "manageSubscriptionBtnFormat" : "{{shop.metafields.appstle_subscription.setting.value.manageSubscriptionBtnFormat}}",
+            "manageSubscriptionUrl" : "{{shop.metafields.appstle_subscription.setting.value.manageSubscriptionUrl}}",
+            "appstlePlanId": {{shop.metafields.appstle_subscription.setting.value.appstlePlanId}},
+            "showCheckoutSubscriptionBtn": {{shop.metafields.appstle_subscription.setting.value.showCheckoutSubscriptionBtn}},
+            "priceSelector": "{{shop.metafields.appstle_subscription.setting.value.priceSelector}}",
+            "landingPagePriceSelector": "{{shop.metafields.appstle_subscription.setting.value.landingPagePriceSelector}}",
+            "quickViewClickSelector": "{{shop.metafields.appstle_subscription.setting.value.quickViewClickSelector}}",
+            "badgeTop": "{{shop.metafields.appstle_subscription.setting.value.badgeTop}}",
+            "pricePlacement": "{{shop.metafields.appstle_subscription.setting.value.pricePlacement}}",
+            "disableLoadingJquery": {{shop.metafields.appstle_subscription.setting.value.disableLoadingJquery}},
+            "widgetEnabledOnSoldVariant": "{{shop.metafields.appstle_subscription.setting.value.widgetEnabledOnSoldVariant}}",
+            "switchRadioButtonWidget": {{shop.metafields.appstle_subscription.setting.value.switchRadioButtonWidget}},
+            "appstlePlanName": "{{shop.metafields.appstle_subscription.setting.value.appstlePlanName}}",
+            "appstlePlanFeatures": {{shop.metafields.appstle_subscription.setting.value.appstlePlanFeatures}},
+            "formMappingAttributeName": "{{shop.metafields.appstle_subscription.setting.value.formMappingAttributeName}}",
+            "formMappingAttributeSelector": "{{shop.metafields.appstle_subscription.setting.value.formMappingAttributeSelector}}",
+            "quickViewModalPollingSelector": "{{shop.metafields.appstle_subscription.setting.value.quickViewModalPollingSelector}}",
+            "scriptLoadDelay": "{{shop.metafields.appstle_subscription.setting.value.scriptLoadDelay}}",
+            "formatMoneyOverride": "{{shop.metafields.appstle_subscription.setting.value.formatMoneyOverride}}",
+            "appstle_app_proxy_path_prefix": "{{shop.metafields.appstle_subscription.setting.value.appProxyPathPrefix}}",
+            "updatePriceOnQuantityChange": "{{shop.metafields.appstle_subscription.setting.value.updatePriceOnQuantityChange}}",
+            "widgetParentSelector": "{{shop.metafields.appstle_subscription.setting.value.widgetParentSelector}}",
+            "quantitySelector": "{{shop.metafields.appstle_subscription.setting.value.quantitySelector}}",
+            "enableAddJSInterceptor": "{{shop.metafields.appstle_subscription.setting.value.enableAddJSInterceptor}}",
+            "reBuyEnabled": "{{shop.metafields.appstle_subscription.setting.value.reBuyEnabled}}",
+            "loyaltyDetailsLabelText": "{{shop.metafields.appstle_subscription.setting.value.loyaltyDetailsLabelText}}",
+            "loyaltyPerkDescriptionText": "{{shop.metafields.appstle_subscription.setting.value.loyaltyPerkDescriptionText}}",
+            "widgetType": "{{shop.metafields.appstle_subscription.setting.value.widgetType | default: ''}}",
+            "widgetTemplateHtml": `{{shop.metafields.appstle_subscription.widget_template_html.value}}`,
+            {% if shop.metafields.appstle_subscription.bundle != blank %}
+              "bundle": {{shop.metafields.appstle_subscription.bundle}},
+            {% else %}
+              "bundle": {},
+            {% endif %}
+            {% if shop.metafields.appstle_subscription.labels != blank %}
+              "labels": "{{shop.metafields.appstle_subscription.labels}}",
+            {% else %}
+              "labels": "",
+            {% endif %}
+            "css": {
+                "appstle_subscription_widget": {
+                    "margin-top": "{{shop.metafields.appstle_subscription.setting.value.subscriptionWidgetMarginTop}}" ,
+                    "margin-bottom": "{{shop.metafields.appstle_subscription.setting.value.subscriptionWidgetMarginBottom}}",
+                },
+
+                "appstle_subscription_wrapper": {
+                    "border-width": "{{shop.metafields.appstle_subscription.setting.value.subscriptionWrapperBorderWidth}}",
+                    "border-color": "{{shop.metafields.appstle_subscription.setting.value.subscriptionWrapperBorderColor}}",
+                },
+
+                "appstle_circle": {
+                    "border-color": "{{shop.metafields.appstle_subscription.setting.value.circleBorderColor}}",
+                },
+
+                "appstle_dot": {
+                    "background-color": "{{shop.metafields.appstle_subscription.setting.value.dotBackgroundColor}}",
+                },
+
+                "appstle_select": {
+                    "padding-top": "{{shop.metafields.appstle_subscription.setting.value.selectPaddingTop}}",
+                    "padding-bottom": "{{shop.metafields.appstle_subscription.setting.value.selectPaddingBottom}}",
+                    "padding-left": "{{shop.metafields.appstle_subscription.setting.value.selectPaddingLeft}}",
+                    "padding-right": "{{shop.metafields.appstle_subscription.setting.value.selectPaddingRight}}",
+                    "border-width": "{{shop.metafields.appstle_subscription.setting.value.selectBorderWidth}}",
+                    "border-style": "{{shop.metafields.appstle_subscription.setting.value.selectBorderStyle}}",
+                    "border-color": "{{shop.metafields.appstle_subscription.setting.value.selectBorderColor}}",
+                    "border-radius": "{{shop.metafields.appstle_subscription.setting.value.selectBorderRadius}}",
+                },
+
+                "tooltip_subscription_svg": {
+                    "fill": "{{shop.metafields.appstle_subscription.setting.value.tooltipSubscriptionSvgFill}}",
+                },
+
+                "appstle_tooltip": {
+                    "color": "{{shop.metafields.appstle_subscription.setting.value.tooltipColor}}",
+                    "background-color": "{{shop.metafields.appstle_subscription.setting.value.tooltipBackgroundColor}}",
+                },
+
+                "appstle_tooltip_border_top_color": {
+                    "border-top-color": "{{shop.metafields.appstle_subscription.setting.value.tooltipBorderTopColorBorderTopColor}}",
+                },
+
+                "appstle_subscription_final_price": {
+                    "color": "{{shop.metafields.appstle_subscription.setting.value.subscriptionFinalPriceColor}}",
+                },
+                "appstle_widget_text_color": {
+                    "color": "{{shop.metafields.appstle_subscription.setting.value.subscriptionWidgetTextColor}}",
+                },
+                "appstle_selected_background": {
+                    "background": "transparent",
+                },
+                "elementCSS": "{{shop.metafields.appstle_subscription.setting.value.elementCSS}}",
+                "customCSS": "{{shop.metafields.appstle_subscription.setting.value.customCss}}",
+                "customerPortalCss": "{{shop.metafields.appstle_subscription.setting.value.customerPortalCss}}",
+            }
+          };
+
+          var _RSConfig = _RSConfig || {};
+
+          _RSConfig.shop = '{{shop.permanent_domain}}';
+
+          {% if product %}
+          _RSConfig.product = {{ product | json }};
+          _RSConfig.product.collections = {{ product.collections | json }};
+
+          {% for variant in product.variants %}
+          _RSConfig.product.variants[{{forloop.index | minus: 1 }}]['inventory_quantity'] = {{ variant.inventory_quantity }};
+          {% endfor %}
+          {% endif %}
+
+          {% if customer %}
+          _RSConfig.customerId = {{ customer.id }};
+          _RSConfig.customer_tags = {{ customer.tags | json }};
+          _RSConfig.customerName = "{{ customer.name }}";
+          _RSConfig.firstName = "{{ customer.first_name }}";
+          _RSConfig.lastName = "{{ customer.last_name }}";
+          {% endif %}
+
+            {% if shop %}
+            _RSConfig.shopMoneyFormat = '{{ shop.money_format | escape }}';
+            _RSConfig.shopMoneyFormatWithCurrencyFormat = '{{ shop.money_with_currency_format | escape }}';
+            {% endif %}
+
+            {% if order %}
+            _RSConfig.order = '{{ order | escape }}';
+            {% endif %}
+
+        }
+
+</script>
+
+<script src="{{ shop.metafields.appstle_subscription.setting.value.appstle_subscription_path }}" defer {{ shop.metafields.appstle_subscription.setting.value.scriptAttributes | default: ""}}></script>
+
+{% if shop.metafields.appstle_subscription.setting.value.bundleEnabled == true %}
+    <script src="{{ shop.metafields.appstle_subscription.setting.value.appstle_bundle_path }}" defer {{ shop.metafields.appstle_subscription.setting.value.scriptAttributes | default: ""}}></script>
+{% endif %}
+
+{% schema %}
+
+{"name": "Appstle Subscriptions",
+"target": "body"
+}
+
+{% endschema %}

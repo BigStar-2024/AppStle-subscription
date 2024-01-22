@@ -1,0 +1,31 @@
+version: 0.2
+env:
+  variables:
+    ECRRepositoryName: 'poc-app'
+    AWS_DEFAULT_REGION: 'us-west-1'
+    AWS_ACCOUNT: '114479152947'
+    APP_SERVICE: 'poc-app'
+    ENVIRONMENT: 'test'
+phases:
+  install:
+    runtime-versions:
+      docker: 19
+      java: corretto17
+    commands:
+      - cp ./settings.xml /root/.m2/settings.xml
+      - echo Entering install phase...
+      - aws ecr get-login-password | docker login --username AWS --password-stdin $AWS_ACCOUNT.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
+      - echo Nothing to do in the install phase...
+  pre_build:
+    commands:
+      - echo Entering pre_build phase...
+  build:
+    commands:
+      - echo Entering build phase...
+      - echo Build started on `date`
+      - ./mvnw clean package -Pprod verify jib:build -Dmaven.test.skip=true
+artifacts:
+  files:
+    - subscription-0.0.1-SNAPSHOT.jar
+    - .ebextensions/**/*
+    - .platform/**/*

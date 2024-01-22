@@ -1,0 +1,19 @@
+#aikon-search-results-grid-mode li.aikon-product {
+  min-width: 150px;
+}
+
+#aikon-search-results-grid-mode li.aikon-product span.aikon-title {
+  font-weight: 700;
+  color: #030303;
+  white-space: normal;
+}
+
+div.aikon-search-results {
+  background-color: white;
+}
+
+.aikon-price {
+  font-size: 0.875em;
+  background-color: #fff;
+  color: #666 !important;
+}

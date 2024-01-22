@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://rsms.me/inter/inter.css');
+html,
+body {
+  font-family: 'Inter', sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html,
+  body {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+.appstle-customer-portal,
+#headlessui-portal-root {
+  a:empty,
+  ul:empty,
+  dl:empty,
+  div:empty,
+  section:empty,
+  article:empty,
+  p:empty,
+  h1:empty,
+  h2:empty,
+  h3:empty,
+  h4:empty,
+  h5:empty,
+  h6:empty {
+    display: unset !important;
+  }
+}

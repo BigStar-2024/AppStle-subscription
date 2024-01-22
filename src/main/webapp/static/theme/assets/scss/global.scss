@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import './variables';
+@import './buttons';
+@import './forms';
+@import './inputs';
+@import './section';
+
+/* GLOBAL STYLES */
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  color: #212b36;
+}
+
+.app-header__content,
+.app-header__menu,
+.app-header__mobile-menu {
+  padding: 0 1rem !important;
+}
+.app-sidebar {
+  background: #f6f6f7 !important;
+  border-right: 1px solid #c9cccf;
+}
+.app-main__inner {
+  padding: 0 !important;
+}
+.app-page-title {
+  padding: 1rem;
+  background: #f6f6f7 !important;
+  border-bottom: 1px solid #c9cccf;
+  margin: 0;
+  .page-title-wrapper {
+    justify-content: space-between;
+    .page-title-icon {
+      width: 50px;
+      height: 50px;
+      padding: 0;
+    }
+    @media (max-width: 991.98px) {
+      display: flex;
+      .page-title-heading {
+        margin-left: 0;
+      }
+    }
+  }
+}

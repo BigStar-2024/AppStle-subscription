@@ -1,0 +1,27 @@
+{
+  "subscriptionApp": {
+    "statsAnalytics": {
+      "home": {
+        "title": "Stats Analytics",
+        "createLabel": "Create a new Stats Analytics",
+        "createOrEditLabel": "Create or edit a Stats Analytics",
+        "notFound": "No Stats Analytics found"
+      },
+      "created": "A new Stats Analytics is created with identifier {{ param }}",
+      "updated": "A Stats Analytics is updated with identifier {{ param }}",
+      "deleted": "A Stats Analytics is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Stats Analytics {{ id }}?"
+      },
+      "detail": {
+        "title": "Stats Analytics"
+      },
+      "shop": "Shop",
+      "originalQuery": "Original Query",
+      "resultsSelectedProductId": "Results Selected Product Id",
+      "query": "Query",
+      "selectedProductId": "Selected Product Id",
+      "searchSuggestion": "Search Suggestion"
+    }
+  }
+}

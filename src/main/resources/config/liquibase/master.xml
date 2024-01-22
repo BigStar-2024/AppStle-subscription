@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+    <property name="now" value="now()" dbms="mysql"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql, mariadb"/>
+    <property name="clobType" value="clob" dbms="h2"/>
+    <property name="clobType" value="clob" dbms="mysql, oracle, mssql, mariadb, postgresql"/>
+    <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+
+    <include file="config/liquibase/changelog/20200216014932_remove_unique_constraint.xml"
+             relativeToChangelogFile="false"/>
+
+    <include file="config/liquibase/changelog/20190527074155_added_entity_SocialConnection.xml"
+             relativeToChangelogFile="false"/>
+
+    <include file="config/liquibase/changelog/20200206103556_added_entity_PlanInfo.xml"
+             relativeToChangelogFile="false"/>
+
+    <include file="config/liquibase/changelog/20190624073453_added_entity_PaymentPlan.xml"
+             relativeToChangelogFile="false"/>
+
+    <include file="config/liquibase/changelog/20201029061909_added_entity_ShopSettings.xml"
+             relativeToChangelogFile="false"/>
+
+    <include file="config/liquibase/changelog/20200123061909_added_entity_ShopInfo.xml"
+             relativeToChangelogFile="false"/>
+
+    <include file="config/liquibase/changelog/20190624073453_added_entity_constraints_PaymentPlan.xml"
+             relativeToChangelogFile="false"/>
+
+    <include file="config/liquibase/changelog/20200308011838_update_user_column_length.xml"
+             relativeToChangelogFile="false"/>
+
+    <include file="config/liquibase/changelog/20201226011838_update_column_length_login.xml"
+             relativeToChangelogFile="false"/>
+
+    <include file="config/liquibase/changelog/20210209011838_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+
+    <include file="config/liquibase/changelog/20190615014932_added_entity_ThemeSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20191226044205_added_entity_ThemeCode.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200123061909_added_entity_SubscriptionContractDetails.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210218011838_add_column_theme_code.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210218021838_add_column_theme_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210218031838_add_column_theme_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210218041838_add_column_theme_code.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210218061838_add_column_theme_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200123061909_added_entity_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200123061909_added_entity_SubscriptionBillingAttempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210220041838_add_column_theme_code.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210220091838_add_column_theme_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210220131838_change_column_theme_code.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210220141838_change_column_theme_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200123061909_added_entity_Analytics.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210221091838_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210223061909_add_column_subscription_widget_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210223081909_add_column_subscription_contract_details.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210223091909_add_column_subscription_billing_attempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210224061909_added_entity_SubscriptionCustomCss.xml"
+             relativeToChangelogFile="false"/>
+    <include
+        file="config/liquibase/changelog/20210226061909_added_column_SubscriptionWidgetSettingsPropertiesChanges.xml"
+        relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210225061909_added_entity_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210226061100_added_column_CustomerSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210227061909_added_column_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210228091838_add_missing_column.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210301091838_SubscriptionWidgetColumn_Changes.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210301225828_added_entity_EmailTemplateSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210308091838_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210308091839_add_column_subscription_widget.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210308061909_added_entity_CustomerPayment.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210309091838_remove_column_gid.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210311091839_add_column_subscription_widget.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210311091840_add_column_customer_payment.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210311091841_add_column_customer_payment.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210312091841_add_column_customer_portal_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210313091841_add_column_email_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210301225828_added_entity_EmailTemplate.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210317111007_added_entity_DunningManagement.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210316099838_add_column_theme_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210316071838_add_column_theme_code.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210317101841_add_column_customer_portal_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210317091909_add_column_subscription_billing_attempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210322131841_remove_column_subscription_widget_settings.xml"
+             relativeToChangelogFile="false"/>
+    <!--    <include file="config/liquibase/changelog/20210319092909_remove_column_SubscriptionWidgetSettings.xml" relativeToChangelogFile="false"/>-->
+    <include file="config/liquibase/changelog/20210320131841_add_column_customer_portal_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210320051841_remove_column_customer_portal_settings.xml"
+             relativeToChangelogFile="false"/>
+
+    <include file="config/liquibase/changelog/20210322201838_remove_column_theme_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210322211838_remove_column_theme_code.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210322221838_update_column_name_theme_code.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210322231838_update_column_name_theme_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210326081828_add_column_EmailTemplateSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210327091828_update_column_name_EmailTemplateSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210329111838_add_column_subscription_contract_details.xml"
+             relativeToChangelogFile="false"/>
+
+    <include file="config/liquibase/changelog/20200123061909_added_entity_SubscriptionContractSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210415111838_add_column_subscription_contract_details.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210421063909_add_column_SubscriptionContractDetails.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210421091838_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210422063909_add_column_SubscriptionBillingAttempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210422228828_add_column_EmailTemplateSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210422062909_added_columns_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210423330828_add_column_EmailTemplateSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210423064909_add_column_SubscriptionBillingAttempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210424066909_update_column_notrequired_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210423069909_add_column_CustomerPayment.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210421162809_added_entity_SubscriptionGroupPlan.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210422205309_add_column_SubscriptionGroupPlan.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210425063909_add_column_SubscriptionContractDetails.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210426330828_add_column_ShopInfo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200123061909_added_entity_DeliveryProfile.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210427063909_add_column_SubscriptionContractDetails.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210430101909_added_entity_ProductSwap.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210430106202_added_entity_ProductCycle.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210430110910_added_entity_MemberOnly.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210503508909_add_column_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210504074909_add_column_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210504099909_update_column_name_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210510096909_add_column_SubscriptionContractDetails.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202105110106909_add_column_SubscriptionContractDetails.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210511073909_add_column_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210511104909_add_column_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210512047909_add_column_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210518066909_add_column_SubscriptionContractDetails.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210520083909_add_column_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210519202909_added_entity_SellingPlanMemberInfo.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202105220106909_add_column_SubscriptionCustomCss.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210526077909_add_column_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210528092909_add_column_SubscriptionContractDetails.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210529011838_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190613141208_added_entity_ActivityUpdatesSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210529093009_added_entity_SubscriptionBundling.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210531087909_add_column_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210531079909_add_column_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210601069909_add_column_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202105310724909_add_column_SubscriptionBundling.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210603047909_add_column_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210604083909_add_column_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202106060724909_add_column_PaymentPlan.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202106070724909_add_column_PaymentPlan.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210607049909_add_column_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210607063909_add_column_SubscriptionBillingAttempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210607052909_add_column_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210604185209_added_entity_ProductInfo.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210612078909_add_column_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210613201838_remove_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210613021838_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210613031838_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210613093909_add_column_SubscriptionBillingAttempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614027888_added_entity_SmsTemplateSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210614093909_modify_column_SubscriptionBillingAttempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210616088909_add_column_SubscriptionContractDetails.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210616077909_add_column_SubscriptionBillingAttempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210616066909_add_column_CustomerPayment.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210618063909_add_column_CustomerPortalSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210618043909_add_column_SubscriptionContractDetails.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210618031838_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210618051838_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210618071838_modify_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210619081909_add_column_subscription_contract_details.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210619101909_add_column_subscription_contract_details.xml"
+             relativeToChangelogFile="false"/>
+    <include
+        file="config/liquibase/changelog/20210624567891_added_customization_variable_SubscriptionWidgetSettings.xml"
+        relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200123061909_added_entity_CancellationManagement.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202106260106909_add_column_SubscriptionContractDetails.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210628567890_added_staticToolTip_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210628039909_update_column_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210629051838_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210628076909_add_column_SubscriptionBillingAttempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202106300724909_add_column_ProductSwap.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210701069909_update_data_type_SubscriptionBillingAttempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202107010106909_add_column_SubscriptionBillingAttempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210703039909_update_column_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210703066909_update_column_notrequired_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210703076909_update_column_notrequired_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210705044909_add_column_SubscriptionContractDetails.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210705022909_add_column_SubscriptionBillingAttempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210705018909_add_column_EmailTemplateSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210705011909_modify_column_name_EmailTemplateSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210702005209_added_entity_MembershipDiscount.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210702035209_added_entity_MembershipDiscountProducts.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210702045209_added_entity_MembershipDiscountCollections.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210706051838_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210710051838_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210711051838_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210711081828_add_column_EmailTemplateSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210711061838_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202107132304000_add_column_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202107142304000_add_column_CustomerPortalSettings_order_note_text.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210715135500_add_column_CustomerPayment_token_created_time.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202107192304000_add_column_in_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202107192305000_add_column_subscription_widget_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202107211220000_drop_column_in_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202107211225000_add_column_in_customer_portal_setting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202107252025000_drop_column_in_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202107252027000_add_column_in_customer_portal_setting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202107262304000_add_column_in_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202107271225000_add_column_in_email_template_setting.xml"
+             relativeToChangelogFile="false"/>
+    <include
+        file="config/liquibase/changelog/202108051725000_add_shop_subscription_contract_id_index_in_subscription_contract_detail.xml"
+        relativeToChangelogFile="false"/>
+    <include
+        file="config/liquibase/changelog/202108051727000_add_shop_contract_id_status_index_in_subscription_billing_attempt.xml"
+        relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202108082027000_add_index_in_subscription_billing_attempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202108082040000_add_index_in_subscription_contract_detail.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202108121700000_add_column_in_subscription_widget_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202108161544000_add_column_in_subscription_widget_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021081622390000_add_column_EmailTemplateSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021081912430000_add_column_SubscriptionGroupPlan.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021082012430000_add_column_SubscriptionGroupPlan.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202108201220000_drop_column_in_subscription_group_plan.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021082023430000_add_column_SubscriptionGroupPlan.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021082209220000_added_entity_SubscriptionBundleSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021082317120000_add_column_SubscriptionBundleSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021082412470000_add_column_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021082510540000_add_column_EmailTemplateSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021083114560000_add_column_in_subscription_widget_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021090117430000_add_column_SubscriptionContractDetails.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021090317430000_add_column_SubscriptionCustomCss.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200123061909_added_entity_SubscriptionContractOneOff.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021090417430000_add_column_SubscriptionContractOneOff.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021090322190000_add_column_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021090616310000_add_column_EmailTemplateSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021090716310000_add_column_ThemeSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021090714590000_add_column_EmailTemplateSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021090915580000_add_column_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021091016310000_add_column_ThemeSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021091015320000_add_column_EmailTemplateSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021091315320000_add_column_EmailTemplateSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021091623210000_added_entity_cart_widget_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021091910040000_add_column_SubscriptionBundleSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021092022460000_add_column_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021092322160000_add_column_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021092514020000_add_column_SubscriptionBundleSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021092923040000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021092914090000_add_index_in_subscription_billing_attempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021092915500000_add_index_in_payment_plan.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021092915500000_add_index_in_user.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021092923050000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021092923350000_add_index_in_subscription_billing_attempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021092923380000_add_index_in_email_template_setting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021092923480000_add_index_in_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021100123480000_add_column_theme_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211001061909_added_entity_CustomerPortalDynamicScript.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211001061909_added_entity_BundleDynamicScript.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021093014460000_add_column_SubscriptionBundleSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021100312290000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021100612290000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021100717040000_alter_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021100822060000_add_column_in_subscription_widget_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021101420500000_add_column_EmailTemplateSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021101612290000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021101614460000_add_column_SubscriptionBundleSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021102021210000_add_column_theme_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021102120430000_add_column_SubscriptionBundleSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021102821420000_add_column_SubscriptionBundleSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202111040106909_add_column_SubscriptionContractDetails.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021110412290000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211117061909000_add_column_subscription_widget_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021120617120000_add_column_SubscriptionBundleSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021120917120000_add_column_SubscriptionBundleSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021121114090000_add_index_in_subscription_billing_attempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211225084744_added_entity_ActivityLog.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2021123117120000_add_column_SubscriptionBundleSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2022011120500000_add_column_EmailTemplateSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220118122900000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220119122900000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220119222900000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220119322900000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220127212100000_add_column_theme_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220127071838000_add_column_theme_code.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220129104909_add_column_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220129322900000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220129422900000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220206061909000_add_column_subscription_widget_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202202092305000_add_column_subscription_widget_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220217204000000_add_index_in_subscription_contract_detail.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220217214000000_add_index_in_subscription_contract_detail.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220218214000000_add_index_in_customer_payment.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220221214000000_add_index_in_customer_portal_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220221214000000_add_index_in_dunning_management.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2022022617120000_add_column_SubscriptionBundleSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220302061909000_add_column_subscription_bundle.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220303061909_add_column_subscription_widget_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220308091838_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220308422900000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220310234800000_add_column_theme_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220322422900000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220330021838_add_column_theme_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220331052248_added_entity_PlanInfoDiscount.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220402422900000_add_column_payment_plan.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220402432900000_add_column_subscription_billing_attempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220406235431_add_column_plan_info_discount.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220409140105_add_column_plan_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220412174250_add_column_PaymentPlan.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220418134050_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220425432900000_add_column_product_swap.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220426061909_added_entity_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220609223935_add_column_CustomerPortalSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220617183225_add_column_subscription_contract_one_off.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20222006091838_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220620113838_add_columns_shopSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220622212322_add_column_SubscriptionContractOneOff.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220622432900000_add_column_subscription_contract_details.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220622212322_add_column_SubscriptionContractOneOff.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220617230330_add_unique_constraints_shopColumn.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220624221040_add_unique_constraints_shopColumn.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220625130928_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200123061909_added_entity_CurrencyConversionInfo.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220626432900000_add_column_currency_conversion_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220626433000000_add_column_subscription_billing_attempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220704202544_add_column_subscription_contract_details.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220705132736_added_entity_WidgetTemplate.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220705203705_add_column_theme_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220706112748_added_entity_OrderInfo.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220706181245_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220607110500_add_index_in_order_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220707181700_add_column_customer_portal_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220709422900000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220710422900000_add_column_social_connection.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220712002538_add_column_product_swap.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220714104909_add_column_SubscriptionWidgetSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220718074432_added_entity_BulkAutomation.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220724004225_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220723110500000_add_index_in_subscription_contract.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220723120500000_add_index_in_customer_payment.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220723130500000_add_index_in_activity_log.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220723140500000_add_index_in_subscription_billing_attempt.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220723160500000_add_index_in_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220723170500000_add_index_in_social_connection.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220728100552_added_entity_BundleRule.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220728131224_added_entity_BundleSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220802120200000_add_column_BundleSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220803091411000_add_column_BundleRule.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220804123607_added_entity_ShopLabel.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220807023835000_add_column_subscription_bundle.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220809010748000_add_column_subscription_bundle.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220811125721000_add_column_subscription_bundle_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220811131300_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220812184019_add_unique_constraints_ShopLabel.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220813142800_remove_column_shop_label.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220813170000_update_column_name_shop_label.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220816422900000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220817101911000_add_column_BundleSetting.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220818042012000_add_column_subscription_bundle_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220818123515000_add_column_subscription_bundle_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220818125719000_add_column_subscription_bundle_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220818200600_add_column_customer_portal_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220820145000_add_column_subscription_contract_details.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220820422900000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220821060021000_add_column_subscription_bundle_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220822120300_drop_column_subscription_contract_details.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220822124800_add_column_subscription_contract_details.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220823010131000_add_column_bundle_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220823232439000_add_column_bundle_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220824123911000_add_column_subscription_bundle_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220826140500_alter_charset_and_collation_order_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220827084513000_add_column_bundle_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220826112717000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200123061909_added_entity_ShopAssetUrls.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202208272303300000_add_shop_asset_urls_unique_constraint.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220828112717000_add_column_payment_plan.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202208301127170000_add_column_customer_portal_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220901183800_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220912141000_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220912110807_added_entity_AppstleMenuSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220917003225_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220926095111000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202209281047511000_add_column_SubscriptionBundling.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220928161900_add_column_appstle_menu_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221028190500_alter_charset_and_collation_bundle_rule.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220927184513000_add_column_bundle_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220930141000000_add_column_subscription_bundle_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221002012101_add_column_appstle_menu_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202210051047511000_add_column_PaymentPlan.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210624073453_added_entity_PaymentPlanActivity.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202210051147511000_add_column_PaymentPlan.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202210051247511000_add_column_PaymentPlanActivity.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202210061147511000_add_column_PaymentPlan.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202210061247511000_add_column_PaymentPlanActivity.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221013121038_add_column_product_swap.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221027193511000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221027125007_added_entity_AppstleMenuLabels.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221028132500_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221028102600_add_unique_constraints_customer_payment.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202211110908261000_add_column_SubscriptionBundling.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202211120155311000_add_column_SubscriptionBundling.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202211170731261900_add_column_SubscriptionContractDetails.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210604185209_added_entity_VariantInfo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230130112110_add_column_enableSwapProductVariant.xml" relativeToChangelogFile="false"/>
+
+    <include file="config/liquibase/changelog/2023310117091000_add_column_enableRedirectToProductPage.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230324030800_add_column_SubscriptionBundleSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230328061909_added_entity_Customization.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230328061910_added_entity_ShopCustomization.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230508032758_add_column_customer_portal_settings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230526055657_add_column_ShopInfo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230527020557_modify_column_ShopInfo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230529103000_added_column_CustomerPortalSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230607111950_add_column_SubscriptionBundleSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230603032050_add_column_SubscriptionBundleSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230605035800_added_column_CustomerPortalSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2023062005555500_add_column_SubscriptionBundling.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230612200338_added_entity_OnboardingInfo.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230630040404_add_column_SubscriptionBundling.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200123061909_added_entity_CancellationManagement.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2023071400000_add_columns_CancellationManagement.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230717050550_add_column_SubscriptionBundling.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230719095500_add_column_SocialConnection.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230818044550_add_column_SubscriptionBundleSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202308210308500_add_column_SubscriptionBundleSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2023090905000_add_column_SubscriptionBundleSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230916094050_add_column_SubscriptionBundleSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230921041300_add_column_theme_settings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230922111050_add_column_SubscriptionBundleSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230928143300_added_entity_AsyncUpdateEventProcessing.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231003135227_added_entity_SubscriptionContractProcessing.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+
+    <include file="config/liquibase/changelog/20210624073453_added_entity_constraints_PaymentPlanActivity.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221025123602_add_column_appstle_menu_settings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202210281228291000_add_column_AppstleMenuLabels.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202210281240291000_add_column_AppstleMenuLabels.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202210281250291000_add_column_AppstleMenuSettings.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202210281251291000_add_column_AppstleMenuLabels.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202210310734011000_add_column_ShopInfo.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202210310815090000_add_column_BundleRule.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202211011041230000_add_column_BundleRule.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221103113500_add_unique_constraints_social_connection.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221011181838_add_column_subscription_contract_details.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221116164011000_add_column_shop_info.xml"
+             relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202211190127311900_add_column_SubscriptionContractDetails.xml"
+             relativeToChangelogFile="false"/>
+
+    <include file="config/liquibase/changelog/202211230127311900_add_column_VariantInfo.xml"
+             relativeToChangelogFile="false"/>
+
+    <include file="config/liquibase/changelog/202211280127311900_add_column_CancellationManagement.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221202143511000_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221202164010000_drop_column_in_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221202170011000_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221212113811000_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202212230127311900_add_column_SubscriptionBundling.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221216155011000_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221224122500000_alter_charset_and_collation_subscription_bundling.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230112171011000_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230128170226_alter_charset_and_collation_subscription_contract_one_off.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230131170025_add_column_bulk_automation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230201115011000_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202302030127311900_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230213102000_add_index_in_activity_log.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230213122700_add_index_in_activity_log.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230214182024000_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202302170127311900_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230215153211000_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230314094510_add_column_subscription_widget_settings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230310060710_add_column_subscription_bundle_settings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230320112511000_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230324115511000_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/2023032509220000_add_column_SubscriptionBundleSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230408150530_alter_charset_and_collation_bundle_rule.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230410131350_add_column_SubscriptionBundleSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230411041320_add_column_SubscriptionBundleSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202304130127311900_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202304140127311900_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230317184711000_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230318135411000_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230419130624000_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230502041150_add_column_subscription_contract_details.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230502052950_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230513050000_add_column_SubscriptionBundleSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230613175624000_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230630013050_add_column_SubscriptionBundleSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230703050928_add_column_EmailTemplateSetting.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230714011038_add_column_subscription_contract_details.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20232107181500_alter_charset_and_collation_appstle_menu_labels.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230803143511000_add_column_bundle_rule.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230901125024000_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230901185709_add_column_SubscriptionWidgetSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230902143741_remove_column_subscription_widget_settings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230909171500_alter_charset_and_collation_product_swap.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230913190105_add_column_theme_settings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231001000845_add_column_shop_info.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202309301105000000_add_index_in_subscription_contract.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231006011005_alter_charset_and_collation_AsyncUpdateEventProcessing.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20231006011522_add_index_in_AsyncUpdateEventProcessing.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+
+</databaseChangeLog>

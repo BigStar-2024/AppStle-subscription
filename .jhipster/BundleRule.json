@@ -1,0 +1,124 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "priceSummary",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "actionButtonText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "actionButtonDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "BundleStatus",
+      "fieldValues": "ACTIVE,PAUSED"
+    },
+    {
+      "fieldName": "showBundleWidget",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "customerIncludeTags",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "startDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "discountType",
+      "fieldType": "BundleDiscountType",
+      "fieldValues": "PERCENTAGE,FIXED_AMOUNT,FIXED_BUNDLE_AMOUNT"
+    },
+    {
+      "fieldName": "discountValue",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "bundleLevel",
+      "fieldType": "BundleLevel",
+      "fieldValues": "PRODUCT,VARIANT"
+    },
+    {
+      "fieldName": "products",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "variants",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "discountCondition",
+      "fieldType": "BundleDiscountCondition",
+      "fieldValues": "BUY_ALL"
+    },
+    {
+      "fieldName": "sequenceNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "bundleType",
+      "fieldType": "BundleType",
+      "fieldValues": "MIX_AND_MATCH,CLASSIC"
+    },
+    {
+      "fieldName": "showCombinedSellingPlan",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "selectSubscriptionByDefault",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "minimumNumberOfItems",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maximumNumberOfItems",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maxQuantity",
+      "fieldType": "Integer"
+    }
+  ],
+  "changelogDate": "20220728100552",
+  "dto": "mapstruct",
+  "searchEngine": false,
+  "service": "serviceImpl",
+  "entityTableName": "bundle_rule",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "pagination"
+}

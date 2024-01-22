@@ -1,0 +1,27 @@
+{
+  "name": "BundleDynamicScript",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "dynamicScript",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "changelogDate": "20211001061909",
+  "entityTableName": "bundle_dynamic_script",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

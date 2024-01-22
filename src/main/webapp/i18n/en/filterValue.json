@@ -1,0 +1,25 @@
+{
+  "subscriptionApp": {
+    "filterValue": {
+      "home": {
+        "title": "Filter Values",
+        "createLabel": "Create a new Filter Value",
+        "createOrEditLabel": "Create or edit a Filter Value",
+        "notFound": "No Filter Values found"
+      },
+      "created": "A new Filter Value is created with identifier {{ param }}",
+      "updated": "A Filter Value is updated with identifier {{ param }}",
+      "deleted": "A Filter Value is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Filter Value {{ id }}?"
+      },
+      "detail": {
+        "title": "Filter Value"
+      },
+      "value": "Value",
+      "displayName": "Display Name",
+      "status": "Status",
+      "filter": "Filter"
+    }
+  }
+}

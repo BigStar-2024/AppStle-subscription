@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+
+    <changeSet id="20210322211838" author="akhil">
+        <dropColumn tableName="theme_code">
+            <column name="regular_compare_price_element" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="regular_selling_price" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="regular_badge_element" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="regular_badge_placement_selector" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="regular_badge_placement_position" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="regular_badge_margin_left" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="regular_badge_margin_right" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="regular_badge_display" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="regular_compare_price_element_margin_left" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="regular_compare_price_element_margin_right" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="regular_selling_price_margin_left" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="regular_selling_price_margin_right" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="regular_strike_element_margin_left" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="regular_strike_element_margin_right" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="sale_compare_price_element" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="sale_selling_price" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="sale_badge_element" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="sale_badge_placement_selector" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="sale_badge_placement_position" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sale_badge_margin_left" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="sale_badge_margin_right" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="sale_badge_top" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="sale_badge_display" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="sale_compare_price_element_margin_left" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="sale_compare_price_element_margin_right" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="sale_selling_price_margin_left" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="sale_selling_price_margin_right" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="sale_strike_element_margin_left" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="sale_strike_element_margin_right" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+        </dropColumn>
+    </changeSet>
+</databaseChangeLog>

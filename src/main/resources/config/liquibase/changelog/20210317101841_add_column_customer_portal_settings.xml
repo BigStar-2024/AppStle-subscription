@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+    <changeSet id="20210317101841" author="akhil">
+        <addColumn tableName="customer_portal_settings">
+            <column name="pause_resume_sub" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="change_next_order_date" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="cancel_sub" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="change_order_frequency" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="create_additional_order" type="boolean">
+                <constraints nullable="true" />
+            </column>
+        </addColumn>
+    </changeSet>
+</databaseChangeLog>

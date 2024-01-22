@@ -1,0 +1,42 @@
+{
+  "Comment": "Recommendation Product Migration Job",
+  "StartAt": "ProductProcessingDelay",
+  "States": {
+    "ProductProcessingDelay": {
+      "Type": "Wait",
+      "Seconds": 0,
+      "Next": "MigrateProducts"
+    },
+    "MigrateProducts": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:us-west-1:944187832661:activity:MigrateProductActivity",
+      "ResultPath": "$.lastProcessingResult",
+      "TimeoutSeconds": 18000,
+      "HeartbeatSeconds": 60,
+      "Next": "IsProductsEndReached",
+      "Retry": [
+        {
+          "ErrorEquals": ["States.Timeout"],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 500,
+          "BackoffRate": 2
+        }
+      ]
+    },
+    "IsProductsEndReached": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.lastProcessingResult.endReached",
+          "BooleanEquals": false,
+          "Next": "ProductProcessingDelay"
+        }
+      ],
+      "Default": "Done"
+    },
+    "Done": {
+      "Type": "Pass",
+      "End": true
+    }
+  }
+}

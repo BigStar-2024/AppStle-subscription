@@ -1,0 +1,50 @@
+{
+  "subscriptionApp": {
+    "searchResultsWidgetColors": {
+      "home": {
+        "title": "Search Results Widget Colors",
+        "createLabel": "Create a new Search Results Widget Colors",
+        "createOrEditLabel": "Create or edit a Search Results Widget Colors",
+        "notFound": "No Search Results Widget Colors found"
+      },
+      "created": "Search Results Widget Colors is created.",
+      "updated": "Search Results Widget Colors is updated.",
+      "deleted": "Search Results Widget Colors is deleted.",
+      "delete": {
+        "question": "Are you sure you want to delete Search Results Widget Colors?"
+      },
+      "detail": {
+        "title": "Search Results Widget Colors"
+      },
+      "style": "Style",
+      "shop": "Shop",
+      "titles": "Titles",
+      "descriptions": "Descriptions",
+      "productPrices": "Product Prices",
+      "navigationHighlight": "Navigation Highlight",
+      "navigationDefault": "Navigation Default",
+      "additionalBorders": "Additional Borders",
+      "borders": "Borders",
+      "onHoverBorders": "On Hover Borders",
+      "onHoverColor": "On Hover Color",
+      "mainPanel": "Main Panel",
+      "itemBackground": "Item Background",
+      "buttonBackground": "Button Background",
+      "buttonText": "Button Text",
+      "viewCartBackground": "View Cart Background",
+      "placeholders": "Placeholders",
+      "skuColor": "Sku Color",
+      "filterTitles": "Filter Titles",
+      "filterTitlesBackground": "Filter Titles Background",
+      "filterValues": "Filter Values",
+      "rangeKeyPoints": "Range Key Points",
+      "activeRange": "Active Range",
+      "rangeLeftoverSpace": "Range Leftover Space",
+      "filterBackground": "Filter Background",
+      "showProductsColor": "Show Products Color",
+      "showProductsText": "Show Products Text",
+      "resetFiltersColor": "Reset Filters Color",
+      "resetFiltersText": "Reset Filters Text"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "SubscriptionContractSettings",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "productId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "endsOnCount",
+      "fieldType": "Integer",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "endsOnInterval",
+      "fieldType": "FrequencyIntervalUnit",
+      "fieldValues": "DAY,WEEK,MONTH,YEAR",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "changelogDate": "20200123061909",
+  "entityTableName": "subscription_contract_settings",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

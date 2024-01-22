@@ -1,0 +1,92 @@
+.planSummary {
+  display: none;
+}
+
+.savedAsDraft {
+  .form-group,
+  label,
+  input,
+  select,
+  .addMoreBtn,
+  .saveAsDraftBtn,
+  .cancelSaveBtn,
+  .planDetailCardBody {
+    display: none !important;
+  }
+  .planSummary {
+    display: block;
+  }
+
+  .saveAndCancelButtonWrapper {
+    display: none;
+  }
+}
+
+.onEditMode,
+.defaultEditMode {
+  //   .editButton,
+  //   .deleteButton {
+  //     display: none;
+  //   }
+  // .saveAsDraftBtn {
+  //   display: none;
+  // }
+  .saveAndCancelButtonWrapper {
+    align-self: flex-start;
+  }
+
+  .editDeleteButtonWrapper {
+    display: none;
+  }
+  & + .addPlanButton {
+    display: none !important;
+    & + .removeLastPlan {
+      display: none !important;
+    }
+  }
+
+  .addMoreBtn,
+  .saveAsDraftBtn,
+  .cancelSaveBtn {
+    margin-top: 0 !important;
+  }
+
+  &.viaEditButton {
+    // .saveAsDraftBtn {
+    //   display: inline-block;
+    // }
+    .addMoreBtn {
+      display: none;
+    }
+  }
+}
+
+// .frequencyCountInput,
+// .discountAmount {
+//   width: calc(100% - 220px);
+// }
+
+.MuiTooltip-arrow {
+  color: #337ab7 !important;
+}
+
+.MuiTooltip-tooltip {
+  background-color: #337ab7 !important;
+}
+
+.swal-button.swal-button--confirm {
+  color: #fff !important;
+  background-color: #545cd8 !important;
+  border-color: #545cd8 o !important;
+}
+
+.product-variant-wrap > div:first-child {
+  border-right: 1px solid #ddd;
+}
+
+@media (max-width: 767px) {
+  .product-variant-wrap > div:first-child {
+    border-bottom: 1px solid #ddd;
+    border-right: none;
+  }
+}

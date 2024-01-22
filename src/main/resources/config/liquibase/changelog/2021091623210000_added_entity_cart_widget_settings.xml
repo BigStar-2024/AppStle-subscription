@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+        <property name="autoIncrement" value="true"/>
+
+    <!--
+        Added the entity ThemeSettings.
+    -->
+    <changeSet id="2021091623210000-1" author="jhipster">
+        <createTable tableName="cart_widget_settings">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="shop" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="enable_cart_widget_settings" type="boolean">
+                <constraints nullable="false" />
+            </column>
+            <column name="cart_widget_setting_approach" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cart_row_selector" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="cart_row_placement" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cart_line_item_selector" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="cart_line_item_placement" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cart_form_selector" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="appstel_custome_selector" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2021091623210000-1-relations" author="jhipster">
+
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+</databaseChangeLog>

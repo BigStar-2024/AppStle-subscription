@@ -1,0 +1,9 @@
+export const enum BasedOnType {
+  PRICE,
+  AVAILABILITY,
+  VENDOR,
+  PRODUCT_TYPE,
+  TAGS,
+  COLLECTIONS,
+  DISCOUNT
+}

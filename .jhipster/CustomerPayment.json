@@ -1,0 +1,88 @@
+{
+  "name": "CustomerPayment",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adminGraphqlApiId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "token",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customerId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "adminGraphqlApiCustomerId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "instrumentType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "paymentInstrumentLastDigits",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "paymentInstrumentMonth",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "paymentInstrumentYear",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "paymentInstrumentName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "paymentInstrumentsBrand",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customerUid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cardExpiryNotificationCounter",
+      "fieldType": "Long",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "cardExpiryNotificationFirstSent",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "cardExpiryNotificationLastSent",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "cardExpireEmailSentStatus",
+      "fieldType": "cardExpireEmailSentStatus",
+      "fieldValues": "FIRST_ATTEMPT,SECOND_ATTEMPT,SENT,UNSENT,FAILED,EMAIL_SETTINGS_DISABLED,CONTRACT_CANCELLED"
+    },
+    {
+      "fieldName": "cardExpireSmsSentStatus",
+      "fieldType": "CardExpireSmsSentStatus",
+      "fieldValues": "FIRST_ATTEMPT,SECOND_ATTEMPT,SENT,UNSENT,FAILED,SMS_SETTINGS_DISABLED,CONTRACT_CANCELLED,PHONE_NUMBER_EMPTY"
+    }
+  ],
+  "changelogDate": "20210308061909",
+  "entityTableName": "customer_payment",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,11 @@
+id;shop;tagging_enabled;delay_tagging;delayed_tagging_value;delayed_tagging_unit;order_status;payment_status;fulfillment_status
+1;Directives synergize invoice;false;true;66441;MINUTES;OPEN;UNPAID;FULFILLED
+2;Identity cross-platform New Hampshire;true;false;42994;HOURS;OPEN;PAID;ANY
+3;circuit Chief Metal;true;false;51662;SECONDS;OPEN;UNPAID;ANY
+4;leverage Latvian Lats;false;false;82165;MINUTES;ANY;ANY;ANY
+5;Intranet;false;true;73223;MINUTES;ANY;UNPAID;ANY
+6;Mountains withdrawal Designer;true;false;34440;HOURS;ANY;UNPAID;ANY
+7;functionalities;false;true;26315;SECONDS;ANY;PAID;UNFULFILLED
+8;convergence database Home;false;true;84443;DAYS;ARCHIVED;UNPAID;UNFULFILLED
+9;deposit optical;false;false;84315;DAYS;OPEN;PAID;FULFILLED
+10;white Street;true;false;6405;MINUTES;OPEN;ANY;ANY

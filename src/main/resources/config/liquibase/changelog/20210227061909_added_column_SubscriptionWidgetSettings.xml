@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+        <property name="autoIncrement" value="true"/>
+
+    <changeSet id="20210227061909" author="rohan" context="faker">
+        <addColumn tableName="subscription_widget_settings">
+            <column name="widget_title_font_size" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="widget_title_font_family" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="widget_title_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="widget_title_font_weight" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="widget_title_text_align" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_wrapper_border_width" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_wrapper_border_style" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_wrapper_border_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_wrapper_border_radius" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_wrapper_margin_bottom" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_wrapper_margin_top" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_wrapper_option_padding_top" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_wrapper_option_padding_bottom" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_wrapper_option_padding_left" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_wrapper_option_padding_right" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="radio_label_font_size" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="radio_label_font_family" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="radio_label_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="radio_label_font_weight" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="circle_border_width" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="circle_border_style" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="circle_border_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="circle_border_radius" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="circle_height" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="circle_width" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="circle_margin_right" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dot_font_size" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dot_background_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dot_height" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="dot_width" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_amount_font_size" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_amount_font_family" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_amount_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_amount_font_weight" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscribe_option_margin_left" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscribe_option_margin_top" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="select_label_font_size" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="select_label_font_family" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="select_label_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="select_label_font_weight" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="select_label_margin_bottom" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="select_padding_top" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="select_padding_bottom" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="select_padding_left" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="select_padding_right" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="select_border_width" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="select_border_style" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="select_border_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="select_border_radius" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_wrapper_margin_bottom" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_wrapper_margin_left" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_title_font_size" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_title_font_family" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_title_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_title_font_weight" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_subscription_svg_fill" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_min_width" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_box_shadow" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_border_radius" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_padding_top" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_padding_bottom" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_padding_left" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_padding_right" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_background_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_bg_color_border_top_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tooltip_anchor_color_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_final_price_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+        </addColumn>
+    </changeSet>
+
+
+</databaseChangeLog>

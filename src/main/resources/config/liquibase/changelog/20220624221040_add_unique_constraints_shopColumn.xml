@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="20220617221030" author="spaul">
+        <addUniqueConstraint
+            tableName="cancellation_management"
+            columnNames="shop"
+            constraintName="cancellation_management_shop_unique_key"
+        />
+    </changeSet>
+    <changeSet id="20220617221031" author="spaul">
+        <addUniqueConstraint
+            tableName="cart_widget_settings"
+            columnNames="shop"
+            constraintName="cart_widget_settings_shop_unique_key"
+        />
+    </changeSet>
+    <changeSet id="20220617221032" author="spaul">
+        <addUniqueConstraint
+            tableName="shop_settings"
+            columnNames="shop"
+            constraintName="shop_settings_shop_unique_key"
+        />
+    </changeSet>
+    <changeSet id="20220617221034" author="spaul">
+        <addUniqueConstraint
+            tableName="subscription_bundle_settings"
+            columnNames="shop"
+            constraintName="subscription_bundle_settings_shop_unique_key"
+        />
+    </changeSet>
+    <changeSet id="20220617221035" author="spaul">
+        <addUniqueConstraint
+            tableName="subscription_custom_css"
+            columnNames="shop"
+            constraintName="subscription_custom_css_shop_unique_key"
+        />
+    </changeSet>
+    <changeSet id="20220617221036" author="spaul">
+        <addUniqueConstraint
+            tableName="subscription_widget_settings"
+            columnNames="shop"
+            constraintName="subscription_widget_settings_shop_unique_key"
+        />
+    </changeSet>
+    <changeSet id="20220617221038" author="spaul">
+        <addUniqueConstraint
+            tableName="theme_settings"
+            columnNames="shop"
+            constraintName="theme_settings_shop_unique_key"
+        />
+    </changeSet>
+</databaseChangeLog>

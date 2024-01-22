@@ -1,0 +1,62 @@
+{
+  "name": "ShopSettings",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "taggingEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "delayTagging",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "delayedTaggingValue",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "delayedTaggingUnit",
+      "fieldType": "DelayedTaggingUnit",
+      "fieldValues": "SECONDS,MINUTES,HOURS,DAYS"
+    },
+    {
+      "fieldName": "orderStatus",
+      "fieldType": "ShopSettingsOrderStatus",
+      "fieldValues": "ANY,OPEN,ARCHIVED"
+    },
+    {
+      "fieldName": "paymentStatus",
+      "fieldType": "PaymentStatus",
+      "fieldValues": "ANY,PAID,UNPAID"
+    },
+    {
+      "fieldName": "fulfillmentStatus",
+      "fieldType": "FulfillmentStatus",
+      "fieldValues": "ANY,UNFULFILLED,FULFILLED"
+    },
+    {
+      "fieldName": "priceSyncEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "skuSyncEnabled",
+      "fieldType": "Boolean"
+    }
+  ],
+  "changelogDate": "20201029061909",
+  "entityTableName": "shop_settings",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

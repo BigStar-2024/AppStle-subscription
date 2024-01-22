@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+        <property name="autoIncrement" value="true"/>
+
+    <!--
+        Added the entity SubscriptionBundling.
+    -->
+    <changeSet id="20210529093009-1" author="jhipster">
+        <createTable tableName="subscription_bundling">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="shop" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="subscription_bundling_enabled" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="min_product_count" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="max_product_count" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="discount" type="double">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <changeSet id="20210529093009-1-relations" author="jhipster">
+
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+</databaseChangeLog>

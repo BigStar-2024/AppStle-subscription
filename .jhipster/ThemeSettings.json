@@ -1,0 +1,166 @@
+{
+  "fluentMethods": true,
+  "name": "ThemeSettings",
+  "clientRootFolder": "",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "skip_setting_theme",
+      "fieldType": "Boolean",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "themeV2Saved",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "themeName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shopifyThemeInstallationVersion",
+      "fieldType": "ShopifyThemeInstallationVersion",
+      "fieldValues": "V1,V2"
+    },
+    {
+      "fieldName": "selectedSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "subscriptionLinkSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "customJavascript",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "placement",
+      "fieldType": "PlacementPosition",
+      "fieldValues": "BEFORE,AFTER,FIRST_CHILD,LAST_CHILD"
+    },
+    {
+      "fieldName": "subscriptionLinkPlacement",
+      "fieldType": "PlacementPosition",
+      "fieldValues": "BEFORE,AFTER,FIRST_CHILD,LAST_CHILD"
+    },
+    {
+      "fieldName": "priceSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "pricePlacement",
+      "fieldType": "PlacementPosition",
+      "fieldValues": "BEFORE,AFTER,FIRST_CHILD,LAST_CHILD"
+    },
+    {
+      "fieldName": "badgeTop",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "disableLoadingJquery",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "quickViewClickSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "landingPagePriceSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartRowSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartLineItemSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartLineItemPerQuantityPriceSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartLineItemTotalPriceSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartLineItemSellingPlanNameSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartSubTotalSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartLineItemPriceSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "enableCartWidgetFeature",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableSlowScriptLoad",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "scriptLoadDelay",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "formatMoneyOverride",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "widgetTemplateType",
+      "fieldType": "WidgetTemplateType",
+      "fieldValues": "WIDGET_TYPE_1,WIDGET_TYPE_2,WIDGET_TYPE_3,WIDGET_TYPE_4,WIDGET_TYPE_5"
+    },
+    {
+      "fieldName": "widgetTemplateHtml",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartHiddenAttributesSelector",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "scriptAttributes",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20190615014932",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "serviceClass",
+  "entityTableName": "theme_settings",
+  "databaseType": "sql",
+  "jpaMetamodelFiltering": false,
+  "pagination": "no"
+}

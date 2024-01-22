@@ -1,0 +1,25 @@
+{
+  "subscriptionApp": {
+    "shopInfo": {
+      "home": {
+        "title": "Shop Infos",
+        "createLabel": "Create a new Shop Info",
+        "createOrEditLabel": "Create or edit a Shop Info",
+        "notFound": "No Shop Infos found"
+      },
+      "created": "Shop Info is created.",
+      "updated": "Shop Info is updated.",
+      "deleted": "Shop Info is deleted.",
+      "delete": {
+        "question": "Are you sure you want to delete Shop Info?"
+      },
+      "detail": {
+        "title": "Shop Info"
+      },
+      "shop": "Shop",
+      "shopIndexingARN": "Shop Indexing ARN",
+      "searchResultPageId": "Search Result Page Id",
+      "publicDomain": "Public Domain"
+    }
+  }
+}

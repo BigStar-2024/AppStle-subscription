@@ -1,0 +1,5 @@
+export const enum CollectionFilterStatus {
+  NO_NAVIGATION,
+  NAVIGATION_THROUGH_REDIRECTING,
+  NAVIGATION_THROUGH_EMBEDDING
+}

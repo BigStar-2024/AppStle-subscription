@@ -1,0 +1,16 @@
+.custom-header-modal {
+  .modal-title {
+    font-weight: bold;
+  }
+  .modal-body {
+    label {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .basic-single {
+      max-width: 300px;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+}

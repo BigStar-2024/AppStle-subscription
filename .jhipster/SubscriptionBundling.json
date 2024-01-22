@@ -1,0 +1,106 @@
+{
+  "name": "SubscriptionBundling",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "subscriptionBundlingEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "subscriptionId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "minProductCount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maxProductCount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "discount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "uniqueRef",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bundleRedirect",
+      "fieldType": "BuildABoxRedirect",
+      "fieldValues": "CART, CHECKOUT, CUSTOM"
+    },
+    {
+      "fieldName": "customRedirectURL",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "minOrderAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "tieredDiscount",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "productViewStyle",
+      "fieldType": "ProductViewSettings",
+      "fieldValues": "QUICK_ADD,VIEW_DETAILS"
+    },
+    {
+      "fieldName": "buildABoxType",
+      "fieldType": "BuildABoxType",
+      "fieldValues": "CLASSIC,SINGLE_PRODUCT"
+    },
+    {
+      "fieldName": "singleProductSettings",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "subscriptionGroup",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "bundleTopHtml",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "bundleBottomHtml",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "proceedToCheckoutButtonText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chooseProductsText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20210529093009",
+  "entityTableName": "subscription_bundling",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

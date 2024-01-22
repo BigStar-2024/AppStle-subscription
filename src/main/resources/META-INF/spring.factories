@@ -1,0 +1,13 @@
+org.springframework.cloud.bootstrap.BootstrapConfiguration=\
+com.et.config.paramstore.AwsParamStoreBootstrapConfiguration, com.et.config.secretsmanager.AwsSecretsManagerBootstrapConfiguration
+
+# ConfigData Location Resolvers
+org.springframework.boot.context.config.ConfigDataLocationResolver=\
+com.et.config.paramstore.AwsParamStoreConfigDataLocationResolver, com.et.config.secretsmanager.AwsSecretsManagerConfigDataLocationResolver
+
+# ConfigData Loaders
+org.springframework.boot.context.config.ConfigDataLoader=\
+com.et.config.paramstore.AwsParamStoreConfigDataLoader, com.et.config.secretsmanager.AwsSecretsManagerConfigDataLoader
+
+org.springframework.boot.diagnostics.FailureAnalyzer=\
+com.et.config.paramstore.AwsParamStoreValidationAnalyzer, com.et.config.secretsmanager.AwsSecretsManagerValidationAnalyzer

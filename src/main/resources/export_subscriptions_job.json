@@ -1,0 +1,26 @@
+{
+  "Comment": "Subscription Export Job",
+  "StartAt": "ExportSubscriptions",
+  "States": {
+    "ExportSubscriptions": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:us-west-1:114479152947:activity:export_subscriptions",
+      "ResultPath": "$.lastProcessingResult",
+      "TimeoutSeconds": 18000,
+      "HeartbeatSeconds": 60,
+      "Next": "Done",
+      "Retry": [
+        {
+          "ErrorEquals": ["States.Timeout"],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 500,
+          "BackoffRate": 2
+        }
+      ]
+    },
+    "Done": {
+      "Type": "Pass",
+      "End": true
+    }
+  }
+}

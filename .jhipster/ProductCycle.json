@@ -1,0 +1,30 @@
+{
+  "name": "ProductCycle",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "sourceProduct",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "destinationProducts",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20210430106202",
+  "entityTableName": "product_cycle",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

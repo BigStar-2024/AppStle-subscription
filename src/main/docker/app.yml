@@ -1,0 +1,10 @@
+version: '2'
+services:
+  subscription-app:
+    image: subscription
+    environment:
+      - _JAVA_OPTIONS=-Xms2048m -Xmx4096m
+      - SPRING_PROFILES_ACTIVE=prod,swagger
+      - JHIPSTER_SLEEP=1 # gives time for other services to boot before the application
+    ports:
+      - 8087:8087

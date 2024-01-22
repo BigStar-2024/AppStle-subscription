@@ -1,0 +1,280 @@
+{
+  "name": "SubscriptionWidgetSettings",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "oneTimePurchaseText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deliveryText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "purchaseOptionsText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subscriptionOptionText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sellingPlanSelectTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tooltipTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tooltipDesctiption",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "subscriptionWidgetMarginTop",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subscriptionWidgetMarginBottom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subscriptionWrapperBorderWidth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subscriptionWrapperBorderColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "circleBorderColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dotBackgroundColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "selectPaddingTop",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "selectPaddingBottom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "selectPaddingLeft",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "selectPaddingRight",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "selectBorderWidth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "selectBorderStyle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "selectBorderColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "selectBorderRadius",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tooltipSubscriptionSvgFill",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tooltipColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tooltipBackgroundColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tooltipBorderTopColorBorderTopColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subscriptionFinalPriceColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subscriptionWidgetTextColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderStatusManageSubscriptionTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderStatusManageSubscriptionDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderStatusManageSubscriptionButtonText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "showTooltipOnClick",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "subscriptionOptionSelectedByDefault",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "widgetEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "showTooltip",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "sellingPlanTitleText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "oneTimePriceText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "selectedPayAsYouGoSellingPlanPriceText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "selectedPrepaidSellingPlanPriceText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "selectedDiscountFormat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "manageSubscriptionBtnFormat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tooltipDescriptionOnPrepaidPlan",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "tooltipDescriptionOnMultipleDiscount",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "tooltipDescriptionCustomization",
+       "fieldType": "byte[]",
+       "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "showStaticTooltip",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "showAppstleLink",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "subscriptionPriceDisplayText",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "sortByDefaultSequence",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "showSubOptionBeforeOneTime",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "showCheckoutSubscriptionBtn",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "totalPricePerDeliveryText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "widgetEnabledOnSoldVariant",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableCartWidgetFeature",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "switchRadioButtonWidget",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "formMappingAttributeName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "formMappingAttributeSelector",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "quickViewModalPollingSelector",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatePriceOnQuantityChange",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "widgetParentSelector",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "quantitySelector",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "loyaltyDetailsLabelText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "loyaltyPerkDescriptionText",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "detectVariantFromURLParams",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "disableQueryParamsUpdate",
+      "fieldType": "Boolean"
+    }
+  ],
+  "changelogDate": "20200123061909",
+  "entityTableName": "subscription_widget_settings",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

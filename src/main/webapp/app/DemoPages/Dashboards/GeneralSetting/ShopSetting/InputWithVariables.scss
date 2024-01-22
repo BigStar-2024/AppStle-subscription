@@ -1,0 +1,31 @@
+.insert_variable {
+  margin-bottom: 20px;
+  display: flex;
+  margin-top: 20px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    .form-control,
+    button {
+      margin-top: 10px;
+      margin-left: 0 !important;
+    }
+  }
+}
+
+.automation_settings_help_text {
+  margin-top: 10px;
+}
+
+.orderTaggingExample {
+  color: rgb(32, 34, 35);
+  background-color: rgb(228, 229, 231);
+  font-size: 12px;
+  min-height: 25px;
+  padding: 8px;
+  display: inline-block;
+  margin-top: 8px;
+  line-height: 16px;
+  border-radius: 3px;
+  word-break: break-word;
+}

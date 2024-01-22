@@ -1,0 +1,49 @@
+{
+  "name": "ShopAssetUrls",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "vendorJavascript",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vendorCss",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customerJavascript",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customerCss",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bundleJavascript",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bundleCss",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20200123061909",
+  "entityTableName": "shop_asset_urls",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "relationships": [],
+  "searchEngine": false,
+  "databaseType": "sql"
+}

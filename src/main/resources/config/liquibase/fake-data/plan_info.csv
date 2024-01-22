@@ -1,0 +1,11 @@
+id;name;price;archived;plan_type;billing_type;based_on;additional_details;features;trial_days
+1;South Carolina solid state;26616;false;YEARLY;SHOPIFY_ONE_TIME;SHOPIFY_PLAN;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;75189
+2;Walks Licensed Soft Tuna;83620;true;YEARLY;SHOPIFY_ONE_TIME;PRODUCT_COUNT_AND_SHOPIFY_PLAN;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;46886
+3;copying;71024;false;YEARLY;SHOPIFY_RECURRING;FIXED_PRICE;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;73385
+4;seamless;53068;true;YEARLY;SHOPIFY_RECURRING;SHOPIFY_PLAN;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;75242
+5;24/365 Assimilated;60680;true;MONTHLY;SHOPIFY_ONE_TIME;PRODUCT_COUNT;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;50707
+6;Personal Loan Account;89421;true;MONTHLY;SHOPIFY_USAGE;PRODUCT_COUNT_AND_SHOPIFY_PLAN;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;79170
+7;copying;81407;false;MONTHLY;SHOPIFY_ONE_TIME;PRODUCT_COUNT;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;95910
+8;content-based Mews;39436;false;MONTHLY;SHOPIFY_ONE_TIME;PRODUCT_COUNT;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;58188
+9;wireless;47486;true;YEARLY;SHOPIFY_ONE_TIME;FIXED_PRICE;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;12945
+10;Fantastic Metal Sausages Tasty Wooden Pizza intangible;42889;true;MONTHLY;SHOPIFY_ONE_TIME;PRODUCT_COUNT_AND_SHOPIFY_PLAN;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;5443

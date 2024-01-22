@@ -1,0 +1,11 @@
+id;email_type;html
+1;TRANSACTION_FAILED;../fake-data/blob/hipster.txt
+2;UPCOMING_ORDER;../fake-data/blob/hipster.txt
+3;SUBSCRIPTION_CREATED;../fake-data/blob/hipster.txt
+4;SUBSCRIPTION_CREATED;../fake-data/blob/hipster.txt
+5;EXPIRING_CREDIT_CARD;../fake-data/blob/hipster.txt
+6;UPCOMING_ORDER;../fake-data/blob/hipster.txt
+7;UPCOMING_ORDER;../fake-data/blob/hipster.txt
+8;SUBSCRIPTION_CREATED;../fake-data/blob/hipster.txt
+9;SUBSCRIPTION_CREATED;../fake-data/blob/hipster.txt
+10;TRANSACTION_FAILED;../fake-data/blob/hipster.txt

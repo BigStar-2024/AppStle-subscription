@@ -1,0 +1,26 @@
+{
+  "Comment": "Subscription Migration Job",
+  "StartAt": "MigrateSubscriptions",
+  "States": {
+    "MigrateSubscriptions": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:us-west-1:114479152947:activity:subscription_migration",
+      "ResultPath": "$.lastProcessingResult",
+      "TimeoutSeconds": 18000,
+      "HeartbeatSeconds": 60,
+      "Next": "Done",
+      "Retry": [
+        {
+          "ErrorEquals": ["States.Timeout"],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 500,
+          "BackoffRate": 2
+        }
+      ]
+    },
+    "Done": {
+      "Type": "Pass",
+      "End": true
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "shop",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "filterMenu",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "menuUrl",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "menuStyle",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "active",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "handle",
+            "fieldType": "String"
+        },
+        {
+          "fieldName": "productViewStyle",
+          "fieldType": "ProductViewSettings",
+          "fieldValues": "QUICK_ADD,VIEW_DETAILS"
+        }
+    ],
+    "changelogDate": "20220912110807",
+    "dto": "mapstruct",
+    "searchEngine": false,
+    "service": "serviceImpl",
+    "entityTableName": "appstle_menu_settings",
+    "databaseType": "sql",
+    "readOnly": false,
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}

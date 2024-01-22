@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+        <property name="autoIncrement" value="true"/>
+
+    <changeSet id="20210226061909-1" author="rohan" context="faker">
+        <addColumn tableName="subscription_widget_settings">
+            <column name="subscription_widget_margin_top" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_widget_margin_bottom" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_widget_margin_left" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_widget_margin_right" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_widget_width" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_widget_height" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_widget_box_shadow" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_widget_border_radius" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_widget_border_width" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_widget_border_style" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="subscription_widget_border_color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+        </addColumn>
+    </changeSet>
+
+
+</databaseChangeLog>

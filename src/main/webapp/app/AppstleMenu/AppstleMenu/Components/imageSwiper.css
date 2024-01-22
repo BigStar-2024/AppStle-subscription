@@ -1,0 +1,76 @@
+.swiper {
+  height: 217px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.swiper-button-next:after {
+  font-size: 12px;
+  color: #4a9951;
+  font-weight: bolder;
+}
+
+.swiper-button-prev:after {
+  font-size: 12px;
+  color: #4a9951;
+  font-weight: bolder;
+}
+
+.swiper-button-next {
+  height: 28px;
+  width: 28px;
+  text-align: center;
+  background-color: #bbbbbb91;
+  border-radius: 50%;
+  margin-top: -19px;
+  display: none;
+}
+
+.swiper-button-prev {
+  height: 28px;
+  width: 28px;
+  text-align: center;
+  background-color: #bbbbbb91;
+  border-radius: 50%;
+  display: none;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: #4a9951;
+}
+
+.swiper:hover .swiper-button-next {
+  display: block;
+}
+
+.swiper:hover .swiper-button-prev {
+  display: block;
+}

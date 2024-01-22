@@ -1,0 +1,34 @@
+#aikon-search-results-grid-mode li.aikon-product span.aikon-title {
+  border-bottom: 1px solid transparent;
+  display: inline;
+  font-family: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #3a3a3a;
+  font-size: 1.13333em;
+  margin: 0 0 17.5px;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+.aikon-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 15px;
+  font-family: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #3a3a3a !important;
+  line-height: 1.5;
+}
+
+#aikon-search-results-grid-mode .aikon-price-list {
+  text-align: inherit;
+}

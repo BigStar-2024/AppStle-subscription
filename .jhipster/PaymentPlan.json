@@ -1,0 +1,148 @@
+{
+  "name": "PaymentPlan",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "chargeActivated",
+      "fieldType": "Boolean",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "activationDate",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "recurringChargeId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "lastEmailSentToMerchant",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "numberOfEmailSentToMerchant",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "basePlan",
+      "fieldType": "BasePlan",
+      "fieldValues": "FREE,FREE_ANNUAL,STARTER,STARTER_ANNUAL,STARTER_PAYG,BUSINESS,BUSINESS_ANNUAL,ENTERPRISE,ENTERPRISE_ANNUAL,ENTERPRISE_PLUS,ENTERPRISE_PLUS_ANNUAL"
+    },
+    {
+      "fieldName": "additionalDetails",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "trialDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "planType",
+      "fieldType": "PlanType",
+      "fieldValues": "MONTHLY,YEARLY"
+    },
+    {
+      "fieldName": "billingType",
+      "fieldType": "BillingType",
+      "fieldValues": "SHOPIFY_RECURRING,SHOPIFY_USAGE,SHOPIFY_ONE_TIME,SHOPIFY_ANNUAL"
+    },
+    {
+      "fieldName": "basedOn",
+      "fieldType": "BasedOn",
+      "fieldValues": "FIXED_PRICE,PRODUCT_COUNT,SHOPIFY_PLAN,PRODUCT_COUNT_AND_SHOPIFY_PLAN,SUBSCRIPTION_ORDER_AMOUNT"
+    },
+    {
+      "fieldName": "features",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "testCharge",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "billedDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "validCharge",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "trialEndsOn",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "shopFrozen",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "paymentPlanEvent",
+      "fieldType": "PaymentPlanEvent",
+      "fieldValues": "APP_UNINSTALLED,APP_INSTALLED,UPGRADE,DOWNGRADE"
+    },
+    {
+      "fieldName": "paymentPlanEventTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "oldPrice",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "oldBasePlan",
+      "fieldType": "BasePlan",
+      "fieldValues": "FREE,FREE_ANNUAL,STARTER,STARTER_ANNUAL,STARTER_PAYG,BUSINESS,BUSINESS_ANNUAL,ENTERPRISE,ENTERPRISE_ANNUAL,ENTERPRISE_PLUS,ENTERPRISE_PLUS_ANNUAL"
+    },
+    {
+      "fieldName": "oldActivationDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "shopifyPlanDisplayName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shopifyPlanName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "planInfo",
+      "otherEntityRelationshipName": "paymentPlan",
+      "relationshipName": "planInfo",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20190624073453",
+  "entityTableName": "payment_plan",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "applications": "*"
+}

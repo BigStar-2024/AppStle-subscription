@@ -1,0 +1,11 @@
+id;shop;source_variants;destination_variants;updated_first_order;check_for_every_recurring_order
+1;monitor bandwidth Up-sized;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;false;false
+2;Palladium Buckinghamshire;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;false;false
+3;USB;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;true;true
+4;Fantastic;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;false;true
+5;TCP Bermuda;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;true;false
+6;turn-key portals Grocery;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;true;true
+7;Borders Compatible Plastic;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;true;true
+8;granular cyan Awesome;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;true;false
+9;cross-platform Chips Granite;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;false;true
+10;payment;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt;false;true

@@ -1,0 +1,46 @@
+{
+  "name": "SmsTemplateSetting",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "smsSettingType",
+      "fieldType": "SmsSettingType",
+      "fieldValues": "SUBSCRIPTION_CREATED,TRANSACTION_FAILED,UPCOMING_ORDER,EXPIRING_CREDIT_CARD"
+    },
+    {
+      "fieldName": "sendSmsDisabled",
+      "fieldType": "Boolean",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "smsContent",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "stopReplySMS",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210614027888",
+  "entityTableName": "sms_template_setting",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "applications": "*"
+}

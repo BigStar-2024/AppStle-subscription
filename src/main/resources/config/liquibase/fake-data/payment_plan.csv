@@ -1,0 +1,11 @@
+id;shop;charge_activated;activation_date;recurring_charge_id;last_email_sent_to_merchant;number_of_email_sent_to_merchant;additional_details;trial_days;price;name;plan_type;billing_type;based_on;features
+1;Beauty Hat;false;2019-06-23T16:54:38;57388;2019-06-24T00:41:07;99116;../fake-data/blob/hipster.txt;12413;45252;XML Forward technologies;MONTHLY;SHOPIFY_USAGE;SHOPIFY_PLAN;../fake-data/blob/hipster.txt
+2;utilize;false;2019-06-24T05:18:24;35130;2019-06-23T16:54:15;94269;../fake-data/blob/hipster.txt;6469;41713;Coordinator neural Representative;YEARLY;SHOPIFY_ANNUAL;SHOPIFY_PLAN;../fake-data/blob/hipster.txt
+3;Operations;true;2019-06-23T14:25:11;90807;2019-06-23T14:45:34;63461;../fake-data/blob/hipster.txt;54579;71677;Plastic Implementation;YEARLY;SHOPIFY_USAGE;SHOPIFY_PLAN;../fake-data/blob/hipster.txt
+4;Brazilian Real Ball;false;2019-06-23T13:32:16;39911;2019-06-23T16:57:14;38244;../fake-data/blob/hipster.txt;63301;55866;dedicated Mouse;MONTHLY;SHOPIFY_USAGE;PRODUCT_COUNT_AND_SHOPIFY_PLAN;../fake-data/blob/hipster.txt
+5;input;true;2019-06-23T18:18:38;31759;2019-06-23T17:13:36;52949;../fake-data/blob/hipster.txt;67111;14271;Chicken AI;YEARLY;SHOPIFY_RECURRING;SHOPIFY_PLAN;../fake-data/blob/hipster.txt
+6;Proactive Factors;true;2019-06-23T16:38:16;62708;2019-06-24T07:10:18;19464;../fake-data/blob/hipster.txt;62185;52886;task-force ADP Architect;YEARLY;SHOPIFY_ONE_TIME;PRODUCT_COUNT_AND_SHOPIFY_PLAN;../fake-data/blob/hipster.txt
+7;cross-platform internet solution;true;2019-06-23T08:52:16;24706;2019-06-24T01:26:32;30552;../fake-data/blob/hipster.txt;33761;30813;SAS Field ivory;YEARLY;SHOPIFY_ANNUAL;PRODUCT_COUNT_AND_SHOPIFY_PLAN;../fake-data/blob/hipster.txt
+8;Division Guernsey Money Market Account;false;2019-06-23T19:03:24;18127;2019-06-24T04:04:27;28412;../fake-data/blob/hipster.txt;10604;2331;transmit circuit Games;MONTHLY;SHOPIFY_USAGE;FIXED_PRICE;../fake-data/blob/hipster.txt
+9;system transmit;false;2019-06-24T03:34:01;81810;2019-06-24T00:47:34;30262;../fake-data/blob/hipster.txt;89911;11400;Small Steel Towels;MONTHLY;SHOPIFY_RECURRING;FIXED_PRICE;../fake-data/blob/hipster.txt
+10;Consultant;true;2019-06-24T04:18:28;8347;2019-06-23T22:03:10;72746;../fake-data/blob/hipster.txt;88038;74948;Hat Assistant Berkshire;YEARLY;SHOPIFY_RECURRING;PRODUCT_COUNT;../fake-data/blob/hipster.txt

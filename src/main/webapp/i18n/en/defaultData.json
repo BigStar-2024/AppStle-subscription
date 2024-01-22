@@ -1,0 +1,24 @@
+{
+  "subscriptionApp": {
+    "defaultData": {
+      "home": {
+        "title": "Default Data",
+        "createLabel": "Create a new Default Data",
+        "createOrEditLabel": "Create or edit a Default Data",
+        "notFound": "No Default Data found"
+      },
+      "created": "A new Default Data is created with identifier {{ param }}",
+      "updated": "A Default Data is updated with identifier {{ param }}",
+      "deleted": "A Default Data is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Default Data {{ id }}?"
+      },
+      "detail": {
+        "title": "Default Data"
+      },
+      "name": "Name",
+      "value": "Value",
+      "largeText": "Large Text"
+    }
+  }
+}

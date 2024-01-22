@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+
+    <changeSet id="20220813142800-1" author="aqeel">
+        <dropNotNullConstraint  columnDataType="varchar(1000)"
+                                columnName="jhi_key"
+                                tableName="shop_label"/>
+    </changeSet>
+
+    <changeSet  id="20220813142800-2" author="aqeel">
+        <dropUniqueConstraint  constraintName="shop_label_shop_jhiKey_unique_key"
+                               tableName="shop_label"
+                               uniqueColumns="shop, jhi_key"/>
+    </changeSet>
+
+    <changeSet id="20220813142800-3" author="aqeel">
+        <dropColumn tableName="shop_label">
+            <column name="jhi_key" type="varchar(1000)">
+                <constraints nullable="false" />
+            </column>
+        </dropColumn>
+    </changeSet>
+</databaseChangeLog>

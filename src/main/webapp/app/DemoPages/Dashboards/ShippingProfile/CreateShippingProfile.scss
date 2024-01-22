@@ -1,0 +1,84 @@
+.planSummary {
+  display: none;
+}
+
+.savedAsDraft {
+  .form-group,
+  label,
+  input,
+  select,
+  .addMoreBtn,
+  .saveAsDraftBtn,
+  .cancelSaveBtn {
+    display: none !important;
+  }
+  .planSummary {
+    display: block;
+  }
+
+  .saveAndCancelButtonWrapper {
+    display: none;
+  }
+}
+
+.onEditMode,
+.defaultEditMode {
+  //   .editButton,
+  //   .deleteButton {
+  //     display: none;
+  //   }
+  // .saveAsDraftBtn {
+  //   display: none;
+  // }
+  .saveAndCancelButtonWrapper {
+    margin-bottom: 35px;
+    align-self: flex-start;
+  }
+
+  .editDeleteButtonWrapper {
+    display: none;
+  }
+  & + .addPlanButton {
+    display: none !important;
+    & + .removeLastPlan {
+      display: none !important;
+    }
+  }
+
+  .addMoreBtn,
+  .saveAsDraftBtn,
+  .cancelSaveBtn {
+    margin-top: 0 !important;
+  }
+
+  &.viaEditButton {
+    // .saveAsDraftBtn {
+    //   display: inline-block;
+    // }
+    .addMoreBtn {
+      display: none;
+    }
+  }
+}
+
+.frequencyCountInput,
+.discountAmount {
+  // width: calc(100% - 220px);
+}
+
+.deliveryMethod {
+  // display: flex;
+  align-items: center;
+  background: #f3f4f4;
+  padding: 21px;
+  border-radius: 11px;
+}
+
+.countryInfo {
+  // display: flex;
+  align-items: center;
+  background: #f3f4f4;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 11px;
+}

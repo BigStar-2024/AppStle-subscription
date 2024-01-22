@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+    <base href="/"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Appstle℠ Subscription</title>
+    <meta name="description" content="Description for subscription"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="theme-color" content="#000000"/>
+    <link rel="shortcut icon"
+          href="https://ik.imagekit.io/2hji2jzaerk/Appstle_Icon_5DCuBJFNm.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1646745271747"/>
+    <link rel="manifest" href="manifest.webapp"/>
+    <!-- <link rel="stylesheet" href="content/css/loading.css"/> -->
+    <!-- jhipster-needle-add-resources-to-root - JHipster will add new resources here -->
+    <style>
+        @keyframes lds-pacman-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes lds-pacman-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes lds-pacman-2 {
+  0% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes lds-pacman-2 {
+  0% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes lds-pacman-3 {
+  0% {
+    -webkit-transform: translate(190px, 0);
+    transform: translate(190px, 0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(70px, 0);
+    transform: translate(70px, 0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes lds-pacman-3 {
+  0% {
+    -webkit-transform: translate(190px, 0);
+    transform: translate(190px, 0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(70px, 0);
+    transform: translate(70px, 0);
+    opacity: 1;
+  }
+}
+
+.app-loading {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 10em;
+}
+.app-loading p {
+  display: block;
+  font-size: 1.17em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: normal;
+}
+
+.app-loading .lds-pacman {
+  position: relative;
+  margin: auto;
+  width: 200px !important;
+  height: 200px !important;
+  -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+  transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}
+.app-loading .lds-pacman > div:nth-child(2) div {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 120px;
+  height: 60px;
+  border-radius: 120px 120px 0 0;
+  background: #bbcedd;
+  -webkit-animation: lds-pacman-1 1s linear infinite;
+  animation: lds-pacman-1 1s linear infinite;
+  -webkit-transform-origin: 60px 60px;
+  transform-origin: 60px 60px;
+}
+.app-loading .lds-pacman > div:nth-child(2) div:nth-child(2) {
+  -webkit-animation: lds-pacman-2 1s linear infinite;
+  animation: lds-pacman-2 1s linear infinite;
+}
+.app-loading .lds-pacman > div:nth-child(1) div {
+  position: absolute;
+  top: 97px;
+  left: -8px;
+  width: 24px;
+  height: 10px;
+  background-image: url('../images/logo-jhipster.png');
+  background-size: contain;
+  -webkit-animation: lds-pacman-3 1s linear infinite;
+  animation: lds-pacman-3 1.5s linear infinite;
+}
+.app-loading .lds-pacman > div:nth-child(1) div:nth-child(1) {
+  -webkit-animation-delay: -0.67s;
+  animation-delay: -1s;
+}
+.app-loading .lds-pacman > div:nth-child(1) div:nth-child(2) {
+  -webkit-animation-delay: -0.33s;
+  animation-delay: -0.5s;
+}
+.app-loading .lds-pacman > div:nth-child(1) div:nth-child(3) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+    </style>
+
+    <script>
+        (function () {
+            var w = window;
+            var ic = w.Intercom;
+            if (typeof ic === 'function') {
+                ic('reattach_activator');
+                ic('update', w.intercomSettings);
+            } else {
+                var d = document;
+                var i = function () {
+                    i.c(arguments);
+                };
+                i.q = [];
+                i.c = function (args) {
+                    i.q.push(args);
+                };
+                w.Intercom = i;
+                var l = function () {
+                    var s = d.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'https://widget.intercom.io/widget/' + 'x4xb7xfy';
+                    var x = d.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                };
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        })();
+
+        function checkIfIntercomAndAppstleDataReady() {
+            if ((window?.Intercom) && (typeof window?.Intercom === 'function') && (window?.APPSTLE_USER?.subscription_app_status === 'Installed') && (window?.APPSTLE_USER?.email)) {
+                window.Intercom('boot', {
+                    app_id: 'x4xb7xfy',
+                    ...window.APPSTLE_USER
+                });
+            } else {
+                setTimeout(checkIfIntercomAndAppstleDataReady, 2000)
+            }
+        }
+
+        // function checkIfClarityIsInitialised() {
+        //     if (window?.clarity && (typeof window?.clarity === 'function') && (window?.APPSTLE_USER?.subscription_app_status === 'Installed') && (window?.APPSTLE_USER?.email)) {
+        //         (Object.keys(window?.APPSTLE_USER)).forEach(function (key) {
+        //             clarity("set", key, window?.APPSTLE_USER[key]);
+        //         })
+        //     } else {
+        //         setTimeout(checkIfClarityIsInitialised, 2000)
+        //     }
+        // }
+
+        checkIfIntercomAndAppstleDataReady();
+        // checkIfClarityIsInitialised();
+    </script>
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<p class="browserupgrade">
+    You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your
+    browser</a> to improve
+    your experience.
+</p>
+<![endif]-->
+<style>
+    .welcome-banner, .welcome-banner-footer {
+        margin: 0;
+        color: #806013;
+        background-color: #fdf1d3;
+        border-color: #fdf1d3;
+        padding: .75rem 1.25rem;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        width: 100%;
+        height: 60px;
+    }
+    @media screen and (max-width: 991px) {
+        .welcome-banner {
+            display: none;
+        }
+    }
+
+    .welcome-banner-footer {
+        height: auto;
+        margin-top: 40px;
+    }
+    @media screen and (min-width: 992px) {
+        .welcome-banner-footer {
+            display: none;
+        }
+    }
+</style>
+<div class="welcome-banner">
+    <p>
+        We have added some new features in our app. Please reach out to us on our support team via chat option below or reach out us via email at support@appstle.com. We would be happy to walk you though our latest features and improvements, which will help you to get more out of Appstle Subscription. 
+    </p>
+</div>
+<div class="welcome-banner-footer">
+    <p>
+        We have added some new features in our app. Please reach out to us on our support team via chat option below or reach out us via email at support@appstle.com. We would be happy to walk you though our latest features and improvements, which will help you to get more out of Appstle Subscription. 
+    </p>
+</div>
+
+<div id="root">
+    <div class="app-loading">
+        <div class="lds-css ng-scope">
+            <div class="lds-pacman">
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app-loading">
+        <!--<div id="jhipster-error" style="display:none">
+            &lt;!&ndash; This content is for troubleshooting purpose and will be removed when app renders &ndash;&gt;
+            <h1>An error has occurred :-(</h1>
+            <h2>Usual error causes</h2>
+            <ol>
+                <li>
+                    You started the application from an IDE and you didn't run <code style="color:red">npm start</code>
+                    or
+                    <code style="color:red">npm run webpack:build</code>.
+                </li>
+                <li>
+                    You had a network error while running <code style="color:red">npm install</code>. If you are behind
+                    a corporate proxy, it is
+                    likely that this error was caused by your proxy. Have a look at the JHipster error logs, you will
+                    probably have the cause of
+                    the error.
+                </li>
+                <li>
+                    You installed a Node.js version that doesn't work with JHipster: please use an LTS (long-term
+                    support) version, as it's the
+                    only version we support.
+                </li>
+            </ol>
+            <h2>Building the client side code again</h2>
+            <p>If you want to go fast, run <code style="color:red">./mvnw</code> to build and run everything.</p>
+            <p>If you want to have more control, so you can debug your issue more easily, you should follow the
+                following steps:</p>
+            <ol>
+                <li>Install npm dependencies with the command <code style="color:red">npm install</code></li>
+                <li>
+                    Build the client with the command <code style="color:red">npm run webpack:build</code> or
+                    <code style="color:red">npm start</code>
+                </li>
+                <li>Start the server with <code style="color:red">./mvnw</code> or using your IDE</li>
+            </ol>
+
+            <h2>Getting more help</h2>
+
+            <h3>If you have a question on how to use JHipster</h3>
+            <p>
+                Go to Stack Overflow with the
+                <a href="http://stackoverflow.com/tags/jhipster" target="_blank"
+                   rel="noopener noreferrer">"jhipster"</a> tag.
+            </p>
+
+            <h3>If you have a bug or a feature request</h3>
+            <p>
+                First read our
+                <a href="https://github.com/jhipster/generator-jhipster/blob/master/CONTRIBUTING.md" target="_blank"
+                   rel="noopener noreferrer"
+                >contributing guidelines</a
+                >.
+            </p>
+            <p>
+                Then, fill a ticket on our
+                <a href="https://github.com/jhipster/generator-jhipster/issues/new/choose" target="_blank"
+                   rel="noopener noreferrer"
+                >bug tracker</a
+                >, we'll be happy to resolve your issue!
+            </p>
+
+            <h3>If you want to chat with contributors and other users</h3>
+            <p>
+                Join our chat room on
+                <a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">Gitter.im</a>.
+                Please note
+                that this is a public chat room, and that we expect you to respect other people and write in a correct
+                English language!
+            </p>
+            &lt;!&ndash; end of troubleshooting content &ndash;&gt;
+        </div>-->
+        <div class="text-center">
+            Login unsuccessful
+            <div>
+                Please clear your browser cache and then relaunch Appstle Subscription from the Shopify Admin. You can
+                also try logging in in a private browsing window.
+            </div>
+        </div>
+    </div>
+</div>
+<noscript>
+    <h1>You must enable javascript to view this page.</h1>
+</noscript>
+<script type="text/javascript" language="javascript">
+    window.onload = function () {
+        setTimeout(showError, 4000);
+    };
+
+    function showError() {
+        var errorElm = document.getElementById('jhipster-error');
+        if (errorElm && errorElm.style) {
+            errorElm.style.display = 'block';
+        }
+    }
+</script>
+<!-- uncomment this for adding service worker
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function () {
+                    console.log('Service Worker Registered');
+                });
+        });
+    }
+</script>
+-->
+<!-- Google Analytics: uncomment and change UA-XXXXX-X to be your site's ID.
+<script>
+(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+e.src='//www.google-analytics.com/analytics.js';
+r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>-->
+
+<!-- Start of Lucky Orange Code -->
+<!-- <script type="text/javascript">
+    if (!(location.hostname === 'localhost' || location.hostname === '127.0.0.1' || location.hostname === '')) {
+        setTimeout(function () {
+            window.__lo_site_id = 286703;
+            (function () {
+                var wa = document.createElement('script');
+                wa.type = 'text/javascript';
+                wa.async = true;
+                wa.src = 'https://d10lpsik1i8c69.cloudfront.net/w.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wa, s);
+            })();
+            var shopName = window.__SHOP;// TODO: replace with embedded app shop name. window.sessionStorage.getItem('jhi-shop');
+            if (shopName == null || shopName === '') {
+                shopName = 'unknown-shop';
+            }
+
+            var customData = {shop: shopName};
+            window._loq = window._loq || [];
+            window._loq.push(['custom', customData]);
+        }, 2000);
+    }
+</script> -->
+<!-- End of Luck Orange Code -->
+</body>
+</html>

@@ -1,0 +1,86 @@
+.AppstleMenu-wrapper {
+  p {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+  }
+  .custom-menu-header {
+    .tags {
+      min-width: 250px;
+      max-width: 400px;
+      width: 100%;
+      background-color: #7faeed;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 30px;
+      padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+      align-items: center;
+      font-size: 15px;
+      color: black;
+    }
+  }
+  .custom-header-options {
+    text-align: center;
+    .custom-button {
+      button {
+        background-color: #5271ff;
+        border-color: #5271ff;
+        min-width: 240px;
+        max-width: 240px;
+        width: 100%;
+      }
+    }
+  }
+  .rodal-fade-enter {
+    background-color: #0000008c;
+    .rodal-zoom-enter {
+      width: 550px !important;
+      select {
+        max-width: 200px;
+      }
+      .custom-button {
+        button {
+          background-color: #5271ff;
+          border-color: #5271ff;
+        }
+      }
+      .custom-filter-options {
+        background-color: #f6f6f6;
+        .custom-filterName {
+          background: transparent;
+          font-size: 14px;
+          font-weight: 600;
+          color: black;
+          border: none;
+          max-width: 224px;
+          text-align: center;
+        }
+        .custom-filterName:focus {
+          box-shadow: none;
+          background: transparent;
+        }
+      }
+      .tag {
+        .custom-tags {
+          flex-wrap: wrap;
+        }
+        .tag-input {
+          max-width: 200px;
+        }
+        .tags {
+          min-width: 170px;
+          max-width: 170px;
+          width: 100%;
+          background-color: #7faeed;
+          display: flex;
+          justify-content: space-between;
+          border-radius: 30px;
+          padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+          align-items: center;
+          font-size: 12px;
+          color: black;
+        }
+      }
+    }
+  }
+}

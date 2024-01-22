@@ -1,0 +1,11 @@
+id;shop;automation_type;running;start_time;end_time;request_info;error_info
+1;deposit Executive Consultant;MIGRATION;false;2022-07-17T21:58:18;2022-07-18T01:49:11;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+2;HDD International;MIGRATION;true;2022-07-18T06:19:23;2022-07-17T16:09:58;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+3;invoice;EXPORT;false;2022-07-17T08:13:02;2022-07-17T21:34:55;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+4;Algeria;MIGRATION;true;2022-07-17T21:04:50;2022-07-17T09:22:14;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+5;JBOD bypass;EXPORT;true;2022-07-17T13:01:08;2022-07-18T02:30:06;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+6;Illinois Monitored;MIGRATION;true;2022-07-17T14:29:48;2022-07-17T15:00:59;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+7;Generic Fresh Cheese;EXPORT;true;2022-07-17T19:30:59;2022-07-17T11:56:28;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+8;Supervisor clear-thinking;EXPORT;true;2022-07-17T21:54:24;2022-07-17T12:17:08;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+9;Tasty Concrete Bike Electronics salmon;MIGRATION;true;2022-07-17T23:10:19;2022-07-18T03:51:16;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt
+10;Delaware;EXPORT;false;2022-07-18T03:21:51;2022-07-17T09:50:48;../fake-data/blob/hipster.txt;../fake-data/blob/hipster.txt

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="autoIncrement" value="true"/>
+
+    <changeSet id="20210703039909" author="akhil">
+        <modifyDataType tableName="subscription_widget_settings" columnName="tooltip_description_on_prepaid_plan" newDataType="${clobType}"/>
+        <modifyDataType tableName="subscription_widget_settings" columnName="tooltip_description_on_multiple_discount" newDataType="${clobType}"/>
+    </changeSet>
+
+</databaseChangeLog>

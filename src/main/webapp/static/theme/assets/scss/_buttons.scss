@@ -1,0 +1,30 @@
+@import './variables';
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: $border-radius-base;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 13.333px;
+  &.btn-purple {
+    background: $btn-gradiant-purple;
+    &:hover {
+      background: linear-gradient(180deg, #5c6ac4, #4959bd);
+      border-color: #3f4eae;
+    }
+  }
+  &.btn-white {
+    background: white;
+    border: 0.1rem solid #c4cdd5;
+    box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0.05);
+    color: #212b36;
+    &:hover {
+      background: linear-gradient(180deg, #f9fafb, #f4f6f8);
+      border-color: #c4cdd5;
+      color: #212b36;
+    }
+  }
+  i {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "themeName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "themeNameFriendly",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "themeStoreId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "addToCartSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "subscriptionLinkSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "addToCartPlacement",
+      "fieldType": "PlacementPosition",
+      "fieldValues": "BEFORE,AFTER,FIRST_CHILD,LAST_CHILD"
+    },
+    {
+      "fieldName": "subscriptionLinkPlacement",
+      "fieldType": "PlacementPosition",
+      "fieldValues": "BEFORE,AFTER,FIRST_CHILD,LAST_CHILD"
+    },
+    {
+      "fieldName": "priceSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "pricePlacement",
+      "fieldType": "PlacementPosition",
+      "fieldValues": "BEFORE,AFTER,FIRST_CHILD,LAST_CHILD"
+    },
+    {
+      "fieldName": "badgeTop",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartRowSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartLineItemSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartLineItemPerQuantityPriceSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartLineItemTotalPriceSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartLineItemSellingPlanNameSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartSubTotalSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartLineItemPriceSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "changelogDate": "20191226044205",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "no",
+  "entityTableName": "theme_code",
+  "databaseType": "sql",
+  "jpaMetamodelFiltering": false,
+  "pagination": "no"
+}

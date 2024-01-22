@@ -1,0 +1,30 @@
+@import './variables';
+.app-main__outer,
+.app-main__inner,
+.mid-main-wrapper {
+  background: #f4f6f8 !important;
+}
+
+.setting-block {
+  border-bottom: 1px solid #dfe3e8;
+  .setting-heading {
+    padding: 2.5rem 2.5rem 2.5rem 0;
+    h2 {
+      font-weight: 600;
+      line-height: 2.4rem;
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.25rem;
+      color: #637381;
+    }
+  }
+  .form-label {
+    font-size: 1.025rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    float: left;
+  }
+}

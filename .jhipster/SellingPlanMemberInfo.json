@@ -1,0 +1,46 @@
+{
+  "name": "SellingPlanMemberInfo",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "subscriptionId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "sellingPlanId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "enableMemberInclusiveTag",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "memberInclusiveTags",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enableMemberExclusiveTag",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "memberExclusiveTags",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20210519202909",
+  "entityTableName": "selling_plan_member_info",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

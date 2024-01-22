@@ -1,0 +1,39 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "Appstle℠ Subscriptions App"
+client_id = "80b36c79c341ba709db28b0a5294fda0"
+application_url = "https://subscription-admin.appstle.com/oauth/subscription/authenticate"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://subscription-admin.appstle.com/oauth/subscription/callback",
+  "https://recreational-email-temperatures-sap.trycloudflare.com/auth/callback",
+  "https://recreational-email-temperatures-sap.trycloudflare.com/auth/shopify/callback",
+  "https://recreational-email-temperatures-sap.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2021-10"
+
+  [webhooks.privacy_compliance]
+  customer_deletion_url = "https://yvec8tlnw8.execute-api.us-west-1.amazonaws.com/prod"
+  customer_data_request_url = "https://yvec8tlnw8.execute-api.us-west-1.amazonaws.com/prod"
+  shop_deletion_url = "https://yvec8tlnw8.execute-api.us-west-1.amazonaws.com/prod"
+
+[app_proxy]
+url = "https://subscription-admin.appstle.com/subscriptions"
+subpath = "subscriptions"
+prefix = "apps"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = false
+dev_store_url = "appstle-jaydeep-35.myshopify.com"

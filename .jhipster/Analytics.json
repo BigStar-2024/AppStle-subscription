@@ -1,0 +1,46 @@
+{
+  "name": "Analytics",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "totalSubscriptions",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "totalOrders",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "totalOrderAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "firstTimeOrders",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "recurringOrders",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "totalCustomers",
+      "fieldType": "Long"
+    }
+  ],
+  "changelogDate": "20200123061909",
+  "entityTableName": "analytics",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

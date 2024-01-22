@@ -1,0 +1,75 @@
+{
+    "name": "PlanInfo",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "archived",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "planType",
+            "fieldType": "PlanType",
+            "fieldValues": "MONTHLY,YEARLY"
+        },
+        {
+            "fieldName": "billingType",
+            "fieldType": "BillingType",
+            "fieldValues": "SHOPIFY_RECURRING,SHOPIFY_USAGE,SHOPIFY_ONE_TIME,SHOPIFY_ANNUAL"
+        },
+        {
+            "fieldName": "basedOn",
+            "fieldType": "BasedOn",
+            "fieldValues": "FIXED_PRICE,PRODUCT_COUNT,SHOPIFY_PLAN,PRODUCT_COUNT_AND_SHOPIFY_PLAN,SUBSCRIPTION_ORDER_AMOUNT"
+        },
+        {
+            "fieldName": "additionalDetails",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "features",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "trialDays",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "basePlan",
+            "fieldType": "BasePlan",
+            "fieldValues": "FREE,FREE_ANNUAL,STARTER,STARTER_ANNUAL,STARTER_PAYG,BUSINESS,BUSINESS_ANNUAL,ENTERPRISE,ENTERPRISE_ANNUAL,ENTERPRISE_PLUS,ENTERPRISE_PLUS_ANNUAL",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "paymentPlan",
+            "otherEntityRelationshipName": "planInfo",
+            "relationshipName": "paymentPlan",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200206103556",
+    "entityTableName": "plan_info",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*",
+    "searchEngine": false,
+    "databaseType": "sql"
+}

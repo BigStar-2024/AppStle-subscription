@@ -1,0 +1,242 @@
+{
+  "name": "EmailTemplateSetting",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "emailSettingType",
+      "fieldType": "EmailSettingType",
+      "fieldValues": "SUBSCRIPTION_CREATED,TRANSACTION_FAILED,UPCOMING_ORDER,EXPIRING_CREDIT_CARD,SHIPPING_ADDRESS_UPDATED,ORDER_FREQUENCY_UPDATED,NEXT_ORDER_DATE_UPDATED,SUBSCRIPTION_PAUSED,SUBSCRIPTION_CANCELLED,SUBSCRIPTION_RESUMED,SUBSCRIPTION_PRODUCT_ADDED,SUBSCRIPTION_PRODUCT_REMOVED,SUBSCRIPTION_PRODUCT_REPLACED,SECURITY_CHALLENGE,SUBSCRIPTION_MANAGEMENT_LINK,ORDER_SKIPPED,OUT_OF_STOCK,TRANSACTION_SUCCESS"
+    },
+    {
+      "fieldName": "sendEmailDisabled",
+      "fieldType": "Boolean",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "subject",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "fromEmail",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "logo",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "heading",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "headingTextColor",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "contentTextColor",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "contentLinkColor",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "content",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "footerTextColor",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "footerLinkColor",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "footerText",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "templateBackgroundColor",
+      "fieldType": "String",
+      "fieldValidateRules": [
+          "required"
+      ]
+    },
+    {
+      "fieldName": "html",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "textImageUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "manageSubscriptionButtonColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "manageSubscriptionButtonText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "manageSubscriptionButtonTextColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shippingAddressText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "billingAddressText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nextOrderdateText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "paymentMethodText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "endingInText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bccEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "upcomingOrderEmailBuffer",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "headingImageUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "quantityText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "manageSubscriptionButtonUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "logoHeight",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "logoWidth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "thanksImageHeight",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "thanksImageWidth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "logoAlignment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "thanksImageAlignment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shippingAddress",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "billingAddress",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "replyTo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sendBCCEmailFlag",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "sellingPlanNameText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "variantSkuText",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210301225828",
+  "entityTableName": "email_template_setting",
+  "dto": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "applications": "*",
+  "searchEngine": false,
+  "databaseType": "sql",
+  "readOnly": false,
+  "pagination": "no"
+}

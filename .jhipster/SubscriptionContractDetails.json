@@ -1,0 +1,238 @@
+{
+  "name": "SubscriptionContractDetails",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "graphSubscriptionContractId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subscriptionContractId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "billingPolicyInterval",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "billingPolicyIntervalCount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "currencyCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customerId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "graphCustomerId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deliveryPolicyInterval",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deliveryPolicyIntervalCount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "graphOrderId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "nextBillingDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "orderAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "orderName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customerName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customerEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subscriptionCreatedEmailSent",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "endsAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "startsAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "subscriptionCreatedEmailSentStatus",
+      "fieldType": "subscriptionCreatedEmailSentStatus",
+      "fieldValues": "SENT,UNSENT,FAILED,EMAIL_SETTINGS_DISABLED,CUSTOMER_PAYMENT_EMPTY,CONTRACT_PAUSED_STATUS"
+    },
+    {
+      "fieldName": "minCycles",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "maxCycles",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "customerFirstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customerLastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "autoCharge",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "importedId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stopUpComingOrderEmail",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "pausedFromActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "subscriptionCreatedSmsSentStatus",
+      "fieldType": "SubscriptionCreatedSmsSentStatus",
+      "fieldValues": "SENT,UNSENT,FAILED,SMS_SETTINGS_DISABLED,CUSTOMER_PAYMENT_EMPTY,CONTRACT_PAUSED_STATUS,PHONE_NUMBER_EMPTY"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "activatedOn",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "pausedOn",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "cancelledOn",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "contractDetailsJSON",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cancellationFeedback",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "orderNote",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "orderNoteAttributes",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "allowDeliveryPriceOverride",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "disableFixEmptyQueue",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "orderAmountUSD",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "originType",
+      "fieldType": "SubscriptionOriginType",
+      "fieldValues": "STORE_FRONT,IMPORTED,SPLIT_ATTEMPT_BILLING,SPLIT_CONTRACT"
+    },
+    {
+      "fieldName": "originalContractId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "cancellationNote",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subscriptionType",
+      "fieldType": "SubscriptionType",
+      "fieldValues": "REGULAR_SUBSCRIPTION,BUILD_A_BOX_CLASSIC,BUILD_A_BOX_SINGLE_PRODUCT,BUNDLING_CLASSIC,BUNDLING_MIX_AND_MATCH"
+    },
+    {
+      "fieldName": "subscriptionTypeIdentifier",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "upcomingEmailBufferDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "upcomingEmailTaskUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contractAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "contractAmountUSD",
+      "fieldType": "Double"
+    }
+  ],
+  "changelogDate": "20200123061909",
+  "entityTableName": "subscription_contract_details",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

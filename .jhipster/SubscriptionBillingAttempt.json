@@ -1,0 +1,130 @@
+{
+  "name": "SubscriptionBillingAttempt",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "billingAttemptId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "BillingAttemptStatus",
+      "fieldValues": "SUCCESS,FAILURE,REQUESTING,PROGRESS,QUEUED,SKIPPED,SOCIAL_CONNECTION_NULL,CONTRACT_CANCELLED,CONTRACT_ENDED,CONTRACT_PAUSED,AUTO_CHARGE_DISABLED,SHOPIFY_EXCEPTION,SKIPPED_DUNNING_MGMT,SKIPPED_INVENTORY_MGMT,IMMEDIATE_TRIGGERED,SECURITY_CHALLENGE,CONTRACT_PAUSED_MAX_CYCLES"
+    },
+    {
+      "fieldName": "billingDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "contractId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "attemptCount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "attemptTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "graphOrderId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "orderAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "orderName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "retryingNeeded",
+      "fieldType": "Boolean",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "transactionFailedEmailSentStatus",
+      "fieldType": "transactionFailedEmailSentStatus",
+      "fieldValues": "SENT,UNSENT,FAILED,EMAIL_SETTINGS_DISABLED,CUSTOMER_PAYMENT_EMPTY,CONTRACT_CANCELLED"
+    },
+    {
+      "fieldName": "upcomingOrderEmailSentStatus",
+      "fieldType": "upcomingOrderEmailSentStatus",
+      "fieldValues": "SENT,UNSENT,FAILED,EMAIL_SETTINGS_DISABLED,CUSTOMER_PAYMENT_EMPTY,CONTRACT_CANCELLED,STOP_FROM_CONTRACT,CONTRACT_PAUSED"
+    },
+    {
+      "fieldName": "applyUsageCharge",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "recurringChargeId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "transactionRate",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "usageChargeStatus",
+      "fieldType": "UsageChargeStatus",
+      "fieldValues": "SUCCESS,FAILED,TO_BE_TRIED"
+    },
+    {
+      "fieldName": "transactionFailedSmsSentStatus",
+      "fieldType": "TransactionFailedSmsSentStatus",
+      "fieldValues": "SENT,UNSENT,FAILED,SMS_SETTINGS_DISABLED,CUSTOMER_PAYMENT_EMPTY,CONTRACT_CANCELLED,PHONE_NUMBER_EMPTY"
+    },
+    {
+      "fieldName": "upcomingOrderSmsSentStatus",
+      "fieldType": "UpcomingOrderSmsSentStatus",
+      "fieldValues": "SENT,UNSENT,FAILED,SMS_SETTINGS_DISABLED,CUSTOMER_PAYMENT_EMPTY,CONTRACT_CANCELLED,STOP_FROM_CONTRACT,CONTRACT_PAUSED,PHONE_NUMBER_EMPTY"
+    },
+    {
+      "fieldName": "billingAttemptResponseMessage",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "progressAttemptCount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "orderNote",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "securityChallengeSentStatus",
+      "fieldType": "SecurityChallengeSentStatus",
+      "fieldValues": "SENT,UNSENT,FAILED,EMAIL_SETTINGS_DISABLED,CONTRACT_CANCELLED"
+    },
+    {
+      "fieldName": "orderAmountUSD",
+      "fieldType": "Double"
+    }
+  ],
+  "changelogDate": "20200123061909",
+  "entityTableName": "subscription_billing_attempt",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

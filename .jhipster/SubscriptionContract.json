@@ -1,0 +1,41 @@
+{
+  "name": "subscription_contract",
+  "fields": [
+    {
+      "fieldName": "createAt",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nextBillingDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderCount",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "subscriptionCustomer",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "billingPolicy",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "changelogDate": "20200123061909",
+  "entityTableName": "subscription_contract",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+
+    <changeSet id="202108082027000" author="Jatin">
+        <createIndex indexName="shop_status_attemptTime_index" tableName="subscription_billing_attempt">
+            <column name="shop"/>
+            <column name="status"/>
+            <column name="attempt_time"/>
+        </createIndex>
+        <createIndex indexName="shop_status_billingDate_index" tableName="subscription_billing_attempt">
+            <column name="shop"/>
+            <column name="status"/>
+            <column name="billing_date"/>
+        </createIndex>
+        <createIndex indexName="shop_status_index" tableName="subscription_billing_attempt">
+            <column name="shop"/>
+            <column name="status"/>
+        </createIndex>
+    </changeSet>
+</databaseChangeLog>

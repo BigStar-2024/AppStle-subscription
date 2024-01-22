@@ -1,0 +1,244 @@
+{
+  "name": "SubscriptionBundleSettings",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "selectedFrequencyLabelText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "addButtonText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "selectMinimumProductButtonText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "productsToProceedText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "proceedToCheckoutButtonText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "myDeliveryText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "bundleTopHtml",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "bundleBottomHtml",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "failedToAddTitleText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "okBtnText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "failedToAddMsgText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "buttonColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "backgroundColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pageBackgroundColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "buttonBackgroundColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ProductTitleFontColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "variantNotAvailable",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bundleRedirect",
+      "fieldType": "BundleRedirect",
+      "fieldValues": "CART, CHECKOUT, CUSTOM"
+    },
+    {
+      "fieldName": "isBundleWithoutScroll",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "descriptionLength",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "currencySwitcherClassName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productPriceFormatField",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customRedirectURL",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "viewProduct",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productDetails",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "editQuantity",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cart",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shoppingCart",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tieredDiscount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subtotal",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "checkoutMessage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "continueShopping",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "spendAmountGetDiscount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "buyQuantityGetDiscount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "removeItem",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "showCompareAtPrice",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableRedirectToProductPage",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "saveDiscountText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "disableProductDescription",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableDisplayProductVendor",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableDisplayProductType",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableCustomAdvancedFields",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "hideProductSearchBox",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "productFilterConfig",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "enableProductDetailButton",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableShowProductBasePrice",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableClearCartSelectedProducts",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableSkieyBABHeader",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableOpeningSidebar",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "rightSidebarHTML",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "leftSidebarHTML",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "isMergeIntoSingleBABVariantDropdown",
+      "fieldType": "Boolean"
+    }
+  ],
+  "changelogDate": "2021082209220000",
+  "entityTableName": "subscription_bundle_settings",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

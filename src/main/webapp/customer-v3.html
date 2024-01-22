@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+    <base href="/"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Subscription</title>
+    <meta name="description" content="Description for subscription"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="theme-color" content="#000000"/>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+
+    <script type="application/javascript">
+        var Shopify = {};
+        Shopify.shop = "test-appstle-store1.myshopify.com";
+        window.appstle_api_key = 'gnxBrRL5aT';
+        var __st = {};
+        __st.cid = '5187093790872';
+        RS = {
+            "Config": {
+                "selectors": {
+                    "payment_button_selectors": "form[action$='/cart/add'] .shopify-payment-button",
+                    "subscriptionLinkSelector": "div.grid.myaccount",
+                    "atcButtonPlacement": "BEFORE",
+                    "subscriptionLinkPlacement": "BEFORE"
+                },
+                "useUrlWithCustomerId": false,
+                "atcButtonSelector": ".btn.product-form__cart-submit",
+                "moneyFormat": "€{{amount}}",
+                "oneTimePurchaseText": "Einzelbestellung",
+                "shop": "koro-fresh.myshopify.com",
+                "deliveryText": "delivery",
+                "purchaseOptionsText": "Kaufoptionen",
+                "manageSubscriptionButtonText": "Abonnement bearbeiten",
+                "subscriptionOptionText": "Abonnieren und sparen",
+                "sellingPlanSelectTitle": "LIEFERTURNUS",
+                "subscriptionPriceDisplayText": "",
+                "tooltipTitle": "Details zum Abo",
+                "showTooltipOnClick": "false",
+                "tooltipDesctiption": "<strong>Volle Kontrolle über Dein Abo</strong><br/><br/>Du kannst Dein Abonnement jederzeit pausieren oder mit einer Frist von nur 1 Woche kostenfrei kündigen.\n",
+                "tooltipDescriptionOnPrepaidPlan": "<b>Prepaid Plan Details</b></br> Total price: {{totalPrice}} ( Price for every delivery: {{pricePerDelivery}})",
+                "tooltipDescriptionOnMultipleDiscount": "<b>Discount Details</b></br> Initial discount is {{discountOne}} and then {{discountTwo}}",
+                "tooltipDescriptionCustomization": "{{{defaultTooltipDescription}}} </br>  {{{prepaidDetails}}} </br> {{{discountDetails}}}",
+                "orderStatusManageSubscriptionTitle": "Abonnement",
+                "orderStatusManageSubscriptionDescription": "Bitte logge Dich mit Deiner E-Mail Adresse ein, um Dein Abo anzusehen und zu bearbeiten.",
+                "orderStatusManageSubscriptionButtonText": "Abonnement verwalten",
+                "subscriptionOptionSelectedByDefault": false,
+                "memberOnlySellingPlansJson": {},
+                "nonMemberOnlySellingPlansJson": {},
+                "widgetEnabled": true,
+                "showTooltip": true,
+                "showStaticTooltip": false,
+                "sellingPlanTitleText": "{{sellingPlanName}} ({{sellingPlanPrice}}/Lieferung)",
+                "oneTimePriceText": "{{price}}",
+                "selectedPayAsYouGoSellingPlanPriceText": "{{price}}",
+                "selectedPrepaidSellingPlanPriceText": "{{pricePerDelivery}}",
+                "selectedDiscountFormat": "{{selectedDiscountPercentage}} SPAREN",
+                "manageSubscriptionBtnFormat": "<a href='apps/subscriptions' class='appstle_manageSubBtn' ><button class='btn' style='padding: 2px 20px'>Abonnements bearbeiten</button><a><br><br>",
+                "manageSubscriptionUrl": "apps/subscriptions",
+                "css": {
+                    "appstle_subscription_widget": {
+                        "margin-top": "",
+                        "margin-bottom": ""
+                    },
+                    "appstle_subscription_wrapper": {
+                        "border-width": "",
+                        "border-color": ""
+                    },
+                    "appstle_circle": {
+                        "border-color": ""
+                    },
+                    "appstle_dot": {
+                        "background-color": ""
+                    },
+                    "appstle_select": {
+                        "padding-top": "",
+                        "padding-bottom": "",
+                        "padding-left": "",
+                        "padding-right": "",
+                        "border-width": "",
+                        "border-style": "",
+                        "border-color": "",
+                        "border-radius": ""
+                    },
+                    "tooltip_subscription_svg": {
+                        "fill": ""
+                    },
+                    "appstle_tooltip": {
+                        "color": "",
+                        "background-color": ""
+                    },
+                    "appstle_tooltip_border_top_color": {
+                        "border-top-color": ""
+                    },
+                    "appstle_subscription_final_price": {
+                        "color": ""
+                    },
+                    "appstle_widget_text_color": {
+                        "color": ""
+                    },
+                    "appstle_selected_background": {
+                        "background": "transparent"
+                    },
+                    "customCSS": "",
+                    "customerPortalCss": ".appstle-customer-portal {\nfont-family: 'Poppins', sans-serif;\n}"
+                },
+                "priceSelector": ".price__regular .price-item.price-item--regular",
+                "badgeTop": "",
+                "pricePlacement": "BEFORE"
+            }
+        }
+
+        theme = {
+            "breakpoints": {
+                "medium": 750,
+                "large": 990,
+                "widescreen": 1400
+            },
+            "strings": {
+                "addToCart": "In den Warenkorb legen",
+                "soldOut": "Ausverkauft",
+                "unavailable": "Nicht verfügbar",
+                "regularPrice": "Normaler Preis",
+                "salePrice": "Sonderpreis",
+                "sale": "Angebot",
+                "fromLowestPrice": "von [price]",
+                "vendor": "Verkäufer",
+                "showMore": "Mehr anzeigen",
+                "showLess": "Weniger anzeigen",
+                "searchFor": "Suchen nach",
+                "addressError": "Die Adresse kann nicht gefunden werden",
+                "addressNoResults": "Keine Ergebnisse für diese Adresse",
+                "addressQueryLimit": "Du hast die Nutzungsgrenze der Google-API überschritten. Du solltest über ein Upgrade auf einen <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium-Plan</a> nachdenken.",
+                "authError": "Es gab ein Problem bei der Authentifizierung deines Google Maps-Kontos.",
+                "newWindow": "Öffnet ein neues Fenster.",
+                "external": "Öffnet externe Website.",
+                "newWindowExternal": "Öffnet externe Website in einem neuen Fenster.",
+                "removeLabel": "[product] entfernen",
+                "update": "Warenkorb aktualisieren",
+                "quantity": "Menge",
+                "discountedTotal": "Gesamtrabatt",
+                "regularTotal": "Normaler Gesamtpreis",
+                "priceColumn": "Rabattdetails findest Du in der Preisspalte.",
+                "quantityMinimumMessage": "Die Menge muss 1 oder mehr sein",
+                "cartError": "Beim Aktualisieren des Warenkorbs ist ein Fehler aufgetreten. Bitte versuche es erneut.",
+                "removedItemMessage": "<span class=\"cart__removed-product-details\">([quantity]) [link]</span> wurde aus Deinem Warenkorb entfernt.",
+                "unitPrice": "Einzelpreis",
+                "unitPriceSeparator": "pro",
+                "oneCartCount": "1 Artikel",
+                "otherCartCount": "[count] Produkte",
+                "quantityLabel": "Menge: [count]",
+                "products": "Produkte",
+                "loading": "Wird geladen",
+                "number_of_results": "[result_number] von [results_count]",
+                "number_of_results_found": "[results_count] Ergebnisse gefunden",
+                "one_result_found": "1 Ergebnis gefunden"
+            },
+            "moneyFormat": "€{{amount_with_comma_separator}}",
+            "moneyFormatWithCurrency": "€{{amount_with_comma_separator}} EUR",
+            "settings": {
+                "predictiveSearchEnabled": true,
+                "predictiveSearchShowPrice": false,
+                "predictiveSearchShowVendor": false
+            },
+            "stylesheet": "//cdn.shopify.com/s/files/1/0588/5748/8579/t/1/assets/theme.css?v=7967236522514208441",
+            "Images": {},
+            "Currency": {},
+            "Helpers": {},
+            "LibraryLoader": {},
+            "Header": {},
+            "MobileNav": {},
+            "Video": {},
+            "ProductVideo": {
+                "hosts": {
+                    "shopify": "shopify",
+                    "external": "external"
+                }
+            },
+            "ProductModel": {},
+            "FormStatus": {},
+            "SearchPage": {},
+            "SearchHeader": {},
+            "Search": {},
+            "SearchDrawer": {},
+            "customerTemplates": {},
+            "heros": {}
+        }
+
+        RSConfig = {
+            "selectors": {
+                "payment_button_selectors": "form[action$='/cart/add'] .shopify-payment-button",
+                "subscriptionLinkSelector": "div.grid.myaccount",
+                "atcButtonPlacement": "BEFORE",
+                "subscriptionLinkPlacement": "BEFORE"
+            },
+            "useUrlWithCustomerId": false,
+            "atcButtonSelector": ".btn.product-form__cart-submit",
+            "moneyFormat": "€{{amount_with_comma_separator}}",
+            "oneTimePurchaseText": "Einzelbestellung",
+            "shop": "koro-fresh.myshopify.com",
+            "deliveryText": "delivery",
+            "purchaseOptionsText": "Kaufoptionen",
+            "manageSubscriptionButtonText": "Abonnement bearbeiten",
+            "subscriptionOptionText": "Abonnieren und sparen",
+            "sellingPlanSelectTitle": "LIEFERTURNUS",
+            "subscriptionPriceDisplayText": "",
+            "tooltipTitle": "Details zum Abo",
+            "showTooltipOnClick": "false",
+            "tooltipDesctiption": "<strong>Volle Kontrolle über Dein Abo</strong><br/><br/>Du kannst Dein Abonnement jederzeit pausieren oder mit einer Frist von nur 1 Woche kostenfrei kündigen.\n",
+            "tooltipDescriptionOnPrepaidPlan": "<b>Prepaid Plan Details</b></br> Total price: {{totalPrice}} ( Price for every delivery: {{pricePerDelivery}})",
+            "tooltipDescriptionOnMultipleDiscount": "<b>Discount Details</b></br> Initial discount is {{discountOne}} and then {{discountTwo}}",
+            "tooltipDescriptionCustomization": "{{{defaultTooltipDescription}}} </br>  {{{prepaidDetails}}} </br> {{{discountDetails}}}",
+            "orderStatusManageSubscriptionTitle": "Abonnement",
+            "orderStatusManageSubscriptionDescription": "Bitte logge Dich mit Deiner E-Mail Adresse ein, um Dein Abo anzusehen und zu bearbeiten.",
+            "orderStatusManageSubscriptionButtonText": "Abonnement verwalten",
+            "subscriptionOptionSelectedByDefault": false,
+            "memberOnlySellingPlansJson": {},
+            "nonMemberOnlySellingPlansJson": {},
+            "widgetEnabled": true,
+            "showTooltip": true,
+            "showStaticTooltip": false,
+            "sellingPlanTitleText": "{{sellingPlanName}} ({{sellingPlanPrice}}/Lieferung)",
+            "oneTimePriceText": "{{price}}",
+            "selectedPayAsYouGoSellingPlanPriceText": "{{price}}",
+            "selectedPrepaidSellingPlanPriceText": "{{pricePerDelivery}}",
+            "selectedDiscountFormat": "{{selectedDiscountPercentage}} SPAREN",
+            "manageSubscriptionBtnFormat": "<a href='apps/subscriptions' class='appstle_manageSubBtn' ><button class='btn' style='padding: 2px 20px'>Abonnements bearbeiten</button><a><br><br>",
+            "manageSubscriptionUrl": "apps/subscriptions",
+            "css": {
+                "appstle_subscription_widget": {
+                    "margin-top": "",
+                    "margin-bottom": ""
+                },
+                "appstle_subscription_wrapper": {
+                    "border-width": "",
+                    "border-color": ""
+                },
+                "appstle_circle": {
+                    "border-color": ""
+                },
+                "appstle_dot": {
+                    "background-color": ""
+                },
+                "appstle_select": {
+                    "padding-top": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "padding-right": "",
+                    "border-width": "",
+                    "border-style": "",
+                    "border-color": "",
+                    "border-radius": ""
+                },
+                "tooltip_subscription_svg": {
+                    "fill": ""
+                },
+                "appstle_tooltip": {
+                    "color": "",
+                    "background-color": ""
+                },
+                "appstle_tooltip_border_top_color": {
+                    "border-top-color": ""
+                },
+                "appstle_subscription_final_price": {
+                    "color": ""
+                },
+                "appstle_widget_text_color": {
+                    "color": ""
+                },
+                "appstle_selected_background": {
+                    "background": "transparent"
+                },
+                "customCSS": "",
+                "customerPortalCss": ".appstle-customer-portal {\nfont-family: 'Poppins', sans-serif;\n}"
+            },
+            "priceSelector": ".price__regular .price-item.price-item--regular",
+            "badgeTop": "",
+            "pricePlacement": "BEFORE"
+        }
+    </script>
+
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<p class="browserupgrade">
+    You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your
+    browser</a> to improve
+    your experience.
+</p>
+<![endif]-->
+<div id="root"></div>
+</body>
+</html>

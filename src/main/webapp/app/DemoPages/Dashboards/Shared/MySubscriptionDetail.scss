@@ -1,0 +1,19 @@
+.cardHeaderItemsWrapper {
+  @media screen and (min-width: 800px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.cardHeaderButtons {
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+    & button {
+      margin-bottom: 10px;
+      margin-right: 0 !important;
+    }
+  }
+}

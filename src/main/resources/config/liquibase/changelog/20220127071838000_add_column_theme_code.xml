@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+
+    <changeSet id="20220127071838000" author="Hemant">
+        <addColumn tableName="theme_code">
+            <column name="cart_row_selector" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="cart_line_item_selector" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="cart_line_item_per_quantity_price_selector" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="cart_line_item_total_price_selector" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="cart_line_item_selling_plan_name_selector" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="cart_sub_total_selector" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="cart_line_item_price_selector" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+        </addColumn>
+    </changeSet>
+</databaseChangeLog>

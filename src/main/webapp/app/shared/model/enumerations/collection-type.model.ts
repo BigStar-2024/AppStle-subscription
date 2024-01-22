@@ -1,0 +1,5 @@
+export const enum CollectionType {
+  SMART_COLLECTION = 'SMART_COLLECTION',
+
+  CUSTOM_COLLECTION = 'CUSTOM_COLLECTION',
+}

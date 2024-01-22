@@ -1,0 +1,24 @@
+{
+  "name": "EmailTemplate",
+  "fields": [
+    {
+      "fieldName": "emailType",
+      "fieldType": "EmailSettingType",
+      "fieldValues": "SUBSCRIPTION_CREATED,TRANSACTION_FAILED,UPCOMING_ORDER,EXPIRING_CREDIT_CARD"
+    },
+    {
+      "fieldName": "html",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210301225828",
+  "entityTableName": "email_template",
+  "dto": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "applications": "*"
+}

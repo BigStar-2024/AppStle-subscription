@@ -1,0 +1,33 @@
+{
+  "name": "OnboardingInfo",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "uncompletedChecklistSteps",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "completedChecklistSteps",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "checklistCompleted",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20230612200338",
+  "entityTableName": "onboarding_info",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

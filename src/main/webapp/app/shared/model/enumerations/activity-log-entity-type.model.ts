@@ -1,0 +1,4 @@
+export const enum ActivityLogEntityType {
+  SUBSCRIPTION_BILLING_ATTEMPT,
+  SUBSCRIPTION_CONTRACT_DETAILS
+}

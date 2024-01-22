@@ -1,0 +1,114 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "showOnProductPage",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "showMultipleOnProductPage",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "actionButtonColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "actionButtonFontColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productTitleColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productPriceColor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "redirectTo",
+      "fieldType": "RedirectOption",
+      "fieldValues": "CHECKOUT,CART"
+    },
+    {
+      "fieldName": "showProductPrice",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "oneTimeDiscount",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "showDiscountInCart",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "selector",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "placement",
+      "fieldType": "PlacementPosition",
+      "fieldValues": "BEFORE,AFTER,FIRST_CHILD,LAST_CHILD"
+    },
+    {
+      "fieldName": "customCss",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "variant",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deliveryFrequency",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "perDelivery",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "discountPopupHeader",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "discountPopupAmount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "discountPopupCheckoutMessage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "discountPopupBuy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "discountPopupNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "showDiscountPopup",
+      "fieldType": "Boolean"
+    }
+  ],
+  "changelogDate": "20220728131224",
+  "dto": "mapstruct",
+  "searchEngine": false,
+  "service": "serviceImpl",
+  "entityTableName": "bundle_setting",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "pagination"
+}

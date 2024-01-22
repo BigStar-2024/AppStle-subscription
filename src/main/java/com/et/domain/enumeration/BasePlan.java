@@ -1,0 +1,8 @@
+package com.et.domain.enumeration;
+
+/**
+ * The BasePlan enumeration.
+ */
+public enum BasePlan {
+    FREE, FREE_ANNUAL, STARTER, STARTER_ANNUAL, STARTER_PAYG, BUSINESS, BUSINESS_ANNUAL, ENTERPRISE, ENTERPRISE_ANNUAL, ENTERPRISE_PLUS, ENTERPRISE_PLUS_ANNUAL
+}

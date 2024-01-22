@@ -1,0 +1,58 @@
+{
+  "name": "SubscriptionGroupPlan",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "groupName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subscriptionId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "productCount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "productVariantCount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "infoJson",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "productIds",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "variantIds",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "variantProductIds",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "changelogDate": "20210421162809",
+  "entityTableName": "subscription_group_plan",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

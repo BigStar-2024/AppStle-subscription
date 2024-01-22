@@ -1,0 +1,210 @@
+.table thead th {
+  border-width: 1px;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  font-size: 12px;
+  line-height: 1.3;
+  font-family: helvetica;
+  color: #000;
+}
+
+.message {
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-top: 1px;
+  margin-bottom: 5px;
+  display: inline-block;
+  max-width: 230px;
+
+  a {
+    color: #147efb;
+  }
+}
+
+.yours {
+  align-items: flex-start;
+}
+
+.yours .message {
+  margin-right: 25%;
+  background-color: rgb(229, 229, 234);
+  position: relative;
+}
+
+.message-date {
+  font-size: 10px;
+  text-align: center;
+  color: rgb(108, 108, 112);
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.yours .message.last:before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: -7px;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(229, 229, 234);
+  border-bottom-right-radius: 15px;
+}
+.yours .message.last:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: -10px;
+  width: 10px;
+  height: 20px;
+  background-color: white;
+  border-bottom-right-radius: 10px;
+}
+
+.iphone_contactWrapper {
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(242, 242, 247);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(216, 216, 220);
+}
+
+.back-arrow {
+  position: absolute;
+}
+
+.sender {
+  padding-top: 5px;
+  font-size: 12px;
+  line-height: 1;
+  color: #000;
+  margin-left: 12px;
+}
+
+.iphone_contact_content {
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.iphone_contact {
+  border-radius: 50%;
+  background-color: rgb(142, 142, 147);
+  width: 45px;
+  height: 45px;
+  margin: 0px auto;
+  overflow: hidden;
+
+  .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    height: 100%;
+    border: 3px solid rgb(142, 142, 147);
+    border-radius: 50%;
+
+    &_top {
+      width: 16px;
+      height: 18px;
+      background-color: white;
+      border-radius: 50%;
+      margin: auto 0;
+    }
+
+    &_bottom {
+      width: 30px;
+      height: 12px;
+      background-color: white;
+      justify-self: flex-end;
+      border-radius: 92%;
+    }
+  }
+}
+
+.form-group_margin-bottom {
+  margin-bottom: 2rem;
+}
+
+.automation_settings_help_text {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  color: #495661;
+}
+
+.navigation-pill {
+  width: 90px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #000;
+  margin: 0 auto;
+}
+
+.iphone-footer {
+  border-bottom-left-radius: 30px;
+  padding: 21px 0px 5px 0;
+  text-align: center;
+  background-color: #f2f2f7;
+  border-bottom-right-radius: 30px;
+}
+
+.iphone-send-message {
+  display: flex;
+  margin-top: auto;
+  padding: 5px 15px;
+  align-items: center;
+
+  &_input {
+    padding: 3px 3px 3px 10px;
+    border: 1px solid #e5e5ea;
+    border-radius: 20px;
+    font-size: 12px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #8e8e93;
+
+    .send-button {
+      border-radius: 50%;
+      height: 24px;
+      width: 24px;
+      background-color: rgb(52, 199, 89);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.insert_variable {
+  margin-bottom: 20px;
+  display: flex;
+  margin-top: 20px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    .form-control,
+    button {
+      margin-top: 10px;
+      margin-left: 0 !important;
+    }
+  }
+}
+
+.emojiWrapper {
+  position: absolute;
+  bottom: 4px;
+  right: 14px;
+  display: none;
+  @media screen and (min-width: 1025px) {
+    display: block;
+  }
+}

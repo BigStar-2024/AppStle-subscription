@@ -1,0 +1,46 @@
+{
+  "name": "VariantInfo",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "productId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "variantId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "productTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "variantTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sku",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "variantPrice",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20210604185209",
+  "entityTableName": "variant_info",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <style>
+      .custom-product-wrapper-grid .custom-recent-products {
+        border: 1px solid #F0F0F0;
+        padding: 0.5rem;
+        max-width: 750px;
+        width: 100%;
+        font-family: Roboto, Arial, sans-serif;
+        letter-spacing: 0;
+      }
+      .custom-product-wrapper-grid .custom-recent-products p {
+        font-size: 24px;
+        font-weight: 500;
+        margin: 0.75rem 0 .75rem 0.75rem;
+      }
+      .custom-product-wrapper-grid .custom-recent-products .recently-product {
+         display: flex;
+        flex-wrap: wrap;
+        grid-gap: 1em;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        margin-bottom: 1rem;
+      }
+      .custom-product-wrapper-grid
+        .custom-recent-products
+        .recently-product
+        .product-item {
+        max-width: 200px;
+        width: 100%;
+        margin-top: 1rem;
+      }
+      .custom-product-wrapper-grid
+        .custom-recent-products
+        .recently-product
+        .product-item
+        img {
+        object-fit: contain;
+        max-width: 150px;
+        width: 100%;
+      }
+      .custom-product-wrapper-grid
+        .custom-recent-products
+        .recently-product
+        .product-item
+        span {
+        max-width: 100px;
+        padding-bottom: 0.75rem;
+        font-size: 14px;
+      }
+      .custom-product-wrapper-grid
+        .custom-recent-products
+        .recently-product
+        .product-item
+        .svg-icon {
+        display: flex;
+        justify-content: end;
+        opacity: 0.5;
+      }
+      .custom-product-wrapper-grid
+        .custom-recent-products
+        .recently-product
+        .product-item
+        .custom-rating {
+        display: flex;
+        margin-top: 0.5rem;
+        align-items: center;
+      }
+      .custom-product-wrapper-grid
+        .custom-recent-products
+        .recently-product
+        .product-item
+        .custom-rating
+        .rating {
+        line-height: normal;
+        display: inline-block;
+        color: #fff;
+        padding: 2px 4px 2px 6px;
+        border-radius: 3px;
+        font-weight: 500;
+        font-size: 12px;
+        vertical-align: middle;
+        background-color: #388E3C;
+      }
+      .custom-product-wrapper-grid
+        .custom-recent-products
+        .recently-product
+        .product-item
+        .custom-rating
+        .rating
+        span {
+        margin: 0;
+        padding: 0;
+      }
+      .custom-product-wrapper-grid
+        .custom-recent-products
+        .recently-product
+        .product-item
+        .custom-rating
+        small {
+        padding-left: 8px;
+        font-weight: 500;
+        color: #878787;
+      }
+      .custom-product-wrapper-grid
+        .custom-recent-products
+        .recently-product
+        .product-item
+        .custom-price {
+        display: flex;
+        padding: 0 10px 0 0;
+        margin: 0.5rem 0 0 0;
+        align-items: center;
+      }
+      .custom-product-wrapper-grid
+        .custom-recent-products
+        .recently-product
+        .product-item
+        .custom-price
+        .price {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 600;
+        color: #212121;
+      }
+      .custom-product-wrapper-grid
+        .custom-recent-products
+        .recently-product
+        .product-item
+        .custom-price
+        .off-price {
+        text-decoration: line-through;
+        margin-left: 0.5rem;
+        font-size: 14px;
+        color: #878787;
+      }
+      .custom-product-wrapper-grid
+        .custom-recent-products
+        .recently-product
+        .product-item
+        .custom-price
+        .off-percentage {
+        color: #388E3C;
+        font-size: 12px;
+        letter-spacing: -0.2px;
+        font-weight: 600;
+        margin-left: 0.5rem;
+      }
+      .custom-product-wrapper-grid
+        .custom-recent-products
+        .recently-product
+        .product-item
+        .custom-price
+        small {
+        color: #008C00;
+        margin-left: 0.25rem;
+        margin-top: 2px;
+      }
+      .custom-product-wrapper-grid .custom-button {
+        max-width: 280px;
+        width: 100%;
+        padding: 0 16px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+      .custom-product-wrapper-grid .custom-button button {
+        background-color: #FF9F00;
+        border: 0;
+        font-size: 15px;
+        color: white;
+        width: 100%;
+        height: 58px;
+        border-radius: 0;
+      }
+      .custom-product-wrapper-grid .custom-calculation {
+        max-width: 750px;
+        width: 100%;
+        position: relative;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        border-top: 1px solid #F0F0F0;
+      }
+      .custom-product-wrapper-grid .custom-calculation .custom-total {
+        /* padding: 0 0.5rem;
+  max-width: 350px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex; */
+        flex: 2;
+        -webkit-flex: 2;
+        display: flex;
+        align-items: center;
+      }
+      .custom-product-wrapper-grid .custom-calculation .custom-total .item {
+        display: inline-block;
+        padding: 20px 0;
+      }
+      .custom-product-wrapper-grid
+        .custom-calculation
+        .custom-total
+        .item
+        .item-count {
+        padding: 0 20px;
+        font-size: 14px;
+        color: #878787;
+      }
+      .custom-product-wrapper-grid
+        .custom-calculation
+        .custom-total
+        .item
+        .item-price {
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+        padding: 0 20px;
+      }
+      .custom-product-wrapper-grid .custom-calculation .custom-total .item p {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container custom-product-wrapper-grid">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="custom-recent-products">
+            <p>Frequently bought together</p>
+            <div class="recently-product d-flex">
+              <div class="product-item">
+                <img src="./images/bottels.png" class="w-100" />
+                <span>Colorcase Front & Back Case for AirPods Pro</span>
+                <div class="custom-rating">
+                  <div class="rating">
+                    4.5
+                    <span>★</span>
+                  </div>
+                  <small>(900)</small>
+                </div>
+                <div class="custom-price">
+                  <div class="price">$17,999</div>
+                  <div class="off-price">$17,999</div>
+                  <div class="off-percentage">20% off</div>
+                </div>
+              </div>
+              <i
+                class="fa fa-plus"
+                aria-hidden="true"
+                style="color: #C2C2C2; margin-right: 12px; "
+              ></i>
+              <div class="product-item">
+                <div class="svg-icon">
+                  <FiPlusSquare size="{25}" />
+                </div>
+                <img src="./images/camera.jpg" class="w-100" />
+                <span>Colorcase Front & Back Case for AirPods Pro</span>
+                <div class="custom-rating">
+                  <div class="rating">
+                    4.5
+                    <span>★</span>
+                  </div>
+                  <small>(900)</small>
+                </div>
+                <div class="custom-price">
+                  <div class="price">$17,999</div>
+                  <div class="off-price">$17,999</div>
+                  <div class="off-percentage">20% off</div>
+                </div>
+              </div>
+              <i
+                class="fa fa-plus"
+                aria-hidden="true"
+                style="color: #C2C2C2; margin-right: 12px;"
+              ></i>
+              <div class="product-item">
+                <div class="svg-icon">
+                  <FiPlusSquare size="{25}" />
+                </div>
+                <img src="./images/frops.jpg" class="w-100" />
+                <span>Colorcase Front & Back Case for AirPods Pro</span>
+                <div class="custom-rating">
+                  <div class="rating">
+                    4.5
+                    <span>★</span>
+                  </div>
+                  <small>(900)</small>
+                </div>
+                <div class="custom-price">
+                  <div class="price">$17,999</div>
+                  <div class="off-price">$17,999</div>
+                  <div class="off-percentage">20% off</div>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="svg-icon">
+                  <FiPlusSquare size="{25}" />
+                </div>
+                <img src="./images/frops.jpg" class="w-100" />
+                <span>Colorcase Front & Back Case for AirPods Pro</span>
+                <div class="custom-rating">
+                  <div class="rating">
+                    4.5
+                    <span>★</span>
+                  </div>
+                  <small>(900)</small>
+                </div>
+                <div class="custom-price">
+                  <div class="price">$17,999</div>
+                  <div class="off-price">$17,999</div>
+                  <div class="off-percentage">20% off</div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-calculation">
+              <div class="custom-total">
+                <div class="item">
+                  <div class="item-count">
+                    <span>1 Item</span>
+                  </div>
+                  <div class="item-price">
+                    <span>₹22,500</span>
+                  </div>
+                </div>
+                <i
+                  class="fa fa-plus"
+                  aria-hidden="true"
+                  style="color: #878787; font-size: 12px"
+                ></i>
+                <div class="item">
+                  <div class="item-count">
+                    <span>2 Add-ons</span>
+                  </div>
+                  <div class="item-price">
+                    <span>₹564</span>
+                  </div>
+                </div>
+                <i
+                  class="fa fa-equals"
+                  aria-hidden="true"
+                  style="color: #878787; font-size: 12px"
+                ></i>
+                <div class="item">
+                  <div class="item-count">
+                    <span>Total</span>
+                  </div>
+                  <div class="item-price">
+                    <span>₹23,064</span>
+                  </div>
+                </div>
+              </div>
+              <div class="custom-button">
+                <button>ADD 3 ITEMS TO CART</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+{
+  "name": "ActivityUpdatesSettings",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "summaryReportEnabled",
+      "fieldType": "Boolean",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "summaryReportFrequency",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "summaryReportDeliverToEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "summaryReportTimePeriod",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "summaryReportLastSent",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "summaryReportProcessing",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20190613141208",
+  "entityTableName": "activity_updates_settings",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,403 @@
+{
+  "name": "CustomerPortalSettings",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "orderFrequencyText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "totalProductsText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "nextOrderText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "statusText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "cancelSubscriptionBtnText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "noSubscriptionMessage",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "subscriptionNoText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "updatePaymentMessage",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "cardLastFourDigitText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "cardExpiryText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "cardHolderNameText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "cardTypeText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "paymentMethodTypeText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "cancelAccordionTitle",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "paymentDetailAccordionTitle",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "upcomingOrderAccordionTitle",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "paymentInfoText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "updatePaymentBtnText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "nextOrderDateLbl",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "statusLbl",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "quantityLbl",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "amountLbl",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "orderNoLbl",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "editFrequencyBtnText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "cancelFreqBtnText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "updateFreqBtnText",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "pauseResumeSub",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "changeNextOrderDate",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "cancelSub",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "changeOrderFrequency",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createAdditionalOrder",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "manageSubscriptionButtonText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "editChangeOrderBtnText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cancelChangeOrderBtnText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updateChangeOrderBtnText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "editProductButtonText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deleteButtonText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updateButtonText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cancelButtonText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "addProductButtonText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "addProductLabelText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "activeBadgeText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "closeBadgeText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "skipOrderButtonText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productLabelText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "seeMoreDetailsText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hideDetailsText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productInSubscriptionText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "EditQuantityLabelText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subTotalLabelText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "paymentNotificationText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "editProductFlag",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "deleteProductFlag",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "showShipment",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "addAdditionalProduct",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "successText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cancelSubscriptionConfirmPrepaidText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cancelSubscriptionConfirmPayAsYouGoText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cancelSubscriptionPrepaidButtonText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cancelSubscriptionPayAsYouGoButtonText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "upcomingFulfillmentText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "creditCardText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "endingWithText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "weekText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dayText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "monthText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "yearText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "skipBadgeText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "queueBadgeText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customerPortalSettingJson",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "orderNoteFlag",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "orderNoteText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "useUrlWithCustomerId",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "productSelectionOption",
+      "fieldType": "ProductSelectionOption",
+      "fieldValues": "ALL_PRODUCTS, PRODUCTS_FROM_ALL_PLANS, PRODUCTS_FROM_CURRENT_PLAN"
+    },
+    {
+      "fieldName": "includeOutOfStockProduct",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "openBadgeText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updateShipmentBillingDate",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "discountCode",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "freezeOrderTillMinCycle",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "addOneTimeProduct",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "allowOrderNow",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "allowSplitContract",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableEditAttributes",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "minQtyToAllowDuringAddProduct",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "enableSwapProductVariant",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableRedirectMyAccountButton",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableAllowOnlyOneDiscountCode",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableRedirectToProductPage",
+      "fieldType": "Boolean"
+    }
+  ],
+  "changelogDate": "20210225061909",
+  "entityTableName": "customer_portal_settings",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "relationships": [],
+  "searchEngine": false,
+  "databaseType": "sql"
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="20230719095500" author="Ajay">
+        <addColumn tableName="social_connection">
+            <column name="access_token_1" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_token_2" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_token_3" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="access_token_4" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="public_access_token" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="public_access_token_1" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="public_access_token_2" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="public_access_token_3" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="public_access_token_4" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+        </addColumn>
+    </changeSet>
+</databaseChangeLog>

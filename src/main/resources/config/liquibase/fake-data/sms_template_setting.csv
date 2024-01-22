@@ -1,0 +1,11 @@
+id;shop;sms_setting_type;send_sms_disabled;sms_content;stop_reply_sms
+1;North Dakota;TRANSACTION_FAILED;true;../fake-data/blob/hipster.txt;true
+2;invoice;UPCOMING_ORDER;false;../fake-data/blob/hipster.txt;false
+3;withdrawal;TRANSACTION_FAILED;true;../fake-data/blob/hipster.txt;true
+4;Representative withdrawal;TRANSACTION_FAILED;true;../fake-data/blob/hipster.txt;false
+5;protocol;TRANSACTION_FAILED;true;../fake-data/blob/hipster.txt;false
+6;transmit Avon;EXPIRING_CREDIT_CARD;true;../fake-data/blob/hipster.txt;false
+7;Generic benchmark;UPCOMING_ORDER;false;../fake-data/blob/hipster.txt;false
+8;Avon open-source Investment Account;TRANSACTION_FAILED;true;../fake-data/blob/hipster.txt;false
+9;real-time benchmark EXE;SUBSCRIPTION_CREATED;false;../fake-data/blob/hipster.txt;true
+10;Identity engage;EXPIRING_CREDIT_CARD;false;../fake-data/blob/hipster.txt;true

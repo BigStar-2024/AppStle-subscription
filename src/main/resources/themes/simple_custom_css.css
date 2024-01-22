@@ -1,0 +1,68 @@
+#aikon-search-results-grid-mode li.aikon-product span.aikon-title {
+  display: block;
+  margin-bottom: 5px;
+  font-size: inherit;
+  line-height: 1.2;
+
+  font-family: Oswald;
+  font-weight: lighter;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #333333;
+  letter-spacing: 2px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  text-decoration: none;
+  position: relative;
+  transition: color 0.1s linear;
+
+  text-align: center;
+}
+
+.aikon-price {
+  color: #03a196 !important;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.1s linear;
+
+  display: block;
+  margin-bottom: 5px;
+  font-size: inherit;
+  line-height: 1.2;
+
+  text-align: center;
+
+  font-family: Roboto;
+  font-weight: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+div.aikon li.aikon-product .aikon-price-list .aikon-discounted-price {
+  color: #8c8b8b !important;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.1s linear;
+
+  margin-bottom: 5px;
+  font-size: inherit;
+  line-height: 1.2;
+
+  text-align: center;
+
+  font-family: Roboto;
+  font-weight: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: line-through;
+}
+
+div.aikon ul.aikon-product-filters-list li label > span {
+  color: #363636;
+  font-weight: inherit;
+}
+
+div.aikon ul.aikon-product-filters-list .aikon-filter-variant-count {
+  font-weight: inherit;
+}

@@ -1,0 +1,64 @@
+.swap-product-img {
+  max-width: 25% !important;
+  border-radius: 10px !important;
+}
+
+.appstle_loadersmall {
+  border: 2px solid #f3f3f3;
+  -webkit-animation: appstle_spin 1s linear infinite;
+  animation: appstle_spin 1s linear infinite;
+  border-top: 3px solid #555;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  margin: 0 auto;
+}
+
+.css-dvua67-singleValue > div {
+  justify-content: unset !important;
+  align-items: center;
+}
+
+.css-dvua67-singleValue > div > img {
+  border-radius: 5px;
+  max-width: 8% !important;
+  margin-right: 9px;
+}
+
+@-webkit-keyframes appstle_spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes appstle_spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 765px) {
+  .rotate-mobile {
+    transform: rotate(90deg);
+  }
+}
+
+.MuiCheckbox-colorSecondary.Mui-checked {
+  color: #545cd8 !important;
+}

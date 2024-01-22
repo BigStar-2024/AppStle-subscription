@@ -1,0 +1,23 @@
+{
+  "subscriptionApp": {
+    "searchResultsWidgetSettings": {
+      "home": {
+        "title": "Search Results Widget Settings",
+        "createLabel": "Create a new Search Results Widget Settings",
+        "createOrEditLabel": "Create or edit a Search Results Widget Settings",
+        "notFound": "No Search Results Widget Settings found"
+      },
+      "created": "Search Results Widget Settings is created.",
+      "updated": "Search Results Widget Settings is updated.",
+      "deleted": "Search Results Widget Settings is deleted.",
+      "delete": {
+        "question": "Are you sure you want to delete Search Results Widget Settings {{ id }}?"
+      },
+      "detail": {
+        "title": "Search Results Widget Settings"
+      },
+      "shop": "Shop",
+      "enableSearchResultsWidget": "Enable Search Results Widget"
+    }
+  }
+}

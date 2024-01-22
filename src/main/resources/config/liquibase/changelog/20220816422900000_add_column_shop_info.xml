@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+
+    <changeSet id="20220816422900000" author="Hemant">
+        <addColumn tableName="shop_info">
+            <column name="zapier_next_order_updated_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="zapier_order_frequency_updated_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="zapier_shipping_address_updated_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="zapier_subscription_canceled_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="zapier_subscription_paused_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="zapier_subscription_product_added_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="zapier_subscription_product_removed_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="zapier_subscription_activated_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="zapier_subscription_transaction_failed_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="zapier_subscription_upcoming_order_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="zapier_subscription_expiring_credit_card_url" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+        </addColumn>
+    </changeSet>
+</databaseChangeLog>

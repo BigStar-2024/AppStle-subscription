@@ -1,0 +1,77 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "shop",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "customCss",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "labels",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "seeMore",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "noDataFound",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "productDetails",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "editQuantity",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addToCart",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "productAddedSuccessfully",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "wentWrong",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "results",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "adding",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "subscribe",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "notAvailable",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20221027125007",
+    "dto": "mapstruct",
+    "searchEngine": false,
+    "service": "serviceImpl",
+    "entityTableName": "appstle_menu_labels",
+    "databaseType": "sql",
+    "readOnly": false,
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}

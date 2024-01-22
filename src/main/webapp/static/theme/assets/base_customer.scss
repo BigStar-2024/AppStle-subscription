@@ -1,0 +1,901 @@
+// BOOTSTRAP 4 VARIABLES
+.appstle-customer-portal {
+  @import 'components/bootstrap4/functions';
+  @import 'components/bootstrap4/variables';
+  @import 'components/bootstrap4/mixins';
+
+  // ArchitectUI Themes Variables
+
+  @import 'themes/layout-variables';
+
+  // BOOTSTRAP 4 IMPORTS
+
+  @import 'components/bootstrap4/root';
+  @import 'components/bootstrap4/reboot';
+  @import 'components/bootstrap4/type';
+  @import 'components/bootstrap4/images';
+  @import 'components/bootstrap4/code';
+  @import 'components/bootstrap4/grid';
+  @import 'components/bootstrap4/tables';
+  @import 'components/bootstrap4/forms';
+  @import 'components/bootstrap4/buttons';
+  @import 'components/bootstrap4/transitions';
+  @import 'components/bootstrap4/dropdown';
+  @import 'components/bootstrap4/button-group';
+  @import 'components/bootstrap4/input-group';
+  @import 'components/bootstrap4/custom-forms';
+  @import 'components/bootstrap4/nav';
+  @import 'components/bootstrap4/navbar';
+  @import 'components/bootstrap4/card';
+  @import 'components/bootstrap4/breadcrumb';
+  @import 'components/bootstrap4/pagination';
+  @import 'components/bootstrap4/badge';
+  @import 'components/bootstrap4/jumbotron';
+  @import 'components/bootstrap4/alert';
+  @import 'components/bootstrap4/progress';
+  @import 'components/bootstrap4/media';
+  @import 'components/bootstrap4/list-group';
+  @import 'components/bootstrap4/close';
+  @import 'components/bootstrap4/toasts';
+  @import 'components/bootstrap4/modal';
+  @import 'components/bootstrap4/tooltip';
+  @import 'components/bootstrap4/popover';
+  @import 'components/bootstrap4/carousel';
+  @import 'components/bootstrap4/spinners';
+  @import 'components/bootstrap4/utilities';
+  @import 'components/bootstrap4/print';
+  // LAYOUT
+
+  @import 'layout/layout';
+
+  // UTILS
+
+  @import 'utils/helpers';
+  @import 'utils/backgrounds';
+  @import 'utils/animate';
+  @import 'utils/comps-animations';
+
+  // ELEMENTS
+
+  @import 'elements/buttons';
+  @import 'elements/dropdown';
+  @import 'elements/navs';
+  @import 'elements/badges';
+  @import 'elements/cards';
+  @import 'elements/tabs';
+  @import 'elements/accordions';
+  @import 'elements/modals';
+  @import 'elements/loaders';
+  @import 'elements/progressbar';
+  @import 'elements/timeline';
+  @import 'elements/listgroup';
+  @import 'elements/forms';
+  @import 'elements/pagination';
+  @import 'elements/chat';
+  @import 'elements/forms-wizard';
+
+  // DASHBOARD BOXES
+
+  @import 'widgets/chart-boxes/chart-boxes';
+  @import 'widgets/content-boxes/content-boxes';
+  @import 'widgets/profile-boxes/profile-boxes';
+
+  // PAGES
+
+  @import 'pages/userpages';
+
+  // Applications
+
+  @import 'applications/applications-base';
+
+  // COMPONENTS
+
+  // Perfect Scrollbar
+  @import 'components/perfect-scrollbar/perfect-scrollbar';
+
+  // RC Tabs
+  @import 'components/rc-tabs/rc-tabs';
+
+  // Loading Buttons
+  @import 'components/loading-buttons/loading-buttons';
+
+  // Hamburger Button
+  @import 'components/hamburgers/hamburgers';
+
+  // Drawer
+  @import 'components/drawer/drawer';
+
+  // Notifications
+  @import 'components/notifications/sweetalerts';
+  @import 'components/notifications/toastify';
+
+  // Modals
+  @import 'components/modals/rodal';
+
+  // Progress Bar
+  @import 'components/progress-bar/progress-bar';
+
+  // Slick Carousel
+  @import 'components/slick-carousel/slick/slick';
+
+  // Block loading
+  @import 'components/block-loading/block-loading';
+
+  // Popovers & Tooltips
+  @import 'components/popovers-tooltips/popovers-tooltips';
+
+  // Sticky Elements
+  @import 'components/sticky-elements/sticky-elements';
+
+  // Calendar
+  @import 'components/calendar/calendar';
+
+  // Splitters
+  @import 'components/splitters/splitters';
+
+  // Tree View
+  @import 'components/tree-view/tree-view';
+
+  // Tables
+  @import 'components/tables/tables';
+
+  // Icons
+  @import 'components/icons/linearicons';
+  @import 'components/icons/p7icons';
+
+  // FORMS
+
+  @import 'components/forms/datepicker/datepicker';
+  @import 'components/forms/rangeslider/rangeslider';
+  @import 'components/forms/multiselect/multiselect';
+  @import 'components/forms/wysiwyg/wysiwyg';
+  @import 'components/forms/toggle-switch/switch';
+  @import 'components/forms/dropzone/dropzone';
+  @import 'components/forms/typeahead/typeahead';
+
+  // REACT WIDGETS
+
+  @import 'components/react-widgets/scss/react-widgets';
+
+  // DEMO
+
+  @import 'demo-ui/demo';
+
+  // Responsive
+
+  @import 'layout/responsive/responsive-base';
+
+  // @import url('https://fonts.googleapis.com/css?family=Rubik');
+
+  .card {
+    opacity: 1 !important;
+  }
+
+  //import other class
+  .appstle_subscription_contract_detail_toggle_wrapper {
+    cursor: pointer;
+  }
+
+  .appstle_subscription_contract_detail_toggle_wrapper.active .appstle_contract_see_more {
+    display: none;
+  }
+
+  .appstle_subscription_contract_detail_toggle_wrapper.active .appstle_contract_hide_more {
+    display: block !important;
+  }
+
+  .appstle_subscription_contract_detail_toggle_wrapper.active .lnr-chevron-right {
+    transform: rotate(90deg);
+  }
+
+  .accordion div {
+    opacity: 0;
+  }
+
+  /* .accordion.active div {
+      opacity: 1;
+  } */
+
+  .lnr-chevron-right {
+    transition: all 0.5s;
+  }
+
+  .accordion.active .lnr-chevron-right {
+    transform: rotate(90deg);
+    color: #444 !important;
+  }
+
+  .panel {
+    /* padding: 0 18px; */
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .appstle_myProduct {
+    visibility: hidden;
+  }
+
+  .appstle_preloader {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 70px;
+    left: calc(50% - 15px);
+    z-index: 98765;
+  }
+
+  .appstle_statusBadge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+  }
+
+  .appstle_status_ACTIVE {
+    padding: 5px 15px;
+    color: #fff;
+    background-color: #28a745;
+  }
+
+  .appstle_status_CANCELLED {
+    color: #fff;
+    background-color: #6c757d;
+  }
+
+  .appstle_status_QUEUED {
+    color: #fff;
+    background-color: #28a745;
+  }
+
+  .appstle_status_SKIPPED {
+    color: #fff;
+    background-color: #6c757d;
+  }
+
+  .appstle_sub-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 8px 0px !important;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .appstle_sub-title {
+      font-size: 13px;
+    }
+  }
+
+  .appstle_orderDate_CANCELLED {
+    display: none;
+  }
+
+  .appstle_upcomingAcc_CANCELLED {
+    display: none;
+  }
+
+  .appstle_cancelbtn_CANCELLED {
+    display: none;
+  }
+
+  .appstle_orderFrequency_CANCELLED {
+    display: none;
+  }
+
+  .hideSkipbtn_SKIPPED {
+    display: none;
+  }
+
+  .appstle_skipShipmentFlag_false,
+  .appstle_pauseResumeSubscriptionFlag_false,
+  .appstle_changeNextOrderDateFlag_false,
+  .appstle_changeOrderFrequencyFlag_false,
+  .appstle_createAdditionalOrderFlag_false,
+  .appstle_cancelSubscriptionFlag_false {
+    display: none !important;
+  }
+
+  .appstle_order-detail_cancel-button,
+  .appstle_order-detail_update-button,
+  .appstle_cancelButton,
+  .appstle_deleteButton,
+  .appstle_updateButton,
+  .appstle_editButton,
+  .appstle_skipOrderButton,
+  .appstle_updatePaymentButton,
+  .appstle_cencelSubscription,
+  .appstle_show_add_products_button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #242222;
+    font-size: 12px;
+    border: 1px solid #242222;
+    margin: 5px 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .appstle_order-detail_cancel-button,
+    .appstle_order-detail_update-button,
+    .appstle_cancelButton,
+    .appstle_deleteButton,
+    .appstle_updateButton,
+    .appstle_editButton,
+    .appstle_skipOrderButton,
+    .appstle_updatePaymentButton,
+    .appstle_cencelSubscription,
+    .appstle_show_add_products_button,
+    .appstle_hide_add_products_button,
+    .appstle_product-search-button {
+      font-size: 10px;
+    }
+  }
+
+  .appstle_buttonGroup {
+    display: flex;
+    margin-top: 15px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .appstle_form_margin {
+    margin: 8px;
+  }
+  .appstle_ml-10 {
+    margin-left: 10px;
+  }
+  .appstle_deleteButton {
+    background-color: white;
+    border: 1px solid #eb3023;
+    color: #eb3023;
+  }
+
+  .appstle_order-detail_cancel-button,
+  .appstle_cancelButton {
+    background-color: white;
+    border: 1px solid #242222;
+    color: #242222;
+  }
+  .appstle_skipOrderButton:hover,
+  .appstle_skipOrderButton {
+    background-color: #3ac47d !important;
+    border: 1px solid #3ac47d !important;
+    color: #fff !important;
+  }
+
+  .appstle_updatePaymentButton:hover,
+  .appstle_updatePaymentButton {
+    background-color: #3ac47d !important;
+    border: 1px solid #3ac47d !important;
+    color: #fff !important;
+  }
+
+  .appstle_show_add_products_button,
+  .appstle_show_add_products_button:hover {
+    background-color: #545cd8 !important;
+    border: 1px solid #545cd8 !important;
+  }
+
+  .appstle_cencelSubscription:hover,
+  .appstle_cencelSubscription {
+    background-color: #d92550 !important;
+    border: 1px solid #d92550 !important;
+  }
+
+  .appstle_form_group {
+    margin-top: 15px;
+  }
+
+  .appstle_form_group select,
+  .appstle_form_group input {
+    width: 100%;
+  }
+
+  .appstle_product_search_wrapper {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .appstle_product-search-select {
+    flex-grow: 1;
+  }
+
+  .appstle_delete_model_nobtn {
+    padding: 5px 20px;
+    background: #0d4f0d;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .appstle_delete_model_yesbtn {
+    padding: 5px 20px;
+    background: #a13333;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .appstle_order-detail-edit-button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #242222;
+  }
+
+  .appstle_hide_add_products_button,
+  .appstle_hide_add_products_button:hover,
+  .appstle_product-search-button {
+    padding: 0 12px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #545cd8;
+    font-size: 12px;
+  }
+
+  .appstle_hide_add_products_button:active,
+  .appstle_hide_add_products_button:focus,
+  .appstle_hide_add_products_button,
+  .appstle_hide_add_products_button:hover {
+    background-color: #d92550 !important;
+  }
+
+  .select2-container,
+  .select2-container--default {
+    flex-grow: 1;
+  }
+
+  .appstle_input_error {
+    color: #eb3023;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+
+  .appstle_order_detail_header {
+    padding: 20px;
+    background-color: #eee;
+    margin-top: 34px;
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .appstle_order_detail_row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    align-items: center;
+  }
+
+  .appstle_loader--big {
+    border: 5px solid #f3f3f3;
+    -webkit-animation: appstle_spin 1s linear infinite;
+    animation: appstle_spin 1s linear infinite;
+    border-top: 5px solid #555;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+  }
+
+  /* The Modal (background) */
+  .appstle_delete_modal {
+    text-align: center;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .appstle_delete_modal-content {
+    text-align: center;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 27rem;
+    border-radius: 0.5rem;
+  }
+
+  /* The Close Button */
+  .appstle_model_close {
+    margin: 1px;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+  }
+
+  .appstle_model_close:hover,
+  .appstle_model_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  @-webkit-keyframes appstle_spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes appstle_spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .appstle_product_wrapper {
+      flex-direction: column;
+    }
+  }
+
+  .appstle_product_wrapper {
+    display: flex;
+    margin-top: 16px;
+    /* background-color: #eeeeee; */
+    box-shadow: 0 0px 4px 0 rgb(0 0 0 / 15%);
+    padding: 15px;
+    border-radius: 5px;
+    align-items: center;
+    border: 2px solid #ddd;
+  }
+
+  .appstle_SKIPPED_status,
+  .appstle_CANCELLED_status,
+  .appstle_QUEUED_status,
+  .appstle_ACTIVE_status {
+    background-color: #3ac47d;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+    margin-left: 5px;
+    line-height: 1;
+  }
+
+  .appstle_QUEUED_status {
+    background-color: #f7b924 !important;
+  }
+
+  .appstle_SKIPPED_status,
+  .appstle_CANCELLED_status {
+    background-color: #d92550 !important;
+  }
+
+  .appstle_edit_wrapper {
+    margin-top: 20px;
+  }
+
+  .appstle_edit_wrapper form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .appstle_edit_wrapper .appstle_form_group {
+    width: calc(50% - 10px);
+  }
+
+  .appstle_edit_total {
+    margin-right: 30px;
+    font-size: 21px;
+    letter-spacing: 0.5px;
+  }
+
+  .appstle_subscription_image_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .appstle_subscription_image_wrapper img {
+    flex-basis: 46%;
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .appstle_subscription_detail {
+    padding-right: 30px;
+    min-height: 200px;
+  }
+
+  .grid {
+  }
+
+  .appstle_subscription_image_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .appstle_subscription_image_wrapper img {
+    flex-basis: 46%;
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .appstle_subscription_detail {
+    padding-right: 30px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid {
+  }
+
+  .appstle_order_detail_row {
+    margin: 0 8px 0px 8px;
+    padding: 0;
+    justify-content: flex-start;
+    min-height: 30px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .appstle_order_detail_row {
+      min-height: 15px;
+    }
+  }
+
+  .appstle_font_size {
+    font-size: 13px !important;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .appstle_font_size {
+      font-size: 10px !important;
+    }
+  }
+
+  span {
+  }
+
+  .appstle_next_oder_date_wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .appstle_ml-auto {
+    margin-left: auto;
+  }
+
+  .appstle_ml-auto {
+    margin-left: auto;
+  }
+
+  .appstle_mb-0 {
+    margin-bottom: 0 !important;
+  }
+
+  .appstle_order-detail-edit-button {
+    background-color: transparent;
+    color: black;
+  }
+
+  .appstle_subscription_contract_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px !important;
+    color: rgb(0, 0, 0);
+  }
+
+  @media screen and (max-width: 767px) {
+    .appstle_subscription_payment_wrapper {
+      flex-direction: column;
+    }
+  }
+
+  .appstle_subscription_payment_wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 750px) {
+    .appstle_subscription_contract_content_wrapper_mobile {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .appstle_subscription_flex_override {
+    display: flex;
+  }
+
+  @media screen and (max-width: 750px) {
+    .appstle_subscription_flex_override {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      padding: 0 18px;
+    }
+  }
+  .appstle_loadersmall {
+    border: 2px solid #f3f3f3;
+    -webkit-animation: appstle_spin 1s linear infinite;
+    animation: appstle_spin 1s linear infinite;
+    border-top: 3px solid #555;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    margin: 0 auto;
+  }
+
+  @-webkit-keyframes appstle_spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes appstle_spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  .badge {
+    padding: 2px 5px;
+    min-width: 8px;
+    font-weight: 600;
+  }
+}
+
+.ladda-button[data-loading] {
+  .ladda-spinner {
+    position: relative;
+    left: calc(50% - 16px);
+    top: -16px;
+  }
+}
+
+.appstle_badge {
+  background-color: #3ac47d;
+  color: white;
+  padding: 4px 10px 3px;
+  border-radius: 4px;
+  font-size: 10px;
+  letter-spacing: 0.3px;
+  margin-left: 5px;
+  line-height: 1;
+  &.appstle_ACTIVE {
+    background-color: #3ac47d;
+  }
+  &.appstle_QUEUED,
+  &.appstle_PAUSED {
+    background-color: #f7b924;
+  }
+  &.appstle_CANCELLED,
+  &.appstle_SKIPPED {
+    background-color: #d92550 !important;
+  }
+  &.appstle_PRICE {
+  }
+}
+.appstle-text-center {
+  text-align: center;
+}
+.appstle-inline {
+  display: inline-block !important;
+}
+
+.appstle-customer-portal .card {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.appstle-customer-portal .card-header {
+  border-bottom: none !important;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.appstle-customer-portal {
+  color: #495661;
+  @media screen and (max-width: 700px) {
+    font-size: 10px;
+  }
+  font-size: 13px;
+}
+
+.appstle-customer-portal p {
+  margin-bottom: 0.8rem;
+}
+
+.appstle-customer-portal address {
+  line-height: 1.5;
+}
+
+.appstle-customer-portal .card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.appstle-customer-portal .accordion-wrapper {
+  border: none;
+}
+
+.appstle-customer-portal .btn.btn-wide {
+  padding: 0.3rem 1.5rem;
+}
+
+// body {
+//   font-family: 'Rubik', sans-serif;
+//   font-weight: 300;
+//   letter-spacing: 0.025em;
+//   line-height: 1.8;
+// }

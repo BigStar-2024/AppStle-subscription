@@ -1,0 +1,488 @@
+{
+  "name": "ShopInfo",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "apiKey",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "shopTimeZone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shopifyPlanDisplayName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shopifyPlanName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "searchResultPageId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "publicDomain",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "moneyFormat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currency",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "onboardingSeen",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "devEnabled",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "firstTimeOrderTag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "recurringOrderTag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customerActiveSubscriptionTag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customerInActiveSubscriptionTag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customerPausedSubscriptionTag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailCustomDomain",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "loyaltyLionToken",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "loyaltyLionSecret",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "loyaltyLionPoints",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "loyaltyLionMultiplier",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "loyaltyLionEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "growaveClientId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "growaveSecret",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "growavePoints",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "growaveMultiplier",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "growaveEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "yotpoApiKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "yotpoGuid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "yotpoPoints",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "yotpoMultiplier",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "yotpoEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "klaviyoPublicApiKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "klaviyoApiKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "omniSendApiKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "manageSubscriptionsUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zapierSubscriptionCreatedUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zapierSubscriptionUpdatedUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zapierRecurringOrderPlacedUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zapierCustomerSubscriptionsUpdatedUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zapierNextOrderUpdatedUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zapierOrderFrequencyUpdatedUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zapierShippingAddressUpdatedUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zapierSubscriptionCanceledUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zapierSubscriptionPausedUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zapierSubscriptionProductAddedUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zapierSubscriptionProductRemovedUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zapierSubscriptionActivatedUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zapierSubscriptionTransactionFailedUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zapierSubscriptionUpcomingOrderUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zapierSubscriptionExpiringCreditCardUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "advancedCustomerPortal",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "transferOrderNotesToSubscription",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "transferOrderNoteAttributesToSubscription",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "transferOrderLineItemAttributesToSubscription",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "customerPortalMode",
+      "fieldType": "CustomerPortalMode",
+      "fieldValues": "IFRAME,NO_IFRAME,V3,V3_IFRAME"
+    },
+    {
+      "fieldName": "recurringOrderTime",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "recurringOrderHour",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "recurringOrderMinute",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "zoneOffsetHours",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "zoneOffsetMinutes",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "localOrderHour",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "localOrderMinute",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "stopImportProcess",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "disableShippingPricingAutoCalculation",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "allowV1FormCustomerPortal",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableChangeFromNextBillingDate",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableInventoryCheck",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "whiteListed",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableAddJSInterceptor",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "reBuyEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "priceSyncEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "discountSyncEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "skuSyncEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "klaviyoListId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "scriptVersion",
+      "fieldType": "ScriptVersion",
+      "fieldValues": "V1,V2"
+    },
+    {
+      "fieldName": "buildBoxVersion",
+      "fieldType": "BuildBoxVersion",
+      "fieldValues": "V1,V2,V2_IFRAME"
+    },
+    {
+      "fieldName": "nextOrderDateAttributeKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nextOrderDateAttributeFormat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shopifyWebhookUrl",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "verifiedEmailCustomDomain",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "localOrderDayOfWeek",
+      "fieldType": "OrderDayOfWeek",
+      "fieldValues": "MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY"
+    },
+    {
+      "fieldName": "storeFrontAccessToken",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enableWebhook",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "onBoardingPaymentSeen",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "changeNextOrderDateOnBillingAttempt",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "keepLineAttributes",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "passwordEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "countryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "countryName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "overwriteSetting",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "mailchimpApiKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "carryForwardLastOrderNote",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "allowLocalDelivery",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "allowLocalPickup",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "useShopifyAssets",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "zapietEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "mechanicEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enablePauseContractsAfterMaximumOrders",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "appstleLoyaltyApiKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eberLoyaltyApiKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eberLoyaltyPoints",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "eberLoyaltyMultiplier",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "shopifyFlowEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "overwriteAnchorDay",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "enableChangeBillingPlan",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "lockBillingPlanComments",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eberLoyaltyEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "upcomingEmailBufferDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "inventoryLocations",
+      "fieldType": "String",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "shipperHqApiKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shipperHqAuthCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shipperHqAccessToken",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ianaTimeZone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shipInsureEnabled",
+      "fieldType": "Boolean"
+    }
+  ],
+  "changelogDate": "20200123061909",
+  "entityTableName": "shop_info",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "relationships": [],
+  "searchEngine": false,
+  "databaseType": "sql"
+}

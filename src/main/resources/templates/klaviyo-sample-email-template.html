@@ -1,0 +1,343 @@
+<html lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      {{ event.subject }}
+    </title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <style type="text/css">
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+      }
+    </style>
+  </head>
+  <body style="margin: 0; padding: 0; font-family: Lato, Helvetica,Arial,sans-serif; color: #495661; color: {{ event.text_color }};">
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+      <tbody style="width: 100%">
+        <tr>
+          <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; max-width: 600px" width="98%">
+              <tbody>
+                <tr>
+                  <td align="center" bgcolor="">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table align="center" border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <td height="30" style="height: 30px"></td>
+                                </tr>
+                                {% if event|lookup:'logo_url' %}
+                                <tr>
+                                  <td align="center" valign="top">
+                                    <img src="{{ event.logo_url }}" style="
+                                        display: block;
+                                        border: none;
+                                        width: {{ event.logoWidth }}px;
+                                        height: {{ event.logoHeight }}px;"
+                                        width="{{ event.logoWidth }}"
+                                        height="{{ event.logoHeight }}"/>
+                                  </td>
+                                </tr>
+                                {% endif %}
+                                {% if event|lookup:'text_image_url' %}
+                                <tr>
+                                  <td height="35" style="height: 35px">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center">
+                                    <img src="{{ event.text_image_url }}" width="150"/>
+                                  </td>
+                                </tr>
+                                {% endif %}
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor="#ffffff">
+                    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100%">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td class="em_height" height="35" style="height: 35px">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="font-size: 16px; font-family: Lato, Helvetica, Arial, sans-serif; line-height: 1.5; letter-spacing: 0.3px; font-weight: bold; color: #202E3A; color: {{ event.header_text_color }};">
+                                    {{ event.heading }}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td height="15" style="height: 15px"></td>
+                                </tr>
+                                <tr>
+                                  <td style="font-size: 14px; font-family: Lato, Helvetica, Arial, sans-serif; line-height: 1.5; letter-spacing: 0.3px; color: #495661; color: {{ event.text_color }};">
+                                    {% for body_line in event.bodyLines %}
+                                      {{ body_line | safe }}
+                                        <br/>
+                                    {% endfor %}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td height="25" style="height: 25px;"></td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td bgcolor="{{ event.manage_subscription_button_color }}" style="border-radius: 5px;">
+                                            <a href="{{ event.manageSubscriptionLink }}" style="padding: 12px 24px;border: 1px solid #20AE96;border-radius: 5px;font-family: Lato, Helvetica, Arial, sans-serif;font-size: 14px;color: #ffffff;text-decoration: none;font-weight:bold;display: inline-block; color: {{ event.manage_subscription_button_text_color }}; border-color: {{ event.manage_subscription_button_color }};" target="_blank">{{ event.manage_subscription_button_text }}</a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="em_height" height="35" style="height: 35px"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td bgcolor="#F5F7FA" style="background-color: #F5F7FA; border-radius: 20px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td colspan="7" height="20" style="height: 20px"></td>
+                                        </tr>
+                                        {% for orderItem in event.orderItems %}
+                                        <tr style="">
+                                          <td style="width: 20px" width="20"></td>
+                                          <td style="width: 70px" valign="top" width="70">
+                                            <img alt="{{ orderItem.title }}" height="70" src="{{ orderItem.imageUrl }}" width="70"/>
+                                          </td>
+                                          <td style="20px;" width="20"></td>
+                                          <td>
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="font-size: 14px; font-family: Lato, Helvetica, Arial, sans-serif; line-height: 1.5; letter-spacing: 0.3px; color: #495661; color: {{ event.text_color }};">
+                                                    {{ orderItem.title }}
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td height="10" style="10px"></td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="font-size: 14px; font-family: Lato, Helvetica, Arial, sans-serif; line-height: 1.5; letter-spacing: 0.3px; color: #495661; color: {{ event.text_color }};">
+                                                    Quantity: {{ orderItem.quantity }}
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                          <td style="20px" width="20"></td>
+                                          <td style="text-align: right; font-size: 14px; font-family:Helvetica,  Arial, sans-serif; line-height: 1.5; letter-spacing: 0.3px; color: #495661; color: {{ event.text_color }};" valign="top">
+                                            {{ orderItem.price }}
+                                          </td>
+                                          <td style="width: 20px" width="20"></td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="7" height="20" style="height: 20px"></td>
+                                        </tr>
+                                        {% endfor %}
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="em_height" height="35" style="height: 35px"></td>
+                </tr>
+                <tr>
+                  <td style="">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="left" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td style="font-size: 16px; font-family: Lato, Helvetica, Helvetica, Arial, sans-serif; line-height: 1.5; letter-spacing: 0.3px; font-weight: bold; color: #202E3A; color: {{ event.header_text_color }};">
+                                            <b>{{ event.shipping_address_text }}</b>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="5" style="height: 5"></td>
+                                        </tr>
+                                        <tr>
+                                          <td style="font-size: 14px; font-family: Lato, Helvetica, Arial, sans-serif; line-height: 1.5; letter-spacing: 0.3px; color: #495661; color: {{ event.text_color }};">
+                                              {% for shipping_line in event.shippingLines %}
+                                                  {{ shipping_line }}
+                                                  <br/>
+                                              {% endfor %}
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td style="width: 35px" width="35"></td>
+                                  <td align="right" valign="top">
+                                    <table align="right" border="0" cellpadding="0" cellspacing="0" valign="top" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="right" style="font-size: 16px; font-family: Lato, Helvetica, Helvetica, Arial, sans-serif; line-height: 1.5; letter-spacing: 0.3px; font-weight: bold; color: #202E3A; color: {{ event.header_text_color }};">
+                                            <b>{{ event.billing_address_text }}</b>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="5" style="height: 5px"></td>
+                                        </tr>
+                                        <tr>
+                                          <td align="right" style="font-size: 14px; font-family: Lato, Helvetica, Arial, sans-serif; line-height: 1.5; letter-spacing: 0.3px; color: #495661; color: {{ event.text_color }};" valign="top">
+                                              {% for billing_line in event.billingLines %}
+                                                  {{ billing_line }}
+                                                  <br/>
+                                              {% endfor %}
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td height="20"></td>
+                                </tr>
+                                <tr>
+                                  <td align="left" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td style="font-size: 16px; font-family: Lato, Helvetica, Arial, sans-serif; line-height: 1.5; letter-spacing: 0.3px; font-weight: bold; color: #202E3A; color: {{ event.header_text_color }};">
+                                            <b>{{ event.next_orderdate_text }}</b>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="5" style="height: 5px"></td>
+                                        </tr>
+                                        <tr>
+                                          <td style="font-size: 14px; font-family: Lato, Helvetica, Arial, sans-serif; line-height: 1.5; letter-spacing: 0.3px; color: #495661; color: {{ event.text_color }};">
+                                            {{ event.nextOrderDate }}
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td style="width: 35px" width="36"></td>
+                                  <td align="right" valign="top">
+                                    <table align="right" border="0" cellpadding="0" cellspacing="0" valign="top" width="100%">
+                                      <tbody>
+                                        <tr>
+                                          <td align="right" style="font-size: 16px; font-family: Lato, Helvetica, Arial, sans-serif; line-height: 1.5; letter-spacing: 0.3px; font-weight: bold; color: #202E3A; color: {{ event.header_text_color }};">
+                                            <b>{{ event.payment_method_text }}</b>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="5" style="height: 5px"></td>
+                                        </tr>
+                                        <tr>
+                                          <td align="right" valign="top">
+                                            <table>
+                                              <tbody border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                  <td>
+                                                    <img src="{{ event.cardLogo }}" width="30"/>
+                                                  </td>
+                                                  <td style="width: 5px" width="5"></td>
+                                                  <td style="font-size: 14px; font-family: Lato, Helvetica, Arial, sans-serif; line-height: 1.5; letter-spacing: 0.3px; color: #495661; color: {{ event.text_color }};">
+                                                    {{ event.maskedCardNumber }}
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="em_height" height="35" style="height: 35px"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="100%">
+                      <tbody>
+                        <tr>
+                          <td style="">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <td bgcolor="#cccccc" height="1" style="font-size: 1px; line-height: 1px"></td>
+                                </tr>
+                                <tr>
+                                  <td height="15" style="height: 15px"></td>
+                                </tr>
+                                <tr>
+                                  <td style="font-size: 14px; font-family: Lato, Helvetica, Arial, sans-serif; line-height: 1.5; letter-spacing: 0.3px; color: #495661; color: {{ event.footer_text_color }};">
+                                    {{ event.footer }}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td height="15" style="height: 15px"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+.page-width.page-width--narrow {
+  min-width: 100% !important;
+}
+
+.appstle_preloader {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 70px;
+  left: calc(50% - 15px);
+  z-index: 98765;
+}
+
+.appstle_loader--big {
+  border: 5px solid #f3f3f3;
+  -webkit-animation: appstle_spin 1s linear infinite;
+  animation: appstle_spin 1s linear infinite;
+  border-top: 5px solid #555;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+@keyframes appstle_spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.appstle-menu-header-item-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.appstle-menu-header-item-container::-webkit-scrollbar {
+  display: none;
+}

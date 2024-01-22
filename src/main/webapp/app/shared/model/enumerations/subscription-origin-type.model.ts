@@ -1,0 +1,9 @@
+export const enum SubscriptionOriginType {
+  STORE_FRONT = 'STORE_FRONT',
+
+  IMPORTED = 'IMPORTED',
+
+  SPLIT_ATTEMPT_BILLING = 'SPLIT_ATTEMPT_BILLING',
+
+  SPLIT_CONTRACT = 'SPLIT_CONTRACT'
+}

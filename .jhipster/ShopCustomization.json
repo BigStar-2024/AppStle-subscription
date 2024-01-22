@@ -1,0 +1,27 @@
+{
+  "name": "ShopCustomization",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "labelId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "value",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20230328061910",
+  "entityTableName": "shop_customization",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

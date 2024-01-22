@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+    commands:
+      - cp ./settings.xml /root/.m2/settings.xml
+      - echo Entering install phase...
+      - echo Nothing to do in the install phase...
+  pre_build:
+    commands:
+      - echo Entering pre_build phase...
+  build:
+    commands:
+      - echo Entering build phase...
+      - echo Build started on `date`
+      - mvn -Pprod,no-liquibase,swagger clean package -Dmaven.test.skip=true
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - cp target/subscription-0.0.1-SNAPSHOT.jar ./subscription-0.0.1-SNAPSHOT.jar
+artifacts:
+  files:
+    - subscription-0.0.1-SNAPSHOT.jar
+    - .ebextensions/**/*
+    - .platform/**/*

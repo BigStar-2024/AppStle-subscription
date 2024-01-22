@@ -1,0 +1,60 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "enable_cart_widget_settings",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "cartWidgetSettingApproach",
+      "fieldType": "cartWidgetSettingApproach",
+      "fieldValues": "V1,V2,V3"
+    },
+    {
+      "fieldName": "cartRowSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartRowPlacement",
+      "fieldType": "PlacementPosition",
+      "fieldValues": "BEFORE,AFTER,FIRST_CHILD,LAST_CHILD"
+    },
+    {
+      "fieldName": "cartLineItemSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cartLineItemPlacement",
+      "fieldType": "PlacementPosition",
+      "fieldValues": "BEFORE,AFTER,FIRST_CHILD,LAST_CHILD"
+    },
+    {
+      "fieldName": "cartFormSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "appstelCustomeSelector",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "changelogDate": "2021091623210000",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "serviceClass",
+  "entityTableName": "cart_widget_settings",
+  "databaseType": "sql",
+  "jpaMetamodelFiltering": false,
+  "pagination": "no"
+}

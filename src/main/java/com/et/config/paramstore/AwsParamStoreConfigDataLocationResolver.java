@@ -1,0 +1,133 @@
+package com.et.config.paramstore;
+
+import com.amazonaws.auth.AWSCredentials;
+import com.amazonaws.auth.BasicAWSCredentials;
+import com.amazonaws.services.simplesystemsmanagement.AWSSimpleSystemsManagement;
+import io.awspring.cloud.paramstore.AwsParamStoreProperties;
+import io.awspring.cloud.paramstore.AwsParamStorePropertySources;
+import org.springframework.boot.BootstrapContext;
+import org.springframework.boot.BootstrapRegistry;
+import org.springframework.boot.ConfigurableBootstrapContext;
+import org.springframework.boot.context.config.*;
+import org.springframework.boot.context.properties.bind.Bindable;
+import org.springframework.boot.context.properties.bind.Binder;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.util.StringUtils;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+import static com.et.constant.AWSConstants.ACCESS_KEY;
+import static com.et.constant.AWSConstants.SECRET_KEY;
+
+/**
+ * @author Eddú Meléndez
+ * @author Matej Nedic
+ * @since 2.3.0
+ */
+public class AwsParamStoreConfigDataLocationResolver
+		implements ConfigDataLocationResolver<AwsParamStoreConfigDataResource> {
+
+	/**
+	 * AWS ParameterStore Config Data prefix.
+	 */
+	public static final String PREFIX = "aws-parameterstore:";
+
+	@Override
+	public boolean isResolvable(ConfigDataLocationResolverContext context, ConfigDataLocation location) {
+		if (!location.hasPrefix(PREFIX)) {
+			return false;
+		}
+		return context.getBinder().bind(AwsParamStoreProperties.CONFIG_PREFIX + ".enabled", Boolean.class).orElse(true);
+	}
+
+	@Override
+	public List<AwsParamStoreConfigDataResource> resolve(ConfigDataLocationResolverContext context,
+                                                                                                    ConfigDataLocation location) throws ConfigDataLocationNotFoundException {
+		return Collections.emptyList();
+	}
+
+	@Override
+	public List<AwsParamStoreConfigDataResource> resolveProfileSpecific(
+			ConfigDataLocationResolverContext resolverContext, ConfigDataLocation location, Profiles profiles)
+			throws ConfigDataLocationNotFoundException {
+		registerBean(resolverContext, AwsParamStoreProperties.class, loadProperties(resolverContext.getBinder()));
+
+		registerAndPromoteBean(resolverContext, AWSSimpleSystemsManagement.class,
+				this::createSimpleSystemManagementClient);
+
+		AwsParamStoreProperties properties = loadConfigProperties(resolverContext.getBinder());
+
+		AwsParamStorePropertySources sources = new AwsParamStorePropertySources(properties);
+
+		List<String> contexts = location.getValue().equals(PREFIX)
+				? sources.getAutomaticContexts(profiles.getAccepted())
+				: getCustomContexts(location.getNonPrefixedValue(PREFIX));
+
+		List<AwsParamStoreConfigDataResource> locations = new ArrayList<>();
+		contexts.forEach(propertySourceContext -> locations
+				.add(new AwsParamStoreConfigDataResource(propertySourceContext, location.isOptional(), sources)));
+
+		return locations;
+	}
+
+	private List<String> getCustomContexts(String keys) {
+		if (StringUtils.hasLength(keys)) {
+			return Arrays.asList(keys.split(";"));
+		}
+		return Collections.emptyList();
+	}
+
+	/**
+	 * Since hook can be activated more then one time, ApplicationContext needs to be
+	 * checked if bean is already registered to prevent Exception. See issue #108 for more
+	 * information.
+	 */
+	protected <T> void registerAndPromoteBean(ConfigDataLocationResolverContext context, Class<T> type,
+			BootstrapRegistry.InstanceSupplier<T> supplier) {
+		registerBean(context, type, supplier);
+		context.getBootstrapContext().addCloseListener(event -> {
+			T instance = event.getBootstrapContext().get(type);
+			String name = "configData" + type.getSimpleName();
+			ConfigurableApplicationContext appContext = event.getApplicationContext();
+			if (!appContext.getBeanFactory().containsBean(name)) {
+				appContext.getBeanFactory().registerSingleton(name, instance);
+			}
+		});
+	}
+
+	public <T> void registerBean(ConfigDataLocationResolverContext context, Class<T> type, T instance) {
+		context.getBootstrapContext().registerIfAbsent(type, BootstrapRegistry.InstanceSupplier.of(instance));
+	}
+
+	protected <T> void registerBean(ConfigDataLocationResolverContext context, Class<T> type,
+			BootstrapRegistry.InstanceSupplier<T> supplier) {
+		ConfigurableBootstrapContext bootstrapContext = context.getBootstrapContext();
+		bootstrapContext.registerIfAbsent(type, supplier);
+	}
+
+	protected AWSSimpleSystemsManagement createSimpleSystemManagementClient(BootstrapContext context) {
+        AWSCredentials credentials = new BasicAWSCredentials(ACCESS_KEY, SECRET_KEY);
+		return AwsParamStoreBootstrapConfiguration.createSimpleSystemManagementClient(credentials);
+	}
+
+	protected AwsParamStoreProperties loadProperties(Binder binder) {
+		return binder.bind(AwsParamStoreProperties.CONFIG_PREFIX, Bindable.of(AwsParamStoreProperties.class))
+				.orElseGet(AwsParamStoreProperties::new);
+	}
+
+	protected AwsParamStoreProperties loadConfigProperties(Binder binder) {
+		AwsParamStoreProperties properties = binder
+				.bind(AwsParamStoreProperties.CONFIG_PREFIX, Bindable.of(AwsParamStoreProperties.class))
+				.orElseGet(AwsParamStoreProperties::new);
+
+		if (!StringUtils.hasLength(properties.getName())) {
+			properties.setName(binder.bind("spring.application.name", String.class).orElse("application"));
+		}
+
+		return properties;
+	}
+
+}

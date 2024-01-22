@@ -1,0 +1,37 @@
+{
+  "name": "DunningManagement",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "retryAttempts",
+      "fieldType": "RetryAttempts",
+      "fieldValues": "ONE_ATTEMPT,TWO_ATTEMPTS,THREE_ATTEMPTS,FOUR_ATTEMPTS,FIVE_ATTEMPTS,SIX_ATTEMPTS,SEVEN_ATTEMPTS,EIGHT_ATTEMPTS,NINE_ATTEMPTS,TEN_ATTEMPTS,ELEVEN_ATTEMPTS,TWELVE_ATTEMPTS,THIRTEEN_ATTEMPTS,FOURTEEN_ATTEMPTS,FIFTEEN_ATTEMPTS"
+    },
+    {
+      "fieldName": "daysBeforeRetrying",
+      "fieldType": "DaysBeforeRetrying",
+      "fieldValues": "ONE_DAY,TWO_DAYS,THREE_DAYS,FOUR_DAYS,FIVE_DAYS,SIX_DAYS,SEVEN_DAYS,EIGHT_DAYS,NINE_DAYS,TEN_DAYS,ELEVEN_DAYS,TWELVE_DAYS,THIRTEEN_DAYS,FOURTEEN_DAYS,FIFTEEN_DAYS"
+    },
+    {
+      "fieldName": "maxNumberOfFailures",
+      "fieldType": "MaxNumberOfFailures",
+      "fieldValues": "CANCEL_SUBSCRIPTION,PAUSE_SUBSCRIPTION,SKIP_FAILED_ORDER"
+    }
+  ],
+  "changelogDate": "20210317111007",
+  "entityTableName": "dunning_management",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

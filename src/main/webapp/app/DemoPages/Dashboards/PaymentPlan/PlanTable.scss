@@ -1,0 +1,28 @@
+.page-heading-icon-wrapper {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.strike-discount-price {
+  color: red;
+  margin-left: 8px;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.applied-discount {
+  color: gray;
+  font-size: 17px;
+}
+
+.discount-background {
+  background: #3f6ad814;
+  padding: 17px;
+  border-radius: 10px;
+  width: 40%;
+}

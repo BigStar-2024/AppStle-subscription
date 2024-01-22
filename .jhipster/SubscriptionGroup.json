@@ -1,0 +1,57 @@
+{
+  "name": "subscription_group",
+  "fields": [
+    {
+      "fieldName": "productCount",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "productVariantCount",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "frequencyCount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "frequencyInterval",
+      "fieldType": "FrequencyIntervalUnit",
+      "fieldValues": "DAY,WEEK,MONTH,YEAR"
+    },
+    {
+      "fieldName": "frequencyName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "groupName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productIds",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "discountOffer",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "discountType",
+      "fieldType": "DiscountTypeUnit",
+      "fieldValues": "PERCENTAGE,FIXED,PRICE"
+    },
+    {
+      "fieldName": "discountEnabled",
+      "fieldType": "Boolean"
+    }
+  ],
+  "changelogDate": "20200123061909",
+  "entityTableName": "subscription_group",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

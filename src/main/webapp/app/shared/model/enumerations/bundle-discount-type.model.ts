@@ -1,0 +1,7 @@
+export const enum BundleDiscountType {
+  PERCENTAGE = 'PERCENTAGE',
+
+  FIXED_AMOUNT = 'FIXED_AMOUNT',
+
+  FIXED_BUNDLE_AMOUNT = 'FIXED_BUNDLE_AMOUNT'
+}

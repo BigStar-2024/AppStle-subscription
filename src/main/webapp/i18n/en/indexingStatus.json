@@ -1,0 +1,10 @@
+{
+  "subscriptionApp": {
+    "IndexingStatus": {
+      "null": "",
+      "PROCESSING": "PROCESSING",
+      "SUCCESS": "SUCCESS",
+      "FAIL": "FAIL"
+    }
+  }
+}

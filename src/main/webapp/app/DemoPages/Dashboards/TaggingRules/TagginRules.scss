@@ -1,0 +1,131 @@
+.tag-badge {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  border-radius: 3px;
+  background-color: #dfe3e8;
+  color: #212b36;
+  width: max-content;
+  font-size: 14px;
+  font-weight: 400;
+  &:hover {
+    background-color: #dfe3e8;
+    color: #212b36;
+  }
+  .close {
+    font-size: 20px;
+    margin-left: 8px;
+    &:hover {
+      background: #c4cdd5;
+    }
+  }
+}
+
+.tag-badge-readonly {
+  font-size: 13px;
+  border-radius: 20px;
+  font-weight: 400;
+  color: #414f3e;
+  padding: 5px 8px;
+  margin: 0 6px;
+
+  &.fixed,
+  &.success {
+    background-color: #bbe5b3;
+  }
+  &.dynamic {
+    background-color: #dfe3e8;
+  }
+  &.toRemove {
+    background-color: #ffc58b;
+  }
+  &.toNotMatch,
+  &.warning {
+    background-color: #ffea8a;
+  }
+  &.deactivated {
+    background-color: #ffc58b;
+    margin: 0;
+    text-transform: none;
+  }
+}
+
+.tags-info-block {
+  margin: 10px 0;
+}
+
+.delimeter-content {
+  position: absolute;
+  top: -13px;
+  left: 48%;
+  padding: 2px 15px;
+  background: #ccc;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.col-black {
+  color: black !important;
+}
+.variationCode {
+  position: relative;
+  padding: 0 0.4rem;
+  border-radius: 3px;
+  background-color: var(--p-surface-subdued, #f4f6f8);
+  display: inline-block;
+  box-shadow: inset 0 0 0 1px var(--p-border-subdued, #dfe3e8);
+  color: #6c757d !important;
+}
+
+.alertInfo {
+  background-color: #eef9f9;
+  border-radius: 3px;
+}
+.alertInfoIcon {
+  color: #00848e;
+}
+.multiselect-list {
+  max-height: 400px;
+}
+
+.multiselect-list-item {
+  img {
+    height: 31px;
+    width: 33px;
+  }
+}
+.font-size-badge {
+  font-size: smaller;
+}
+
+.custom-scrollable {
+  overflow-y: auto;
+}
+
+/*Remove the scrollbar from Chrome, Safari, Edge and IE*/
+// ::-webkit-scrollbar {
+//   width: 0px;
+//   background: transparent;
+// }
+
+.scrollCriteria::-webkit-scrollbar {
+  width: unset !important;
+  background: unset !important;
+  // -webkit-appearance: scrollbartrack-vertical!important;
+}
+* {
+  -ms-overflow-style: none !important;
+}
+.welcome-page {
+  background-image: url('../../../../static/theme/assets/utils/images/undraw_blank_canvas_3rbb.svg');
+  margin: 2rem auto 0;
+  padding: 2rem 0;
+  max-width: 1000px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 50vh;
+}
+.drag-select {
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+}

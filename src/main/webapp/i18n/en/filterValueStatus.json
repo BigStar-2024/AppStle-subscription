@@ -1,0 +1,9 @@
+{
+  "subscriptionApp": {
+    "FilterValueStatus": {
+      "null": "",
+      "ACTIVE": "ACTIVE",
+      "HIDDEN": "HIDDEN"
+    }
+  }
+}

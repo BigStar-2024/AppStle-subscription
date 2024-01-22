@@ -1,0 +1,39 @@
+{
+  "name": "MembershipDiscountCollections",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "membershipDiscountId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "collectionId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "collectionTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "collectionType",
+      "fieldType": "CollectionType",
+      "fieldValues": "SMART_COLLECTION,CUSTOM_COLLECTION"
+    }
+  ],
+  "changelogDate": "20210702045209",
+  "entityTableName": "membership_discount_collections",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

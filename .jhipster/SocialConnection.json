@@ -1,0 +1,80 @@
+{
+  "name": "SocialConnection",
+  "fields": [
+    {
+      "fieldName": "userId",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "proverId",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "accessToken",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "restRateLimit",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "graphqlRateLimit",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "accessToken1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessToken2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessToken3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessToken4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "publicAccessToken",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "publicAccessToken1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "publicAccessToken2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "publicAccessToken3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "publicAccessToken4",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20190527074155",
+  "entityTableName": "social_connection",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "applications": "*"
+}

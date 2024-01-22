@@ -1,0 +1,11 @@
+export const enum DefaultSorting {
+  RELEVANCE,
+  TITLE_A_Z,
+  TITLE_Z_A,
+  DATE_NEW_TO_OLD,
+  DATE_OLD_TO_NEW,
+  PRICE_LOW_TO_HIGH,
+  PRICE_HIGH_TO_LOW,
+  DISCOUNT_HIGH_TO_LOW,
+  BESTSELLING
+}

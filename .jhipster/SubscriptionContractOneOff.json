@@ -1,0 +1,49 @@
+{
+    "name": "SubscriptionContractOneOff",
+    "fields": [
+        {
+            "fieldName": "shop",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "billingAttemptId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "subscriptionContractId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "variantId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "variantHandle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "quantity",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "Double"
+        }
+    ],
+    "changelogDate": "20200123061909",
+    "entityTableName": "subscription_contract_one_off",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*",
+    "relationships": [],
+    "searchEngine": false,
+    "databaseType": "sql"
+}

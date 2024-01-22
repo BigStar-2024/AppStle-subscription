@@ -1,0 +1,55 @@
+{
+  "name": "CancellationManagement",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "cancellationType",
+      "fieldType": "CancellationTypeStatus",
+      "fieldValues": "CANCEL_IMMEDIATELY,CANCELLATION_INSTRUCTIONS,CUSTOMER_RETENTION_FLOW,CANCEL_AFTER_PAUSE"
+    },
+    {
+      "fieldName": "cancellationInstructionsText",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "cancellationReasonsJSON",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "pauseInstructionsText",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "pauseDurationCycle",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "enableDiscountEmail",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "discountEmailAddress",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20200123061909",
+  "entityTableName": "cancellation_management",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*",
+  "relationships": [],
+  "searchEngine": false,
+  "databaseType": "sql"
+}

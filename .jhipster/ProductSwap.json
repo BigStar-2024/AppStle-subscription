@@ -1,0 +1,55 @@
+{
+  "name": "ProductSwap",
+  "fields": [
+    {
+      "fieldName": "shop",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "sourceVariants",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "destinationVariants",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "updatedFirstOrder",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "checkForEveryRecurringOrder",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "changeNextOrderDateBy",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "forBillingCycle",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "carryDiscountForward",
+      "fieldType": "Boolean"
+    }
+  ],
+  "changelogDate": "20210430101909",
+  "entityTableName": "product_swap",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
